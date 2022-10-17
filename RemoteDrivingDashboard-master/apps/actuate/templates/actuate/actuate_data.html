@@ -1,0 +1,111 @@
+{% extends "home/dashboard_layout.html" %}
+{% block content %}
+{% load static %}
+<div class="row row-eq-height">
+    <div class="col-6" id="streaming">
+        <div class="card">
+            <div class="card-header ">
+                <div class="row">
+                    <div class="col-sm-6 text-left">
+                        <h2 class="card-title">Live Stream</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body ">
+                <div class="row">
+                    <div class="col-12">
+                        <canvas id="canvas_objects" class="w-100">
+                        </canvas>
+                        <div style="display:none;">
+                            <img id="streamer-image" src="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-6" id="gpsTracking">
+        <div class="card">
+            <div class="card-header ">
+                <div class="row">
+                    <div class="col-sm-6 text-left">
+                        <h2 class="card-title">Live Tracking</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="row ">
+                    <div class="col-12 ">
+                        <div id="map-canvas"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=" col text-center"><button class="btn btn-primary" id="action">Start Tracking</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<div class="row row-eq-height">
+    <div class="col-md-6">
+        <div class="card" id="actuateDev">
+            <div class="card-header">
+                <h2 class="card-title">Actuate</h2>
+            </div>
+
+                    <div class="arr pause" id="0" onclick="direction(this.id)">
+            <i class="fa fa-solid fa-pause"></i>
+        </div>
+
+
+            <div class="keys">
+
+  <div class="up arr"><i class="fa fa-arrow-up"></i></div>
+  <br />
+  <div class="left arr"><i class="fa fa-arrow-left"></i></div>
+  <div class="down arr"><i class="fa fa-arrow-down"></i></div>
+  <div class="right arr"><i class="fa fa-arrow-right"></i></div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<div class="names">
+  <div class="uptext"></div>
+  <div class="downtext"></div>
+  <div class="lefttext"></div>
+  <div class="righttext"></div>
+  <div class="b"></div>
+  <div class="a"></div>
+</div>
+
+
+        </div>
+    </div>
+
+
+</div>
+</div>
+
+
+{% endblock %}
+
+{% block javascript %}
+{% load static %}
+
+<script>
+    var actuateData12 = "{{actuateData|escapejs}}";
+</script>
+
+<script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script>
+<script src="{% static 'js/ActuateData.js' %}"></script>
+
+<script async
+    src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCBZkMMzE4flmC_f65CXbnNkjcruZSB6Rc&callback=initialize"></script>
+{% endblock %}

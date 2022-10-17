@@ -1,0 +1,12 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>graph.png</file>
+    <file>left-round-128.png</file>
+    <file>addsign.png</file>
+    <file>back.png</file>
+    <file>classify.png</file>
+    <file>anomaly2.png</file>
+    <file>visualization.png</file>
+    <file>joystick2.png</file>
+  </qresource>
+</RCC>

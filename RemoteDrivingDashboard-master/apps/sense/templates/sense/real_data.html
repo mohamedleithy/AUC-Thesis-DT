@@ -1,0 +1,19 @@
+{% extends "home/dashboard_layout.html" %}
+{% block content %}
+
+<div class="row" id="sensors">
+
+</div>
+<button type="button" id="anomalyButton" class="btn btn-primary">Detect Outliers</button>
+
+{% endblock %}
+
+{% block javascript %}
+{% load static %}
+<script>
+    var dataSensorInfo = "{{data|escapejs}}";
+    var anomalyData = "{{anomaly|escapejs}}"
+</script>
+<script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script>
+<script src="{% static 'sense/js/realdata.js' %}"></script>
+{% endblock %}
