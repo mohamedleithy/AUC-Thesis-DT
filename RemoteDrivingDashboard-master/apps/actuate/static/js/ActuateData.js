@@ -14,11 +14,16 @@
 
   // preparing HTML canvas for video stream
   const image_elem = document.getElementById("streamer-image");
+  const image_elem1 = document.getElementById("streamer-image1");
   const text_elem = document.getElementById("streamer-text");
   const canvas_od = document.getElementById("canvas_objects");
+  const canvas_od1 = document.getElementById("canvas_objects1");
   var draw = canvas_od.getContext("2d");
+  var draw1 = canvas_od1.getContext("2d");
   draw.font = "20px Arial";
   draw.lineWidth = 3;
+  draw1.font = "20px Arial";
+  draw1.lineWidth = 3;
 
   //actuation controls and sliders
 
@@ -57,9 +62,9 @@
   });
 
   //loading model then allow acceptaance of socket events
-  console.log(canvas_od.width, canvas_od.height)
+  //console.log(canvas_od.width, canvas_od.height)
   cocoSsd.load().then(model => {
-      socket.on('server2web', (a) => {
+      socket.on('server2webvirtual', (a) => {
           image_elem.src = a.image;
           image_elem.onload = () => {
               draw.drawImage(image_elem, 0, 0, canvas_od.width, canvas_od.height);
@@ -132,6 +137,81 @@
 
       });
   });
+
+  cocoSsd.load().then(model => {
+    socket.on('server2webphysical', (a) => {
+        image_elem1.src = a.image;
+        image_elem1.onload = () => {
+            draw1.drawImage(image_elem1, 0, 0, canvas_od1.width, canvas_od1.height);
+        };
+        delay(1).then(delayers => model.detect(image_elem1).then(predictions => {
+            for (i = 0; i < predictions.length; i++) {
+                // get bounding box and label
+                const box = predictions[i].bbox;
+                const label = predictions[i].class;
+
+                // mark objects of different types with different colors
+                var color_code = "#FFA500";
+                switch (label) {
+                    case "person":
+                        color_code = "#4682B4";
+                        break;
+
+                    case "horse":
+                        color_code = "#DB7093";
+                        break;
+
+                    case "cat":
+                        color_code = "#C71585";
+                        break;
+
+                    case "dog":
+                        color_code = "#BA55D3";
+                        break;
+
+                    case "car":
+                        color_code = "#008080";
+                        break;
+
+                    case "bus":
+                        color_code = "#9ACD32";
+                        break;
+
+                    case "truck":
+                        color_code = "#40E0D0";
+                        break;
+
+                    case "airplane":
+                        color_code = "#32CD32";
+                        break;
+
+                    case "boat":
+                        color_code = "#808000";
+                        break;
+
+                    case "train":
+                        color_code = "#228B22";
+                        break;
+
+                    // add more classes here as necessary
+
+                }
+
+                // draw on canvas
+
+                draw1.fillStyle = color_code;
+                draw1.strokeStyle = color_code;
+
+                draw1.strokeRect(box[0], box[1], box[2], box[3]);
+                draw1.fillRect(box[0], box[1] - 30, 70, 30);
+                draw1.fillStyle = "white";
+                draw1.fillText(label, box[0], box[1] - 5);
+
+            }
+        }));
+
+    });
+});
   //delay to allow drawing
   async function delay(delayInms) {
       return new Promise(resolve => {

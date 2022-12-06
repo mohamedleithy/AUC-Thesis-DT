@@ -49,7 +49,8 @@ def disconnect_cv(sid):
 
 @sio.on('cv2server',namespace='/cv')
 def handle_cv_message(sid,message):
-    sio.emit('server2web', message, namespace='/web')
+    sio.emit('server2webvirtual', message, namespace='/web')
+    sio.emit('server2webphysical', message, namespace='/web')
 
 #dashboard
 @sio.on('connect', namespace='/dashboard')

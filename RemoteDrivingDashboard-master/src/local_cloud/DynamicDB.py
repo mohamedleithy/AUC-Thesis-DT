@@ -17,15 +17,26 @@ class Singleton:
             Singleton.__instance = self
 
     def create_Table(self, name):
-     cursor = connections["default"].cursor()
-     create_sense = """CREATE TABLE IF NOT EXISTS """ + name + """ (
-                         `time` datetime,
-                         `value` float,
-                         `id` int NOT NULL AUTO_INCREMENT,
-                         PRIMARY KEY (id) 
-                         )
-                         """
-     cursor.execute(create_sense)
+        cursor = connections["default"].cursor()
+        if "Position" in name:
+            create_sense = """CREATE TABLE IF NOT EXISTS """ + name + """ (
+                                `time` datetime,
+                                `lat` float,
+                                `lng` float,
+                                `id` int NOT NULL AUTO_INCREMENT,
+                                PRIMARY KEY (id) 
+                                )
+                                """
+            cursor.execute(create_sense)
+        else:
+            create_sense = """CREATE TABLE IF NOT EXISTS """ + name + """ (
+                                `time` datetime,
+                                `value` float,
+                                `id` int NOT NULL AUTO_INCREMENT,
+                                PRIMARY KEY (id) 
+                                )
+                                """
+            cursor.execute(create_sense)
 
 
 
