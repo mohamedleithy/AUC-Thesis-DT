@@ -32,7 +32,7 @@ def send_dictionary(dictionary,topic):
 def cmd_vel_callback(msg):
     speed_dict = {}
     global last_speed
-    speed_dict['sensor_name'] = 'Speed1'
+    speed_dict['sensor_name'] = 'Speed_Digital_1'
     # speed_dict['linear_x'] = msg.linear.x
     # speed_dict['linear_y'] = msg.linear.y
     # speed_dict['linear_z'] = msg.linear.z
@@ -50,7 +50,7 @@ def cmd_vel_callback(msg):
 
 def pose_callback(msg):
     position_dict = {}
-    position_dict['sensor_name'] = 'Position'
+    position_dict['sensor_name'] = 'Position_Digital_1'
     position_dict['position_x'] = msg.pose.pose.position.x
     position_dict['position_y'] = msg.pose.pose.position.y
     position_dict['position_z'] = msg.pose.pose.position.z
@@ -74,7 +74,7 @@ def acc_callback(msg):
     linear_acc_y += msg.linear_acceleration.y
     linear_acc_z += msg.linear_acceleration.z
     n+=1
-    acc_dict['sensor_name'] = 'Accelerometer1'
+    acc_dict['sensor_name'] = 'Accelerometer_Digital_1'
     # acc_dict['linear_acceleration_x'] = linear_acc_x / n
     # acc_dict['linear_acceleration_y'] = linear_acc_y / n
     # acc_dict['linear_acceleration_z'] = linear_acc_z / n

@@ -42,7 +42,7 @@ def rcv(jsonfile):
 
     for key in countsForEachSensor:
         for j in range(countsForEachSensor[key]):
-            dynamic_DB.create_Table(key+str(j+1))
+            dynamic_DB.create_Table(f'''{key}{str(j+1)}''')
     
     print("data received and table created")
     print(jsonResponse.values())
