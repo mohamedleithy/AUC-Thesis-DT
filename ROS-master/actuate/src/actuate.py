@@ -67,6 +67,15 @@ target_angular_vel  = 0.0
 control_linear_vel  = 0.0
 control_angular_vel = 0.0
 
+def c_move(key):
+    global status, target_linear_vel, target_angular_vel, control_angular_vel, control_linear_vel
+    twist = Twist()
+    control_linear_vel = makeSimpleProfile(control_linear_vel, target_linear_vel, (LIN_VEL_STEP_SIZE/2.0))
+    twist.linear.x = control_linear_vel; twist.linear.y = 0.0; twist.linear.z = 0.0
+
+    control_angular_vel = makeSimpleProfile(control_angular_vel, target_angular_vel, (ANG_VEL_STEP_SIZE/2.0))
+    twist.angular.x = 0.0; twist.angular.y = 0.0; twist.angular.z = control_angular_vel  
+    pub.publish(twist)
 
 def move(key):  
     global pub
@@ -112,12 +121,13 @@ def move(key):
         control_angular_vel = makeSimpleProfile(control_angular_vel, target_angular_vel, (ANG_VEL_STEP_SIZE/2.0))
         twist.angular.x = 0.0; twist.angular.y = 0.0; twist.angular.z = control_angular_vel
 
-
+        
         pub.publish(twist)
 
     except:
         print("Exception")
 
+    
 
     # finally:
     #     print("finally")
@@ -139,4 +149,9 @@ rospy.init_node('aa')
 
 pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
 sub = rospy.Subscriber('/control',String,key_callback)
+
+itr = rospy.Subscriber('/metric',String, c_move)
+
+
+
 rospy.spin()

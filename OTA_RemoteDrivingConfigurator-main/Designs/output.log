@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/g02-f22/Downloads/source_code/AUC-Thesis-DT/ROS-master/cloudconnect/Streaming.py", line 88, in <module>
+    sio.connect('http://localhost:8000')
+  File "/home/g02-f22/.local/lib/python3.8/site-packages/socketio/client.py", line 338, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from None
+socketio.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+e'))

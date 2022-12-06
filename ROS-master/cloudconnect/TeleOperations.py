@@ -24,7 +24,7 @@ import socketio
 
 def move(key):
     global pub
-    pub.publish(key)
+    pub.publish(key)                                         
 
 sio = socketio.Client()
 
@@ -72,3 +72,4 @@ sio.connect('http://localhost:8000')
 rospy.init_node('cloud_connect_move')
 pub = rospy.Publisher('/control', String, queue_size=10)
 rospy.spin()
+

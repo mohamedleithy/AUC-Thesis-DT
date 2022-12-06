@@ -1,6 +1,8 @@
 from django.db import connections
 
 # Class Singleton to make sure only one instance is created from the DB Table
+
+# HANDLE THE POSITION 
 class Singleton:
     __instance = None
     @staticmethod

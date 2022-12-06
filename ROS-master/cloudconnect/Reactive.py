@@ -62,7 +62,7 @@ def dbSave(data):
 def callback(data):
 #     # rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
 #     #Send the data you got from sensors throgh ros node to the dashboard to update the graphs by emitting an event
-    # sio.emit('sensedData', data ,namespace='/dashboard')
+  # sio.emit('sensedData', data ,namespace='/dashboard')
   data = message_converter.convert_ros_message_to_dictionary(data)
 
   data = json.loads(data['data'])
@@ -70,42 +70,42 @@ def callback(data):
 
   data = preprocessing(data)
   print(data)
-  # cursor, mydb = dbInit("127.0.0.1","root","root","velanalytics","0.0.0.0")
+  cursor, mydb = dbInit("127.0.0.1","root","root","velanalytics","0.0.0.0")
 
-  # # cursor = connections["default"].cursor()
-  # sql_statement = f"""INSERT INTO  {data["sensor_name"]}
-  #               ( `time`,
-  #               `value`)
-  #               VALUES
-  #               ({data["time"]},{data["magnitude"]});
-  #               """
-  # cursor.execute(sql_statement)
+  # cursor = connections["default"].cursor()
+  sql_statement = f"""INSERT INTO  {data["sensor_name"]}
+                ( `time`,
+                `value`)
+                VALUES
+                ({data["time"]},{data["magnitude"]});
+                """
+  cursor.execute(sql_statement)
 
-  # for i in range(5):
-  sio.emit('sensedData', dict(data) ,namespace='/dashboard')
+  for i in range(5):
+    sio.emit('sensedData', dict(data) ,namespace='/dashboard')
 
 def preprocessing(data):
     global i 
     i+=1
     print(i)
     data["time"] = json.dumps(datetime.now(), default=str)
-    # flag = False
-    # if(bool(re.search("^Accelerometer", data["sensor_name"]))):
-    #   print("accelerometer")
-    #   data = {"sensor_name" : data["sensor_name"],
-    #         "magnitude" : data["magnitude"],
-    #         "time": json.dumps(datetime.now(), default=str)
-    #       }
-    #   flag = True
-    #   # dbSave(data)    
+    flag = False
+    if(bool(re.search("^Accelerometer", data["sensor_name"]))):
+      print("accelerometer")
+      data = {"sensor_name" : data["sensor_name"],
+            "magnitude" : data["magnitude"],
+            "time": json.dumps(datetime.now(), default=str)
+          }
+      flag = True
+      # dbSave(data)    
 
-    # elif(bool(re.search("^Speed", data["sensor_name"]))):
-    #   print("speed")
-    #   data = {"sensor_name" : data["sensor_name"],
-    #           "magnitude" : data['magnitude'],
-    #           "time": json.dumps(datetime.now(), default=str)
-    #         }
-    #   flag = True
+    elif(bool(re.search("^Speed", data["sensor_name"]))):
+      print("speed")
+      data = {"sensor_name" : data["sensor_name"],
+              "magnitude" : data['magnitude'],
+              "time": json.dumps(datetime.now(), default=str)
+            }
+      flag = True
       
 
     if(bool(re.search("^Position", data["sensor_name"]))):
