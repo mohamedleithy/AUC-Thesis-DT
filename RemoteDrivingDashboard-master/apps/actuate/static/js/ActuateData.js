@@ -14,7 +14,6 @@
 
   // preparing HTML canvas for video stream
   const image_elem = document.getElementById("streamer-image");
-  const image_elem1 = document.getElementById("stream-image1");
   const text_elem = document.getElementById("streamer-text");
   const canvas_od = document.getElementById("canvas_objects");
   var draw = canvas_od.getContext("2d");
@@ -62,14 +61,10 @@
   cocoSsd.load().then(model => {
       socket.on('server2web', (a) => {
           image_elem.src = a.image;
-          image_elem1.src = a.image;
           image_elem.onload = () => {
               draw.drawImage(image_elem, 0, 0, canvas_od.width, canvas_od.height);
           };
-          image_elem1.onload = () => {
-            draw.drawImage(image_elem1, 0, 0, canvas_od.width, canvas_od.height);
-        };
-         delay(1).then(delayers => model.detect(image_elem1).then(predictions => {
+          delay(1).then(delayers => model.detect(image_elem).then(predictions => {
               for (i = 0; i < predictions.length; i++) {
                   // get bounding box and label
                   const box = predictions[i].bbox;
@@ -152,9 +147,9 @@
   //real time data recieve 
   socket.on('sensedData', (data) => {
       console.log(data);
-    
+
     if(data["sensor_name"]=="Position"){
-    
+
         map.setCenter({ lat: data["lat"], lng: data["lng"], alt: 0 });
         mark.setPosition({ lat: data["lat"], lng: data["lng"], alt: 0 });
 
