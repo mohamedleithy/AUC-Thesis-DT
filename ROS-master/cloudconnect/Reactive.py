@@ -9,7 +9,7 @@ import math
 import message_converter
 # from django.db import connections
 import mysql.connector
-
+import time
 # data = {"sensor_name": "Accelerometer1",
 # "linear_acceleartion_x": 1,
 #  "linear_accelaration_y": 1,
@@ -89,6 +89,15 @@ def callback(data):
                   ({data["time"]},{data["magnitude"]});
                   """                    
   cursor.execute(sql_statement)
+
+  #timestamp here ----------------------
+
+
+  obj = time.gmtime(0)
+  epoch = time.asctime(obj)
+  print("The time is:",epoch)
+  curr_time = round(time.time())
+  print("Milliseconds since epoch:",curr_time)
 
   for i in range(5):
     sio.emit('sensedData', dict(data) ,namespace='/dashboard')

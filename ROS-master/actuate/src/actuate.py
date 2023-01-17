@@ -78,6 +78,8 @@ def c_move(key):
     pub.publish(twist)
 
 def move(key):  
+    #timestamp here ----------------------------
+
     global pub
     try:
         # print(msg)

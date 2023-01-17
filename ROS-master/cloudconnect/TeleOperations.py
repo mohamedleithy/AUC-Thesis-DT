@@ -2,7 +2,7 @@ import rospy
 from geometry_msgs.msg import Twist
 import sys, select, os
 from std_msgs.msg import String
-
+import time
 
 
 BURGER_MAX_LIN_VEL = 5.0
@@ -43,6 +43,12 @@ def disconnect():
 
 @sio.event(namespace='/movement')
 def actuateData(data):
+    #timestamp here ------------------------------
+    obj = time.gmtime(0)
+    epoch = time.asctime(obj)
+    print("The time is:",epoch)
+    curr_time = round(time.time())
+    print("Milliseconds since epoch:",curr_time)
     print(data)
     move(data)
 

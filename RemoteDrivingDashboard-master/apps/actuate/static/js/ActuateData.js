@@ -278,6 +278,9 @@
 
    function direction(clicked_id) {
 //       clicked_id == 1 ? 0 : 1
+//timestamp here --------------------------------
+      var timestamp = getTime()
+      console.log(timestamp);
       socket.emit('new_data', 's');
   }
 $(document).keydown(function(e) {

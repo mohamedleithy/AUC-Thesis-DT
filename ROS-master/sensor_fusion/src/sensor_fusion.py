@@ -24,6 +24,7 @@ def send_dictionary(dictionary,topic):
     # while not rospy.is_shutdown():
         # hello_str = "hello world %s" % rospy.get_time()
         # rospy.loginfo(encoded_data_string)
+        #timestamp here -----------------------------------------
     pub.publish(encoded_data_string)
     # time.sleep(1)
     

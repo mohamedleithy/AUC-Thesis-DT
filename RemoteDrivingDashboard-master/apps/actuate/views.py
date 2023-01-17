@@ -33,6 +33,7 @@ def disconnect_web(sid):
 
 @sio.on('new_data', namespace='/web')
 def newData(sid,data):
+    
     sio.emit('actuateData',data,namespace='/movement')
 
 #cv
@@ -48,8 +49,11 @@ def disconnect_cv(sid):
 
 
 @sio.on('cv2server',namespace='/cv')
-def handle_cv_message(sid,message):
+def handle_cv_message_digital(sid,message):
     sio.emit('server2webvirtual', message, namespace='/web')
+
+@sio.on('cv2serverphysical',namespace='/cv')
+def handle_cv_message_physical(sid,message):
     sio.emit('server2webphysical', message, namespace='/web')
 
 #dashboard

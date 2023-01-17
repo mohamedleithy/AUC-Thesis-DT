@@ -109,6 +109,9 @@ for (const [key, value] of Object.entries(dataSensor)){
 }
 
     socket.on('sensedData', (data) =>{
+        //timestamp here ---------------------------------
+        var timestamp = getTime()
+        console.log(timestamp);
         console.log(data);
         var name = data["sensor_name"];
 
