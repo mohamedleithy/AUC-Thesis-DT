@@ -10,7 +10,7 @@ os.system("docker-compose -f " + dir_path + " up -d")
 # the scripts can be found in the ROS directory attached with the project
 os.system("nohup python3 /home/g02-f22/Downloads/source_code/AUC-Thesis-DT/ROS-master/cloudconnect/Reactive.py > output.log &")
 os.system("nohup python3 /home/g02-f22/Downloads/source_code/AUC-Thesis-DT/ROS-master/cloudconnect/Streaming.py > output.log &")
-os.system("nohup python3 /home/g02-f22/Downloads/source_code/AUC-Thesis-DT/ROS-master/cloudconnect/TeleOperations.py > output.log &")
+# os.system("nohup python3 /home/g02-f22/Downloads/source_code/AUC-Thesis-DT/ROS-master/cloudconnect/TeleOperations.py > output.log &")
 
 sio = socketio.Client()
 
