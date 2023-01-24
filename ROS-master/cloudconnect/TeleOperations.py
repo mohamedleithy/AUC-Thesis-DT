@@ -74,7 +74,7 @@ def actuateData(data):
 
 
 # if __name__=="__main__": 
-sio.connect('http://localhost:8000')
+sio.connect(os.path.expandvars('http://$HOST_IP:8000'))
 rospy.init_node('cloud_connect_move')
 pub = rospy.Publisher('/control', String, queue_size=10)
 rospy.spin()

@@ -180,7 +180,7 @@ def data_Changed(data):
   print(data)
 
 if __name__ == '__main__':
-    sio.connect('http://localhost:8000')
+    sio.connect(os.path.expandvars('http://$HOST_IP:8000'))
     global i 
     i=0
     listener()

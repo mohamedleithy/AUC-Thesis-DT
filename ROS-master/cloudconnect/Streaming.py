@@ -1,4 +1,4 @@
-import sys
+import sys, os
 from matplotlib import image
 import rospy
 from sensor_msgs.msg import Image
@@ -85,7 +85,7 @@ def disconnect():
 	
 	
 if __name__ == '__main__':
-    sio.connect('http://localhost:8000')
+    sio.connect(os.path.expandvars('http://$HOST_IP:8000'))
     rospy.init_node('streaming', anonymous=True)
     sub = rospy.Subscriber('/images',Image,image_callback)
     rospy.spin()
