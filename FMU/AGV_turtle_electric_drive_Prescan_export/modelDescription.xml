@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription fmiVersion="2.0" modelName="AGV_turtle_electric_drive_Prescan_export" guid="237474235" description="Simcenter Amesim model with FMI for co-simulation interface" generationTool="Simcenter Amesim 20211.." generationDateAndTime="2022-01-31T18:07:22Z" variableNamingConvention="structured" numberOfEventIndicators="0">
+<CoSimulation modelIdentifier="AGV_turtle_electric_drive_Prescan_export" needsExecutionTool="true" canBeInstantiatedOnlyOncePerProcess="true" canNotUseMemoryManagementFunctions="true" canGetAndSetFMUstate="false" canSerializeFMUstate="false" providesDirectionalDerivative="false" canHandleVariableCommunicationStepSize="true" canInterpolateInputs="true" maxOutputDerivativeOrder="0" canRunAsynchronuously="false"/>
+<UnitDefinitions>
+  <Unit name="kg"/>
+  <Unit name="mm"/>
+  <Unit name="s"/>
+</UnitDefinitions>
+<TypeDefinitions>
+  <SimpleType name="integratorType_SimpleEnumeration">
+    <Enumeration>
+      <Item name="standardIntegrator" value="1" description="standard variable step size integrator"/>
+      <Item name="fixedStepIntegrator" value="2" description="fixed step size integrator"/>
+    </Enumeration>
+  </SimpleType>
+  <SimpleType name="errorType_SimpleEnumeration">
+    <Enumeration>
+      <Item name="mixedErrorType" value="1" description="mixed error type"/>
+      <Item name="relativeErrorType" value="2" description="relative error type"/>
+      <Item name="absoluteErrorType" value="3" description="absolute error type"/>
+    </Enumeration>
+  </SimpleType>
+  <SimpleType name="solverType_SimpleEnumeration">
+    <Enumeration>
+      <Item name="regularsolverType" value="1" description="regular solver type"/>
+      <Item name="cautiousSolverType" value="2" description="cautious solver type"/>
+    </Enumeration>
+  </SimpleType>
+  <SimpleType name="integrationMethod_SimpleEnumeration">
+    <Enumeration>
+      <Item name="Euler" value="1" description="Forward Euler"/>
+      <Item name="AdamsBashforth" value="2" description="Adams-Bashforth"/>
+      <Item name="RungeKutta" value="3" description="Runge-Kutta"/>
+    </Enumeration>
+  </SimpleType>
+</TypeDefinitions>
+<DefaultExperiment startTime="0." stopTime="28." stepSize="0.005"/>
+<ModelVariables>
+  <ScalarVariable name="expseu_.SetSpeed_mps" valueReference="134217728" description="expseu instance 1 SetSpeed_mps" causality="input" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1." start="0."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="1"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="expseu_.PosError_m" valueReference="134217729" description="expseu instance 1 PosError_m" causality="input" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1." start="0."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="2"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="expseu_.HeadingError_rad" valueReference="134217730" description="expseu instance 1 HeadingError_rad" causality="input" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1." start="0."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="3"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="expseu_.PositionX_m" valueReference="268435456" description="expseu instance 1 PositionX_m" causality="output" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="4"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="expseu_.PositionY_m" valueReference="268435457" description="expseu instance 1 PositionY_m" causality="output" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="5"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="expseu_.PositionZ_m" valueReference="268435458" description="expseu instance 1 PositionZ_m" causality="output" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="6"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="expseu_.Roll_deg" valueReference="268435459" description="expseu instance 1 Roll_deg" causality="output" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="7"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="expseu_.Pitch_deg" valueReference="268435460" description="expseu instance 1 Pitch_deg" causality="output" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="8"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="expseu_.Yaw_deg" valueReference="268435461" description="expseu instance 1 Yaw_deg" causality="output" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="9"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="expseu_.WheelSpeedLeft_RPM" valueReference="268435462" description="expseu instance 1 WheelSpeedLeft_RPM" causality="output" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="10"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="expseu_.WheelSpeedRight_RPM" valueReference="268435463" description="expseu instance 1 WheelSpeedRight_RPM" causality="output" variability="continuous">
+    <Real min="-1e+30" max="1e+30" nominal="1."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="11"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="run_parameters.maxTimeStep" valueReference="536870912" description="maximum internal time step" causality="parameter" variability="fixed" initial="exact">
+    <Real unit="s" min="0." max="1e+30" nominal="1." start="1e+30"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="12"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="run_parameters.tolerance" valueReference="536870913" description="tolerance" causality="parameter" variability="fixed" initial="exact">
+    <Real min="0." max="1e+30" nominal="1." start="1e-07"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="13"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="run_parameters.fixedStep" valueReference="536870914" description="fixed step size" causality="parameter" variability="fixed" initial="exact">
+    <Real unit="s" min="0." max="1e+30" nominal="1." start="0.001"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="14"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="run_parameters.integratorType" valueReference="536870912" description="integrator type: standard (1) or fixed step (2)" causality="parameter" variability="fixed" initial="exact">
+    <Enumeration declaredType="integratorType_SimpleEnumeration" min="1" max="2" start="1"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="15"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="run_parameters.errorType" valueReference="536870913" description="error control: mixed (1), relative (2), or absolute (3)" causality="parameter" variability="fixed" initial="exact">
+    <Enumeration declaredType="errorType_SimpleEnumeration" min="1" max="3" start="1"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="16"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="run_parameters.solverType" valueReference="536870914" description="solver type: regular (1) or cautious (2)" causality="parameter" variability="fixed" initial="exact">
+    <Enumeration declaredType="solverType_SimpleEnumeration" min="1" max="2" start="1"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="17"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="run_parameters.integrationMethod" valueReference="536870915" description="fixed step integration method: Forward Euler (1), Adams-Bashforth (2) or Runge-Kutta (3)" causality="parameter" variability="fixed" initial="exact">
+    <Enumeration declaredType="integrationMethod_SimpleEnumeration" min="1" max="3" start="3"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="18"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="run_parameters.fixedOrder" valueReference="536870916" description="order of fixed step integration method" causality="parameter" variability="fixed" initial="exact">
+    <Integer min="1" max="4" start="2"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="19"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="Ky" valueReference="671088651" description="Y-position control gain" causality="parameter" variability="fixed" initial="exact">
+    <Real min="-1e+30" max="1e+30" start="75."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="20"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="Kh" valueReference="671088652" description="Heading control gain" causality="parameter" variability="fixed" initial="exact">
+    <Real min="-1e+30" max="1e+30" start="25."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="21"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="Mload" valueReference="671088658" description="load additioal weight" causality="parameter" variability="fixed" initial="exact">
+    <Real unit="kg" min="-1e+30" max="1e+30" start="0."/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="22"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="Xg_ini" valueReference="671088666" description="Initial X position of the COG (ground frame)" causality="local" variability="fixed" initial="calculated">
+    <Real unit="mm" min="-1e+30" max="1e+30"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="23"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="Yg_ini" valueReference="671088669" description="Initial Y position of the COG (ground frame)" causality="local" variability="fixed" initial="calculated">
+    <Real unit="mm" min="-1e+30" max="1e+30"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="24"/></Tool></Annotations>
+  </ScalarVariable>
+  <ScalarVariable name="Zg_ini" valueReference="671088671" description="Initial Z position of the COG (ground frame)" causality="local" variability="fixed" initial="calculated">
+    <Real unit="mm" min="-1e+30" max="1e+30"/>
+    <Annotations><Tool name="Amesim"><VarAnnot index="25"/></Tool></Annotations>
+  </ScalarVariable>
+</ModelVariables>
+<ModelStructure>
+  <Outputs>
+    <Unknown index="4"/>
+    <Unknown index="5"/>
+    <Unknown index="6"/>
+    <Unknown index="7"/>
+    <Unknown index="8"/>
+    <Unknown index="9"/>
+    <Unknown index="10"/>
+    <Unknown index="11"/>
+  </Outputs>
+  <InitialUnknowns>
+    <Unknown index="4"/>
+    <Unknown index="5"/>
+    <Unknown index="6"/>
+    <Unknown index="7"/>
+    <Unknown index="8"/>
+    <Unknown index="9"/>
+    <Unknown index="10"/>
+    <Unknown index="11"/>
+  </InitialUnknowns>
+</ModelStructure>
+</fmiModelDescription>

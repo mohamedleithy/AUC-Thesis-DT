@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE SPE>
+<SPE DOC_VERSION="2" AME_VERSION="17.0.0 - dev - 29/01/18 19:04 - 69591-67126">
+<SUBMODEL>
+   <SUB_TYPE>0</SUB_TYPE>
+   <SUB_ID_MAX>36</SUB_ID_MAX>
+   <DEFAULT_ICON>TURTLEBOT</DEFAULT_ICON>
+   <SUB_LABEL>TURTLEBOT</SUB_LABEL>
+   <SUB_UNIT>1</SUB_UNIT>
+   <R_STORES_NUMBER>0</R_STORES_NUMBER>
+   <I_STORES_NUMBER>0</I_STORES_NUMBER>
+   <P_STORES_NUMBER>1</P_STORES_NUMBER>
+   <DISCONTINUITY>1</DISCONTINUITY>
+   <TIME_REQUIRED>1</TIME_REQUIRED>
+   <HAS_NO_CALC>0</HAS_NO_CALC>
+   <HAS_PREINIT>0</HAS_PREINIT>
+   <HAS_TERMINATE>1</HAS_TERMINATE>
+   <OUTPUT_TYPE>1</OUTPUT_TYPE>
+   <SUBIDS_RESET>1</SUBIDS_RESET>
+   <RPARAMS_LIST>
+      <RPARAM>
+         <SUB_ID>1</SUB_ID>
+         <VARNAME>comStepSize</VARNAME>
+         <TITLE>co-simulation step size</TITLE>
+         <VALUE>0.005</VALUE>
+         <DEF_VALUE>0.005</DEF_VALUE>
+         <MIN_VALUE>1e-030</MIN_VALUE>
+         <MAX_VALUE>1e+030</MAX_VALUE>
+         <UNITS>s</UNITS>
+         <TUNABLE>False</TUNABLE>
+         <VISIBILITY>comType==1</VISIBILITY>
+      </RPARAM>
+      <RPARAM>
+         <SUB_ID>2</SUB_ID>
+         <VARNAME>runparametersmaxTimeStep</VARNAME>
+         <TITLE>maxTimeStep - maximum internal time step</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <UNITS>s</UNITS>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>   1.0000000000000000e+30</VALUE>
+         <DEF_VALUE>   1.0000000000000000e+30</DEF_VALUE>
+         <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+      </RPARAM>
+      <RPARAM>
+         <SUB_ID>3</SUB_ID>
+         <VARNAME>runparameterstolerance</VARNAME>
+         <TITLE>tolerance - tolerance</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <UNITS>null</UNITS>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>   9.9999999999999995e-08</VALUE>
+         <DEF_VALUE>   9.9999999999999995e-08</DEF_VALUE>
+         <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+      </RPARAM>
+      <RPARAM>
+         <SUB_ID>4</SUB_ID>
+         <VARNAME>runparametersfixedStep</VARNAME>
+         <TITLE>fixedStep - fixed step size</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <UNITS>s</UNITS>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>   1.0000000000000000e-03</VALUE>
+         <DEF_VALUE>   1.0000000000000000e-03</DEF_VALUE>
+         <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+      </RPARAM>
+      <RPARAM>
+         <SUB_ID>5</SUB_ID>
+         <VARNAME>Ky</VARNAME>
+         <TITLE>Ky - Y-position control gain</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <UNITS>null</UNITS>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>   7.5000000000000000e+01</VALUE>
+         <DEF_VALUE>   7.5000000000000000e+01</DEF_VALUE>
+         <MIN_VALUE>  -1.0000000000000000e+30</MIN_VALUE>
+         <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+      </RPARAM>
+      <RPARAM>
+         <SUB_ID>6</SUB_ID>
+         <VARNAME>Kh</VARNAME>
+         <TITLE>Kh - Heading control gain</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <UNITS>null</UNITS>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>   2.5000000000000000e+01</VALUE>
+         <DEF_VALUE>   2.5000000000000000e+01</DEF_VALUE>
+         <MIN_VALUE>  -1.0000000000000000e+30</MIN_VALUE>
+         <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+      </RPARAM>
+      <RPARAM>
+         <SUB_ID>7</SUB_ID>
+         <VARNAME>Mload</VARNAME>
+         <TITLE>Mload - load additioal weight</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <UNITS>kg</UNITS>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>   0.0000000000000000e+00</VALUE>
+         <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+         <MIN_VALUE>  -1.0000000000000000e+30</MIN_VALUE>
+         <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+      </RPARAM>
+      <RPARAM>
+         <SUB_ID>8</SUB_ID>
+         <VARNAME>startexpseuSetSpeedmps</VARNAME>
+         <TITLE>SetSpeed_mps - expseu instance 1 SetSpeed_mps - start value</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <UNITS>null</UNITS>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>   0.0000000000000000e+00</VALUE>
+         <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+         <MIN_VALUE>  -1.0000000000000000e+30</MIN_VALUE>
+         <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+      </RPARAM>
+      <RPARAM>
+         <SUB_ID>9</SUB_ID>
+         <VARNAME>startexpseuPosErrorm</VARNAME>
+         <TITLE>PosError_m - expseu instance 1 PosError_m - start value</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <UNITS>null</UNITS>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>   0.0000000000000000e+00</VALUE>
+         <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+         <MIN_VALUE>  -1.0000000000000000e+30</MIN_VALUE>
+         <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+      </RPARAM>
+      <RPARAM>
+         <SUB_ID>10</SUB_ID>
+         <VARNAME>startexpseuHeadingErrorrad</VARNAME>
+         <TITLE>HeadingError_rad - expseu instance 1 HeadingError_rad - start value</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <UNITS>null</UNITS>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>   0.0000000000000000e+00</VALUE>
+         <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+         <MIN_VALUE>  -1.0000000000000000e+30</MIN_VALUE>
+         <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+      </RPARAM>
+   </RPARAMS_LIST>
+   <IPARAMS_LIST>
+      <IPARAM>
+         <SUB_ID>11</SUB_ID>
+         <VARNAME>enableLogging</VARNAME>
+         <TITLE>enable logging</TITLE>
+         <VALUE>2</VALUE>
+         <DEF_VALUE>2</DEF_VALUE>
+         <MIN_VALUE>1</MIN_VALUE>
+         <MAX_VALUE>2</MAX_VALUE>
+         <VISIBILITY>True</VISIBILITY>
+         <TUNABLE>False</TUNABLE>
+         <ENUM_LIST>
+            <ENUM>
+               <ENUM_STRING>yes</ENUM_STRING>
+            </ENUM>
+            <ENUM>
+               <ENUM_STRING>no</ENUM_STRING>
+            </ENUM>
+         </ENUM_LIST>
+      </IPARAM>
+      <IPARAM>
+         <SUB_ID>12</SUB_ID>
+         <VARNAME>comType</VARNAME>
+         <TITLE>co-simulation step specification</TITLE>
+         <VALUE>1</VALUE>
+         <DEF_VALUE>1</DEF_VALUE>
+         <MIN_VALUE>1</MIN_VALUE>
+         <MAX_VALUE>2</MAX_VALUE>
+         <VISIBILITY>True</VISIBILITY>
+         <TUNABLE>False</TUNABLE>
+         <ENUM_LIST>
+            <ENUM>
+               <ENUM_STRING>time step size</ENUM_STRING>
+            </ENUM>
+            <ENUM>
+               <ENUM_STRING>multiple of master fixed step size</ENUM_STRING>
+            </ENUM>
+         </ENUM_LIST>
+      </IPARAM>
+      <IPARAM>
+         <SUB_ID>13</SUB_ID>
+         <VARNAME>comNbStepSize</VARNAME>
+         <TITLE>multiple of master fixed step size</TITLE>
+         <VALUE>1</VALUE>
+         <DEF_VALUE>1</DEF_VALUE>
+         <MIN_VALUE>1</MIN_VALUE>
+         <MAX_VALUE>2147483647</MAX_VALUE>
+         <VISIBILITY>comType==2</VISIBILITY>
+         <TUNABLE>False</TUNABLE>
+      </IPARAM>
+      <IPARAM>
+         <SUB_ID>14</SUB_ID>
+         <VARNAME>runparametersintegratorType</VARNAME>
+         <TITLE>integratorType - integrator type: standard (1) or fixed step (2)</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>1</VALUE>
+         <DEF_VALUE>1</DEF_VALUE>
+         <MIN_VALUE>1</MIN_VALUE>
+         <MAX_VALUE>2</MAX_VALUE>
+         <ENUM_LIST>
+            <ENUM>
+               <ENUM_STRING>standardIntegrator - standard variable step size integrator</ENUM_STRING>
+            </ENUM>
+            <ENUM>
+               <ENUM_STRING>fixedStepIntegrator - fixed step size integrator</ENUM_STRING>
+            </ENUM>
+         </ENUM_LIST>
+      </IPARAM>
+      <IPARAM>
+         <SUB_ID>15</SUB_ID>
+         <VARNAME>runparameterserrorType</VARNAME>
+         <TITLE>errorType - error control: mixed (1), relative (2), or absolute (3)</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>1</VALUE>
+         <DEF_VALUE>1</DEF_VALUE>
+         <MIN_VALUE>1</MIN_VALUE>
+         <MAX_VALUE>3</MAX_VALUE>
+         <ENUM_LIST>
+            <ENUM>
+               <ENUM_STRING>mixedErrorType - mixed error type</ENUM_STRING>
+            </ENUM>
+            <ENUM>
+               <ENUM_STRING>relativeErrorType - relative error type</ENUM_STRING>
+            </ENUM>
+            <ENUM>
+               <ENUM_STRING>absoluteErrorType - absolute error type</ENUM_STRING>
+            </ENUM>
+         </ENUM_LIST>
+      </IPARAM>
+      <IPARAM>
+         <SUB_ID>16</SUB_ID>
+         <VARNAME>runparameterssolverType</VARNAME>
+         <TITLE>solverType - solver type: regular (1) or cautious (2)</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>1</VALUE>
+         <DEF_VALUE>1</DEF_VALUE>
+         <MIN_VALUE>1</MIN_VALUE>
+         <MAX_VALUE>2</MAX_VALUE>
+         <ENUM_LIST>
+            <ENUM>
+               <ENUM_STRING>regularsolverType - regular solver type</ENUM_STRING>
+            </ENUM>
+            <ENUM>
+               <ENUM_STRING>cautiousSolverType - cautious solver type</ENUM_STRING>
+            </ENUM>
+         </ENUM_LIST>
+      </IPARAM>
+      <IPARAM>
+         <SUB_ID>17</SUB_ID>
+         <VARNAME>runparametersintegrationMethod</VARNAME>
+         <TITLE>integrationMethod - fixed step integration method: Forward Euler (1), Adams-Bashforth (2) or Runge-Kutta (3)</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>3</VALUE>
+         <DEF_VALUE>3</DEF_VALUE>
+         <MIN_VALUE>1</MIN_VALUE>
+         <MAX_VALUE>3</MAX_VALUE>
+         <ENUM_LIST>
+            <ENUM>
+               <ENUM_STRING>Euler - Forward Euler</ENUM_STRING>
+            </ENUM>
+            <ENUM>
+               <ENUM_STRING>AdamsBashforth - Adams-Bashforth</ENUM_STRING>
+            </ENUM>
+            <ENUM>
+               <ENUM_STRING>RungeKutta - Runge-Kutta</ENUM_STRING>
+            </ENUM>
+         </ENUM_LIST>
+      </IPARAM>
+      <IPARAM>
+         <SUB_ID>18</SUB_ID>
+         <VARNAME>runparametersfixedOrder</VARNAME>
+         <TITLE>fixedOrder - order of fixed step integration method</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <TUNABLE>False</TUNABLE>
+         <VALUE>2</VALUE>
+         <DEF_VALUE>2</DEF_VALUE>
+         <MIN_VALUE>1</MIN_VALUE>
+         <MAX_VALUE>4</MAX_VALUE>
+      </IPARAM>
+   </IPARAMS_LIST>
+   <TPARAMS_LIST>
+      <TPARAM>
+         <SUB_ID>19</SUB_ID>
+         <VARNAME>fmuLocation</VARNAME>
+         <TITLE>path to the unzipped FMU root</TITLE>
+         <VALUE>${library_node}/AGV_turtle_electric_drive_Prescan_export</VALUE>
+         <DEF_VALUE>AGV_turtle_electric_drive_Prescan_export</DEF_VALUE>
+         <VISIBILITY>True</VISIBILITY>
+         <TEXT_TYPE>3</TEXT_TYPE>
+      </TPARAM>
+   </TPARAMS_LIST>
+   <PARAMS_GROUPS_LIST>
+      <PARAMS_GROUP>
+         <ORIG_TITLE>Import parameters</ORIG_TITLE>
+         <NAME>_parameter_variable_group_999472221_1</NAME>
+         <SUB_ID>20</SUB_ID>
+         <PARAM_GROUP_ELEMENT_LIST>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>comNbStepSize</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>comStepSize</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>comType</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>enableLogging</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>fmuLocation</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+         </PARAM_GROUP_ELEMENT_LIST>
+         <EDITABLE>0</EDITABLE>
+      </PARAMS_GROUP>
+      <PARAMS_GROUP>
+         <ORIG_TITLE>expseu_</ORIG_TITLE>
+         <NAME>_parameter_variable_group_999472221_3</NAME>
+         <SUB_ID>21</SUB_ID>
+         <PARAM_GROUP_ELEMENT_LIST>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuHeadingErrorrad</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuPitchdeg</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>2</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuPosErrorm</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuPositionXm</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>2</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuPositionYm</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>2</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuPositionZm</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>2</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuRolldeg</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>2</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuSetSpeedmps</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>1</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuWheelSpeedLeftRPM</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>2</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuWheelSpeedRightRPM</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>2</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>expseuYawdeg</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>2</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>startexpseuHeadingErrorrad</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>startexpseuPosErrorm</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>startexpseuSetSpeedmps</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+         </PARAM_GROUP_ELEMENT_LIST>
+         <EDITABLE>0</EDITABLE>
+      </PARAMS_GROUP>
+      <PARAMS_GROUP>
+         <ORIG_TITLE>run_parameters</ORIG_TITLE>
+         <NAME>_parameter_variable_group_999472221_2</NAME>
+         <SUB_ID>22</SUB_ID>
+         <PARAM_GROUP_ELEMENT_LIST>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>runparameterserrorType</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>runparametersfixedOrder</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>runparametersfixedStep</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>runparametersintegrationMethod</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>runparametersintegratorType</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>runparametersmaxTimeStep</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>runparameterssolverType</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+            <PARAM_GROUP_ELEMENT>
+               <PARAM_GROUP_ELEMENT_VARNAME>runparameterstolerance</PARAM_GROUP_ELEMENT_VARNAME>
+               <PARAM_GROUP_ELEMENT_DISPLAY>0</PARAM_GROUP_ELEMENT_DISPLAY>
+            </PARAM_GROUP_ELEMENT>
+         </PARAM_GROUP_ELEMENT_LIST>
+         <EDITABLE>0</EDITABLE>
+      </PARAMS_GROUP>
+   </PARAMS_GROUPS_LIST>
+   <IVARS_LIST>
+      <IVAR>
+         <SUB_ID>23</SUB_ID>
+         <TYPE>10</TYPE>
+         <VARNAME>Xgini</VARNAME>
+         <TITLE>Xg_ini - Initial X position of the COG (ground frame)</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <DIMENSION>1</DIMENSION>
+         <UNITS>mm</UNITS>
+         <VALUE>   0.0000000000000000e+00</VALUE>
+         <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+         <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+      </IVAR>
+      <IVAR>
+         <SUB_ID>24</SUB_ID>
+         <TYPE>10</TYPE>
+         <VARNAME>Ygini</VARNAME>
+         <TITLE>Yg_ini - Initial Y position of the COG (ground frame)</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <DIMENSION>1</DIMENSION>
+         <UNITS>mm</UNITS>
+         <VALUE>   0.0000000000000000e+00</VALUE>
+         <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+         <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+      </IVAR>
+      <IVAR>
+         <SUB_ID>25</SUB_ID>
+         <TYPE>10</TYPE>
+         <VARNAME>Zgini</VARNAME>
+         <TITLE>Zg_ini - Initial Z position of the COG (ground frame)</TITLE>
+         <VISIBILITY>True</VISIBILITY>
+         <DIMENSION>1</DIMENSION>
+         <UNITS>mm</UNITS>
+         <VALUE>   0.0000000000000000e+00</VALUE>
+         <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+         <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+         <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+      </IVAR>
+   </IVARS_LIST>
+   <EVARS_LIST>
+      <PORT>
+         <TYPE>signalout</TYPE>
+         <NAME>expseu_.PositionX_m</NAME>
+         <EVAR>
+            <SUB_ID>26</SUB_ID>
+            <TYPE>10</TYPE>
+            <IO>2</IO>
+            <VARNAME>expseuPositionXm</VARNAME>
+            <TITLE>PositionX_m - expseu instance 1 PositionX_m</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+            <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+         </EVAR>
+      </PORT>
+      <PORT>
+         <TYPE>signalout</TYPE>
+         <NAME>expseu_.PositionY_m</NAME>
+         <EVAR>
+            <SUB_ID>27</SUB_ID>
+            <TYPE>10</TYPE>
+            <IO>2</IO>
+            <VARNAME>expseuPositionYm</VARNAME>
+            <TITLE>PositionY_m - expseu instance 1 PositionY_m</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+            <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+         </EVAR>
+      </PORT>
+      <PORT>
+         <TYPE>signalout</TYPE>
+         <NAME>expseu_.PositionZ_m</NAME>
+         <EVAR>
+            <SUB_ID>28</SUB_ID>
+            <TYPE>10</TYPE>
+            <IO>2</IO>
+            <VARNAME>expseuPositionZm</VARNAME>
+            <TITLE>PositionZ_m - expseu instance 1 PositionZ_m</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+            <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+         </EVAR>
+      </PORT>
+      <PORT>
+         <TYPE>signalout</TYPE>
+         <NAME>expseu_.Roll_deg</NAME>
+         <EVAR>
+            <SUB_ID>29</SUB_ID>
+            <TYPE>10</TYPE>
+            <IO>2</IO>
+            <VARNAME>expseuRolldeg</VARNAME>
+            <TITLE>Roll_deg - expseu instance 1 Roll_deg</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+            <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+         </EVAR>
+      </PORT>
+      <PORT>
+         <TYPE>signalout</TYPE>
+         <NAME>expseu_.Pitch_deg</NAME>
+         <EVAR>
+            <SUB_ID>30</SUB_ID>
+            <TYPE>10</TYPE>
+            <IO>2</IO>
+            <VARNAME>expseuPitchdeg</VARNAME>
+            <TITLE>Pitch_deg - expseu instance 1 Pitch_deg</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+            <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+         </EVAR>
+      </PORT>
+      <PORT>
+         <TYPE>signalout</TYPE>
+         <NAME>expseu_.Yaw_deg</NAME>
+         <EVAR>
+            <SUB_ID>31</SUB_ID>
+            <TYPE>10</TYPE>
+            <IO>2</IO>
+            <VARNAME>expseuYawdeg</VARNAME>
+            <TITLE>Yaw_deg - expseu instance 1 Yaw_deg</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+            <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+         </EVAR>
+      </PORT>
+      <PORT>
+         <TYPE>signalout</TYPE>
+         <NAME>expseu_.WheelSpeedLeft_RPM</NAME>
+         <EVAR>
+            <SUB_ID>32</SUB_ID>
+            <TYPE>10</TYPE>
+            <IO>2</IO>
+            <VARNAME>expseuWheelSpeedLeftRPM</VARNAME>
+            <TITLE>WheelSpeedLeft_RPM - expseu instance 1 WheelSpeedLeft_RPM</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+            <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+         </EVAR>
+      </PORT>
+      <PORT>
+         <TYPE>signalout</TYPE>
+         <NAME>expseu_.WheelSpeedRight_RPM</NAME>
+         <EVAR>
+            <SUB_ID>33</SUB_ID>
+            <TYPE>10</TYPE>
+            <IO>2</IO>
+            <VARNAME>expseuWheelSpeedRightRPM</VARNAME>
+            <TITLE>WheelSpeedRight_RPM - expseu instance 1 WheelSpeedRight_RPM</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>   0.0000000000000000e+00</MIN_VALUE>
+            <MAX_VALUE>   0.0000000000000000e+00</MAX_VALUE>
+         </EVAR>
+      </PORT>
+      <PORT>
+         <TYPE>signalin</TYPE>
+         <NAME>expseu_.SetSpeed_mps</NAME>
+         <EVAR>
+            <SUB_ID>34</SUB_ID>
+            <TYPE>0</TYPE>
+            <IO>1</IO>
+            <VARNAME>expseuSetSpeedmps</VARNAME>
+            <TITLE>SetSpeed_mps - expseu instance 1 SetSpeed_mps</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>  -1.0000000000000000e+30</MIN_VALUE>
+            <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+         </EVAR>
+      </PORT>
+      <PORT>
+         <TYPE>signalin</TYPE>
+         <NAME>expseu_.PosError_m</NAME>
+         <EVAR>
+            <SUB_ID>35</SUB_ID>
+            <TYPE>0</TYPE>
+            <IO>1</IO>
+            <VARNAME>expseuPosErrorm</VARNAME>
+            <TITLE>PosError_m - expseu instance 1 PosError_m</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>  -1.0000000000000000e+30</MIN_VALUE>
+            <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+         </EVAR>
+      </PORT>
+      <PORT>
+         <TYPE>signalin</TYPE>
+         <NAME>expseu_.HeadingError_rad</NAME>
+         <EVAR>
+            <SUB_ID>36</SUB_ID>
+            <TYPE>0</TYPE>
+            <IO>1</IO>
+            <VARNAME>expseuHeadingErrorrad</VARNAME>
+            <TITLE>HeadingError_rad - expseu instance 1 HeadingError_rad</TITLE>
+            <VISIBILITY>True</VISIBILITY>
+            <DIMENSION>1</DIMENSION>
+            <UNITS>null</UNITS>
+            <VALUE>   0.0000000000000000e+00</VALUE>
+            <DEF_VALUE>   0.0000000000000000e+00</DEF_VALUE>
+            <MIN_VALUE>  -1.0000000000000000e+30</MIN_VALUE>
+            <MAX_VALUE>   1.0000000000000000e+30</MAX_VALUE>
+         </EVAR>
+      </PORT>
+   </EVARS_LIST>
+</SUBMODEL>
+</SPE>
