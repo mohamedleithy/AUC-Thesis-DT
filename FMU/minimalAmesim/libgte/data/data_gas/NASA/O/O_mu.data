@@ -1,0 +1,9 @@
+# Table format: MULTILINES
+# Gas: oxygen (O)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+1000.0 5000.0 15000.0       # boundary temperatures
+# Temperature range 1000.0 - 5000.0 K
+7.7269241e-01 8.3842977e+01 -5.8502098e+04 8.5100827e-01        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu
+# Temperature range 5000.0 - 15000.0 K
+8.7669586e-01 1.015842e+03 -1.0884566e+06 -1.8001077e-01         # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

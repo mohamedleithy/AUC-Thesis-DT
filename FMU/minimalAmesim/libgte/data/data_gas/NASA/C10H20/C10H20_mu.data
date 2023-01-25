@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: taken from n-decane (C10H22n)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+450.0 680.0       # boundary temperatures
+# Temperature range 450.0 - 680.0 K
+9.849180e-01 9.601610e-01 9.998250e-01 -1.665670e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

@@ -1,0 +1,85 @@
+<NTUSimpRegToolModel version="v1500">
+  <Parameters version="v1500">
+    <efficiency>
+      <type>3</type>
+      <expression>0.5</expression>
+    </efficiency>
+    <side1 version="v1500">
+      <mediaChoice version="v1500">
+        <currentMediaId>
+          <parentClassName>PNGD00_SP</parentClassName>
+          <name>NITROGEN</name>
+        </currentMediaId>
+      </mediaChoice>
+      <pressA unit="barA">1.013</pressA>
+    </side1>
+    <side2 version="v1500">
+      <mediaChoice version="v1500">
+        <currentMediaId>
+          <parentClassName>TFFD3_ADVANCED</parentClassName>
+          <name>JP_TS</name>
+        </currentMediaId>
+      </mediaChoice>
+      <pressA unit="barA">3.0</pressA>
+    </side2>
+    <fitting>
+      <GWall>
+        <isChecked>False</isChecked>
+        <value unit="W/K">1000000.0</value>
+      </GWall>
+      <UA1 version="v1500">
+        <isLowChecked>True</isLowChecked>
+        <lowExpression>21.6971 * dm^0.0001</lowExpression>
+        <isHighChecked>True</isHighChecked>
+        <highExpression>397030.9023 * dm^3.3356</highExpression>
+        <dmTransMin>0.093</dmTransMin>
+        <dmTransMax>0.15</dmTransMax>
+      </UA1>
+      <UA2 version="v1500">
+        <isLowChecked>True</isLowChecked>
+        <lowExpression>138.9365 * dm^1.0720</lowExpression>
+        <isHighChecked>True</isHighChecked>
+        <highExpression>307.1558 * dm^0.1251</highExpression>
+        <dmTransMin>0.05</dmTransMin>
+        <dmTransMax>0.09</dmTransMax>
+      </UA2>
+    </fitting>
+  </Parameters>
+  <Table version="v1500">
+    <tempIn1 version="v1500">
+      <description>Inlet temperature at side 1</description>
+      <title>Tin1</title>
+      <unit>degC</unit>
+      <values>[35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35, 35]</values>
+    </tempIn1>
+    <tempIn2 version="v1500">
+      <description>Inlet temperature at side 2</description>
+      <title>Tin2</title>
+      <unit>degC</unit>
+      <values>[90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90, 90]</values>
+    </tempIn2>
+    <dm1 version="v1500">
+      <description>Flow rate at side 1</description>
+      <title>v1</title>
+      <unit>m/s</unit>
+      <values>[1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4]</values>
+      <type description="velocities">2</type>
+      <Xarea unit="m**2">0.05</Xarea>
+    </dm1>
+    <dm2 version="v1500">
+      <description>Flow rate at side 2</description>
+      <title>q2</title>
+      <unit>L/h</unit>
+      <values>[200, 350, 500, 650, 200, 350, 500, 650, 200, 350, 500, 650, 200, 350, 500, 650]</values>
+      <type description="volumetric flow rates">1</type>
+      <Xarea unit="m**2">0.1</Xarea>
+    </dm2>
+    <dhEffi version="v1500">
+      <description>Experimental heat flow rate</description>
+      <title>QExp</title>
+      <unit>kW</unit>
+      <values>[0.196, 0.852, 0.871, 0.881, 0.208, 1.236, 1.274, 1.295, 0.228, 3.68, 4.991, 5.36, 0.227, 3.863, 5.755, 6.286]</values>
+      <type description="heat flow rates">0</type>
+    </dhEffi>
+  </Table>
+</NTUSimpRegToolModel>

@@ -1,0 +1,13 @@
+# Table format: MULTILINES
+# Gas: sulfuric acid (H2SO4)
+# Coefficients for specific heat (Cp in J/kg/K), specific enthalpy (h in J/kg) and specific entropy (s in J/kg/K) as a function of temperature (T in K) in the NASA 2002 format
+# Ref: NASA Glenn Coefficients for Calculating Thermodynamic Properties of Individual Species, NASA/TP-2002-211556, 2002
+200.0 1000.0 6000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+-4.129150e+04 6.681590e+02 -2.632754e+00 5.415382e-02 -7.067502e-05 4.684611e-08 -1.236791e-11       # a1, a2... a7 in C_p0/r=a1/T^2+a2/T+a3+a4.T+a5.T^2+a6.T^3+a7.T^4
+-9.315660e+04                           # a8 in H_0/rT=-a1/T^2-a2/T.ln(T)+a3+a4/2.T+a5/3.T^2+a6/4.T^3+a7/5.T^4+a8/T
+3.961096e+01                            # a9 in S_0/r=-a1/2/T^2-a2/T+a3.ln(T)+a4.T+a5/2.T^2+a6/3.T^3+a7/4.T^4+a9
+# Temperature range 1000.0 - 6000.0 K
+1.437878e+06 -6.614903e+03 2.157662e+01 -4.806256e-04 3.010775e-08 2.334842e-12 -2.946330e-16       # a1, a2... a7 in C_p0/r=a1/T^2+a2/T+a3+a4.T+a5.T^2+a6.T^3+a7.T^4
+-5.259093e+04                           # a8 in H_0/rT=-a1/T^2-a2/T.ln(T)+a3+a4/2.T+a5/3.T^2+a6/4.T^3+a7/5.T^4+a8/T
+-1.023604e+02                           # a9 in S_0/r=-a1/2/T^2-a2/T+a3.ln(T)+a4.T+a5/2.T^2+a6/3.T^3+a7/4.T^4+a9

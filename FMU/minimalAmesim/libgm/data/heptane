@@ -1,0 +1,18 @@
+# gas name
+heptane C7H16
+# reference temperature (in K)
+500.00
+# reference pressure (absolute) (in Pa)
+1.0e5
+# minimum temperature (in K)
+400.0
+# maximum temperature (in K)
+600.0
+# density at ref. pressure and ref. temperature (in kg/m3)
+2.4520558
+#	T(K)		cp(J/kg/K)		mu(kg/m/s)		lam(W/m/K)
+4.0000E+02		2.1387E+03		8.1460E-06		2.0823E-02
+4.5000E+02		2.3378E+03		9.1063E-06		2.6014E-02
+5.0000E+02		2.5295E+03		1.0052E-05		3.1544E-02
+5.5000E+02		2.7089E+03		1.0978E-05		3.7303E-02
+6.0000E+02		2.8749E+03		1.1883E-05		4.3213E-02

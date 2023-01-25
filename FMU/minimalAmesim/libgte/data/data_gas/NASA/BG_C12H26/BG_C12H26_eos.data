@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: Burned gas C12H26
+# Coefficients for equation of state
+28.6554e-3     # molar mass M [kg/mol]
+369.820000              # Not used in case of semi-perfect gas assumption
+4.249000e+06            # Not used in case of semi-perfect gas assumption
+0.152000                # Not used in case of semi-perfect gas assumption
+85.500000               # Not used in case of semi-perfect gas assumption
+625.000000              # Not used in case of semi-perfect gas assumption
+-83185.30034                     # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from libeng)

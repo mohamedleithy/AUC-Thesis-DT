@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: nitric acid (HNO3)
+# Coefficients for equation of state
+6.30128400e-02          # molar mass M [kg/mol]
+520.000000              # critical temperature Tc [K]
+6.890000e+07            # critical pressure Pc [Pa]
+0.714000                # acentric factor w [-]
+231.600000              # minimal temperature [K]
+2000.000000             # maximal temperature [K]
+-133912.869             # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

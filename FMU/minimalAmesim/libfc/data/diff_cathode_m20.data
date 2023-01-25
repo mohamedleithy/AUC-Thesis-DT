@@ -1,0 +1,10 @@
+#  diffusion data file for Fuller, Schettler and Giddings   				
+#  2 gas icon, cathode, mixture 20				
+#  5 species in the gas mixture : 02, H2O, N2, CO2, Ar				
+#  T = 353 K	P = 3 bar			
+5				
+4.66E-05	4.31E-05	4.39E-05	4.24E-05	4.96E-05
+4.31E-05	4.18E-05	4.10E-05	3.81E-05	4.52E-05
+4.39E-05	4.10E-05	4.14E-05	3.98E-05	4.65E-05
+4.24E-05	3.81E-05	3.98E-05	3.96E-05	4.55E-05
+4.96E-05	4.52E-05	4.65E-05	4.55E-05	5.31E-05

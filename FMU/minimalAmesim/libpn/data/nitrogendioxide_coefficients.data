@@ -1,0 +1,16 @@
+# Table format: 0D
+#***********************************
+#*   Equation of State parameters  *
+#***********************************
+46.006e-3	# Gas molar mass M [kg/mol]
+431.35		# Tc [K]
+1.0133e7		# Pc [Pa]
+0.849			# Acentric factor w [-]
+262.0	   	# Tmin [K]
+2000.0		# Tmax [K]
+
+
+
+
+
+

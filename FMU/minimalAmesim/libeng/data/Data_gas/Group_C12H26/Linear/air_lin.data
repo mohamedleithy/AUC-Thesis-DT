@@ -1,0 +1,12 @@
+# Table format: 0D
+3000
+295			tint		[K]
+700			texh		[K]
+1011.53		cpint		[J/kg/K]
+1081.79		cpexh		[J/kg/K]
+288.298		r		[J/kg/K]
+0.0000181723	muint		[kg/m/s]
+0.0000348566	muexh		[kg/m/s]
+0.0247504		lambint	[W/m/K]
+0.0517753		lambexh	[W/m/K]
+0.00000000e+00  enthalpy of formation [J/mol] 

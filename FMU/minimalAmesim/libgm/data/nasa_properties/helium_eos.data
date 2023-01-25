@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: helium (He)
+# Coefficients for equation of state
+4.00260200e-03          # molar mass M [kg/mol]
+5.195300                # critical temperature Tc [K]
+2.274600e+05            # critical pressure Pc [Pa]
+-0.382000               # acentric factor w [-]
+2.200000                # minimal temperature [K]
+1500.000000             # maximal temperature [K]
+0.000                   # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

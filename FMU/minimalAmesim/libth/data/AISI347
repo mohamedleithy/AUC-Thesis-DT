@@ -1,0 +1,14 @@
+# solid name
+stainless steel AISI347
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+1400.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+27             7978            480            14.2
+127            7978            513            15.8
+327	       7978            559            18.9
+527            7978            585            21.9
+727            7978            606            24.7

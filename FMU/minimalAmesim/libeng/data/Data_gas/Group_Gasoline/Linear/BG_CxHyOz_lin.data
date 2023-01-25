@@ -1,0 +1,12 @@
+# Table format: 0D
+ 3000	/* Gas properties degree used for the gas */
+ 295	/* Intake temperature [K] */
+ 700	/* Exhaust temperature [K] */
+ 1063.393645	/* Intake constant pressure specific heat Cp [J/kg/K]*/
+ 1180.24206787925	/* Exhaust constant pressure specific heat Cp [J/kg/K]*/
+ 287.458464385366	/* Perfect gas constant r [J/kg/K] */
+ 1.59978005158791E-05	/* Intake absolute viscosity [kg/m/s] */
+ 3.17664216830567E-05	/* Exhaust absolute viscosity [kg/m/s] */
+ 2.21259182408536E-02	/* Intake thermal conductivity [W/m/K] */
+ 5.11800169810277E-02	/* Exhaust thermal conductivity [W/m/K] */
+-8.34735605E+04	/* Enthalpy of formation [J/mol] */

@@ -1,0 +1,40 @@
+# Table format: nT1D v1.0
+# time dependant data for stop and start, 7.6s
+
+id activeLongitudinalDriver longiDriverId
+   0.   fixedAcceleratorPosition
+   5.   fixedBrakePedalPosition
+  15.   fixedAcceleratorPosition
+  20.   fixedBrakePedalPosition
+  25.   fixedAcceleratorPosition
+  27    fixedBrakePedalPosition
+  30    fixedAcceleratorPosition
+  33    fixedBrakePedalPosition
+  38    fixedAcceleratorPosition
+
+float brakePedalPosition
+   5       0.3
+  19       2.
+  22       0.5
+
+float acceleratorPosition
+   0       0.
+   1       0.1
+  14      -0.05
+  24       0.2
+
+float longitudinalAccelerationTarget
+   0.0    -2. 
+  10.0     2.
+  15.0    -2.
+  27.0     2.
+
+float cruiseControlTargetSpeed
+  27       0.
+  
+id activeLateralDriver latDriverId
+   0.  fixedSteerAngle
+
+float steeringAngleTarget
+   0.  0.
+   2   0.

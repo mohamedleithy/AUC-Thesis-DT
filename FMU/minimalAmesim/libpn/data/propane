@@ -1,0 +1,23 @@
+# gas name
+propane C3H8
+# reference temperature (in K)
+500.00
+# reference pressure (absolute) (in Pa)
+1.0e5
+# minimum temperature (in K)
+240.0
+# maximum temperature (in K)
+600.0
+# density at ref. pressure and ref. temperature (in kg/m3)
+1.0638279
+#	T(K)		cp(J/kg/K)		mu(kg/m/s)		lam(W/m/K)
+2.4000E+02		1.4827E+03		6.5587E-06		1.2396E-02
+2.6000E+02		1.5481E+03		7.1101E-06		1.4322E-02
+2.8000E+02		1.6231E+03		7.6557E-06		1.6361E-02
+3.0000E+02		1.7041E+03		8.1962E-06		1.8513E-02
+3.5000E+02		1.9192E+03		9.5249E-06		2.4394E-02
+4.0000E+02		2.1377E+03		1.0819E-05		3.0995E-02
+4.5000E+02		2.3503E+03		1.2075E-05		3.8317E-02
+5.0000E+02		2.5525E+03		1.3290E-05		4.6363E-02
+5.5000E+02		2.7428E+03		1.4460E-05		5.5134E-02
+6.0000E+02		2.9204E+03		1.5585E-05		6.4632E-02

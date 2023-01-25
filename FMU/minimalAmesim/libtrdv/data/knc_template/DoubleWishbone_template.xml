@@ -1,0 +1,118 @@
+<?xml version="1.0" ?>
+
+<SUSPENSION type="Double Wishbone">
+<HARDPOINTS>
+	<point name="A" title="wheel centre">
+	  <x>-1.51635</x>
+	  <y>0.75596</y>
+	  <z>-0.247</z>
+	</point>
+	<point name="B" title="contact patch">
+	  <x>-1.51635</x>
+	  <y>0.76382</y>
+	  <z>-0.54</z>
+	</point>
+	<point name="K" title="upper wishbone ball joint">
+	  <x>-1.50076</x>
+	  <y>0.69696</y>
+	  <z>-0.15141</z>
+	</point>
+	<point name="C1" title="upper wishbone bushing - front">
+	  <x>-1.21706</x>
+	  <y>0.47</y>
+	  <z>-0.213</z>
+	</point>
+	<point name="C2" title="upper wishbone bushing - rear">
+	  <x>-1.51925</x>
+	  <y>0.39716</y>
+	  <z>-0.16548</z>
+	</point>
+	<point name="D" title="lower wishbone ball joint">
+	  <x>-1.5201</x>
+	  <y>0.72984</y>
+	  <z>-0.36806</z>
+	</point>
+	<point name="E1" title="lower wishbone bushing - front">
+	  <x>-1.13506</x>
+	  <y>0.357</y>
+	  <z>-0.354</z>
+	</point>
+	<point name="E2" title="lower wishbone bushing - rear">
+	  <x>-1.52006</x>
+	  <y>0.314</y>
+	  <z>-0.354</z>
+	</point>
+	<point name="M" title="tie rod outer ball joint">
+	  <x>-1.65133</x>
+	  <y>0.71159</y>
+	  <z>-0.24225</z>
+	</point>
+	<point name="N" title="tie rod inner ball joint">
+	  <x>-1.64706</x>
+	  <y>0.31435</y>
+	  <z>-0.2493</z>
+	</point>
+	<point name="R1" title="lower strut ball joint">
+	  <x>-1.42114</x>
+	  <y>0.5364</y>
+	  <z>-0.34614</z>
+	</point>
+	<point name="R2" title="upper strut bushing">
+	  <x>-1.41806</x>
+	  <y>0.51</y>
+	  <z>-0.16994</z>
+	</point>
+	<point name="W" title="camber adjust (on wheel rotation axis)">
+	  <x>-1.51479</x>
+	  <y>1.15583</y>
+	  <z>-0.23667</z>
+	</point>
+</HARDPOINTS>
+<BUSHINGS>
+	<point name="E1" title="lower wishbone bushing - front">
+	  <ka>2.0e+05</ka>
+	  <kr>7.0e+05</kr>
+	</point>
+	<point name="E2" title="lower wishbone bushing - rear">
+	  <ka>1.2e+06</ka>
+	  <kr>1.25e+07</kr>
+	</point>
+	<point name="C1" title="upper wishbone bushing - front">
+	  <ka>2.0e+05</ka>
+	  <kr>7.0e+05</kr>
+	</point>
+	<point name="C2" title="upper wishbone bushing - rear">
+	  <ka>6.0e+05</ka>
+	  <kr>4.5e+06</kr>
+	</point>
+	<point name="R2" title="upper strut bushing">
+	  <ka>3.8e+06</ka>
+	  <kr>6.0e+05</kr>
+	</point>
+</BUSHINGS>
+<PARTS>
+	<part name="spindle" title="spindle">
+	  <point>D</point>
+	  <point>M</point>
+	  <point>K</point>
+	</part>
+	<part name="lower wishbone" title="lower wishbone">
+	  <point>D</point>
+	  <point>E1</point>
+	  <point>E2</point>
+	</part>
+	<part name="tie rod" title="tie rod">
+	  <point>M</point>
+	  <point>N</point>
+	</part>
+	<part name="upper wishbone" title="upper wishbone">
+	  <point>K</point>
+	  <point>C1</point>
+	  <point>C2</point>
+	</part>
+	<part name="damper" title="damper">
+	  <point>R1</point>
+	  <point>R2</point>
+	</part>
+</PARTS>
+</SUSPENSION>

@@ -1,0 +1,46 @@
+% Date    : Wed Feb 13 15:04:29 2013
+%
+% Parameters for submodel "ENGDEF01"
+% used in the system "C:/Users/tsangui/Documents/6_Trainning/AE_Training/03_Combustion_Tools/02_CFM/Engine_GDI_Turbocharged_Tool".
+%
+% The fields in each line is : title units dimension value
+%
+  "engine timing"                                  "#noUNITS#"  "1" "-1"
+  "number of strokes"                              "#noUNITS#"  "4" "-1"
+  "number of cylinders"                            "#noUNITS#"  "4" "-1"
+  "engine architecture"                            "#noUNITS#"  "1" "-1"
+  "crankshaft offset"                              "#noUNITS#"  "1" "-1"
+  "crank pin type"                                 "#noUNITS#"  "1" "-1"
+  "cylinder wall heat exchange model"              "#noUNITS#"  "4" "-1"
+  "# first cylinder initial angle"                 "degree"     "0.00000000000000e+000" "-1"
+  "Vee engines : angle of the V"                   "degree"     "9.00000000000000e+001" "-1"
+  "bore"                                           "mm"         "8.05000000000000e+001" "-1"
+  "stroke"                                         "mm"         "8.82000000000000e+001" "-1"
+  "connecting rod length"                          "mm"         "1.29750000000000e+002" "-1"
+  "piston pin offset"                              "mm"         "0.00000000000000e+000" "-1"
+  "compression ratio"                              "null"       "1.05000000000000e+001" "-1"
+  "squish height for heat exchange"                "mm"         "1.00000000000000e+000" "-1"
+  "piston surface for heat exchange"               "mm**2"      "5.00000000000000e+003" "-1"
+  "cylinder head surface for heat exchange"        "mm**2"      "6.00000000000000e+003" "-1"
+  "Eichelberg : wall heat exchange coefficient"    "null"       "1.00000000000000e+000" "-1"
+  "Annand : wall convective heat exchange coefficient" "null"       "8.00000000000000e-001" "-1"
+  "Annand : radiative heat exchange coefficient"   "null"       "6.00000000000000e-001" "-1"
+  "Woschni : C1 intake-exhaust coefficient"        "null"       "6.18000000000000e+000" "-1"
+  "Woschni : C1 compression-combustion-expansion coefficient" "null"       "2.28000000000000e+000" "-1"
+  "Woschni : C2 combustion-expansion coefficient"  "null"       "1.20000000000000e-002" "-1"
+  "Woschni : C2 intake-exhaust-compression coefficient" "null"       "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 2 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 3 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 4 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 5 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 6 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 7 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 8 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 9 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 10 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 11 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "phase difference between cylinder 12 and cylinder 1" "degree"     "0.00000000000000e+000" "-1"
+  "firing order"                                   "#noUNITS#"  "1-3-4-2" "-1"
+%
+% End of file
+%

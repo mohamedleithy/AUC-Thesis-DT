@@ -1,0 +1,33 @@
+# fluid name
+15W40 oil
+# definition temperature (in degC)
+20.0
+# minimum temperature (in degC)
+0.0
+# maximum temperature (in degC)
+140.0
+# definition pressure (in PaA)
+1e5
+# minimum pressure (in PaA)
+0.0
+# maximum pressure (in PaA)
+500e5
+# pressure coefficient for specific volume
+-7.6923e-10
+# pressure * temperature coefficient for specific volume.
+0.0
+# squared pressure coefficient for specific volume..
+0.0
+# pressure coefficient for absolute viscosity
+7.6923e-10
+#   T(degC)        rho(kg/m**3)     cp(J/kg/degC)     lam(W/m/degC)    nu(m**2/s)
+0                  891.2            2000              0.15             1350e-6
+10                 889.1            2000              0.15             600e-6
+20                 887.6            2000              0.15             310e-6
+30                 885.8            2000              0.15             170e-6
+60                 882.2            2000              0.15             78e-6
+70                 878.7            2000              0.15             31e-6  
+90                 875.1            2000              0.15             18e-6
+100                873.3            2000              0.15             14e-6
+110                871.6            2000              0.15             11e-6
+140                866.2            2000              0.15             6e-6

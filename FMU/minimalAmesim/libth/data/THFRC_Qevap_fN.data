@@ -1,0 +1,8 @@
+# Table format: 1D
+# table_unit = W
+# axis1_unit = rev/min
+0		-0.0
+500		-1260.5
+1000		-1946.64
+1500		-2488.10
+2000		-3052.40

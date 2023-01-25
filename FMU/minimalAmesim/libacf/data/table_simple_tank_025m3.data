@@ -1,0 +1,16 @@
+# Table format: 1D
+# fuel height above tank reference point as a function of volume for a pitch of 0.0 degree and a roll of 0.0 degree
+# table_unit = m
+# axis1_unit = m**3
+#vol         	hfl/refPoint
+2.500000E-01	2.500000E-01
+2.250000E-01	2.000000E-01
+2.000000E-01	1.500000E-01
+1.750000E-01	1.000000E-01
+1.500000E-01	5.000001E-02
+1.250000E-01	1.341105E-08
+9.999999E-02	-4.999999E-02
+7.500000E-02	-9.999999E-02
+5.000000E-02	-1.500000E-01
+2.500001E-02	-2.000000E-01
+0.000000E+00	-2.500000E-01

@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: dodecane (C12H26)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Gas properties model derived from Janaf formulation implemented in libeng
+311.00 751.00       # boundary temperatures
+# Temperature range 311.00 - 751.00 K
+1.1380 0.0 0.0 -2.748481647        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

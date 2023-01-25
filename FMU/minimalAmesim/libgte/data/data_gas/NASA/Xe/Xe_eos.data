@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: xenon (Xe)
+# Coefficients for equation of state
+1.31293000e-01          # molar mass M [kg/mol]
+289.740000              # critical temperature Tc [K]
+5.840000e+06            # critical pressure Pc [Pa]
+0.000000                # acentric factor w [-]
+161.360000              # minimal temperature [K]
+1000.000000             # maximal temperature [K]
+0.000                   # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

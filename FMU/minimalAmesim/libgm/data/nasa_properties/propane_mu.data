@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: propane (C3H8)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+230.0 660.0       # boundary temperatures
+# Temperature range 230.0 - 660.0 K
+9.377865e-01 9.653295e-01 9.998496e-01 -9.458034e-01        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

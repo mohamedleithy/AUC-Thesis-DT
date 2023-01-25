@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: E85 (CxHyOz with x = 2.35, y = 6.48, z = 0.93)
+# Coefficients for equation of state
+49.6683474245022e-3     # molar mass M [kg/mol]
+369.820000              # Not used in case of semi-perfect gas assumption
+4.249000e+06            # Not used in case of semi-perfect gas assumption
+0.152000                # Not used in case of semi-perfect gas assumption
+85.500000               # Not used in case of semi-perfect gas assumption
+625.000000              # Not used in case of semi-perfect gas assumption
+-224631.933509979       # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from libeng)

@@ -1,0 +1,11 @@
+# Table format: MULTILINES
+# Gas: argon (Ar)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0 15000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+6.096893e-01 -7.089225e+01 5.842062e+02 1.933715e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 1000.0 - 5000.0 K
+6.907546e-01 6.267606e+01 -2.566741e+04 1.266419e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 5000.0 - 15000.0 K
+7.626950e-01 6.234175e+02 -7.189955e+05 5.692792e-01        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

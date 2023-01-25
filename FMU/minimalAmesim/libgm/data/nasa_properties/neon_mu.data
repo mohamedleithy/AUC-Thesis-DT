@@ -1,0 +1,11 @@
+# Table format: MULTILINES
+# Gas: neon (Ne)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0 15000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+6.839851e-01 1.873237e+01 -2.366319e+03 1.828475e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu
+# Temperature range 1000.0 - 5000.0 K
+7.233350e-01 1.042087e+02 -2.542954e+04 1.494243e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu
+# Temperature range 5000.0 - 15000.0 K
+7.754935e-01 5.941485e+02 -6.967079e+05 9.788571e-01        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

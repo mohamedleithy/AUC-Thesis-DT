@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: water vapour (H2O)
+# Coefficients for equation of state
+1.80152800e-02          # molar mass M [kg/mol]
+647.100000              # critical temperature Tc [K]
+2.206400e+07            # critical pressure Pc [Pa]
+0.344300                # acentric factor w [-]
+273.160000              # minimal temperature [K]
+2000.000000             # maximal temperature [K]
+-241826.00              # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

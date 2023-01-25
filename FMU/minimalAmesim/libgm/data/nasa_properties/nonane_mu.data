@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: nonane (C9H20)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+420.0 610.0       # boundary temperatures
+# Temperature range 420.0 - 610.0 K
+9.974226e-01 9.598387e-01 9.998236e-01 -1.708059e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

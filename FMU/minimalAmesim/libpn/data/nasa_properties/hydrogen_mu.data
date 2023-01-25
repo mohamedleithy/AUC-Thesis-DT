@@ -1,0 +1,11 @@
+# Table format: MULTILINES
+# Gas: (di)hydrogen (H2)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0 15000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+7.455318e-01 4.355511e+01 -3.257934e+03 1.355624e-01        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu
+# Temperature range 1000.0 - 5000.0 K
+9.673061e-01 6.793190e+02 -2.102518e+05 -1.825170e+00       # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu
+# Temperature range 5000.0 - 15000.0 K
+1.012613e+00 1.497374e+03 -1.442848e+06 -2.325493e+00       # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

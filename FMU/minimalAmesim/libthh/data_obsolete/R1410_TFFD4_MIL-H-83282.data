@@ -1,0 +1,67 @@
+# Table format: 0D
+#
+# The following regression expressions are used to define the
+# density ρ [kg/m^3], the specific heat at constant pressure cp
+# [J/kg/K], the thermal conductivity λ [W/m/K], and the dynamic
+# viscosity μ [kg/m/s]:
+#
+# Δp = p-p0
+# ΔT = T-T0
+# ρ(p,T) = ρb*(1 - α*T) / ( 1-A*log( 1 + Δp/(B1+B2*T+B3*T^2+B4*T^3)))
+# cp(p0,T) = cp00 + cp0t*ΔT + cp0t2*ΔT^2
+# μ(P,T) = μ0   . 10^(bP Δp + bT ΔT + bT2 ΔT^2 + bPT ΔpΔT + bP2 Δp^2 + bP2T Δp^2ΔT
+#                       + bP2T2 Δp^2ΔT^2 + bPT2 ΔpΔT^2 + bP3 Δp^3 + bP3T Δp^3ΔT
+#                       + bP3T2 Δp^3ΔT^2 + bT3 ΔT^3 + bPT3 ΔpΔT^3 + bP2T3 Δp^2ΔT^3
+#                       + bP3T3 Δp^3ΔT^3)
+# λ(P,T) = λ0   . (1 + dT ΔT + dT2 ΔT^2 + dP Δp + dPT ΔpΔT + dP2 Δp^2 + dP2T Δp^2ΔT
+#                     + dP2T2 Δp^2ΔT^2 + dPT2 ΔpΔT^2 + dP3 Δp^3 + dP3T Δp^3ΔT
+#                     + dP3T2 Δp^3ΔT^2)
+# where T and T0 are temperatures in K, p and p0 pressures in barA.
+# cp(p,T) is obtained from cp(p0,T) and ρ(p,T) using energy conservation.
+#
+300
+ 1.000000000e+00    # p0 [barA]: definition pressure
+ 1.000000000e+01    # T0 [degC]: definition temperature
+ 0.000000000e+00    # pmin [barA]: minimum pressure allowed
+ 5.000000000e+02    # pmax [barA]: maximum pressure allowed
+-5.000000000e+01    # Tmin [degC]: minimum temperature allowed
+ 2.000000000e+02    # Tmax [degC]: maximum temperature allowed
+ 1.032499163e+03    # rhob [kg/m**3]
+ 6.378257945e-04    # alpha [1/K]
+ 1.099267049e-01    # A [null]
+ 1.067472337e+04    # B1 [barA]
+-5.904799429e+01    # B2 [barA/K]
+ 1.260669639e-01    # B3 [barA/K**2]
+-9.520660523e-05    # B4 [barA/K**3]
+ 1                  # cporcs [null]
+ 1.983523619e+03    # cp00 [J/kg/K]
+ 3.488964502e+00    # cp0t [J/kg/K**2]
+ 6.644710779e-05    # cp0t2 [J/kg/K**3]
+ 6.126906968e-02    # μ0 [kg/m/s]: definition absolute viscosity
+-2.058909227e-02    # bT [kg/m/s/K]: temperature coefficient for absolute viscosity
+ 7.813935788e-05    # bT2 [kg/m/s/K^2]: temperature^2 coefficient for absolute viscosity
+ 5.720485685e-09    # bP [kg/m/s/PaA]: pressure coefficient for absolute viscosity
+-2.318845853e-11    # bPT [kg/m/s/PaA/K]: pressure * temperature coefficient for absolute viscosity
+ 0.000000000e+00    # bP2 [kg/m/s/PaA^2]: pressure^2 coefficient for absolute viscosity
+ 0.000000000e+00    # bP2T [kg/m/s/PaA^2/K]: pressure^2*temperature coefficient for absolute viscosity
+ 0.000000000e+00    # bP2T2 [kg/m/s/PaA^2/K^2]: pressure^2*temperature^2 coefficient for absolute viscosity
+ 8.932303674e-14    # bPT2 [kg/m/s/PaA/K^2]: pressure*temperature^2 coefficient for absolute viscosity
+ 0.000000000e+00    # bP3 [kg/m/s/PaA^3]: pressure^3 coefficient for absolute viscosity
+ 0.000000000e+00    # bP3T [kg/m/s/PaA^3/K]: pressure^3*temperature coefficient for absolute viscosity
+ 0.000000000e+00    # bP3T2 [kg/m/s/PaA^3/K^2]: pressure^3*temperature^2 coefficient for absolute viscosity
+-1.122189674e-07    # bT3 [kg/m/s/K^3]: temperature^3 coefficient for absolute viscosity
+-1.238064778e-16    # bPT3 [kg/m/s/PaA/K^3]: pressure*temperature^3 coefficient for absolute viscosity
+ 0.000000000e+00    # bP2T3 [kg/m/s/PaA^2/K^3]: pressure^2*temperature^3 coefficient for absolute viscosity
+ 0.000000000e+00    # bP3T3 [kg/m/s/PaA^3/K^3]: pressure^3*temperature^3 coefficient for absolute viscosity
+ 1.737101382e-01    # λ0 [W/m/K]: definition thermal conductivity
+-2.033243162e-03    # dT [W/m/K^2]: temperature coefficient for thermal conductivity
+ 1.406094596e-09    # dT2 [W/m/K^3]: temperature^2 coefficient for thermal conductivity
+-2.082546635e-20    # dP [W/m/PaA/K]: pressure coefficient for thermal conductivity
+ 8.175738083e-22    # dPT [W/m/PaA/K^2]: pressure*temperature coefficient for thermal conductivity
+ 8.630303593e-28    # dP2 [W/m/PaA^2/K]: pressure^2 coefficient for thermal conductivity
+-3.535766930e-29    # dP2T [W/m/PaA^2/K^2]: pressure^2*temperature coefficient for thermal conductivity
+ 1.289308418e-31    # dP2T2 [W/m/PaA^2/K^3]: pressure^2*temperature^2 coefficient for thermal conductivity
+-2.965609466e-24    # dPT2 [W/m/PaA/K^3]: pressure*temperature^2 coefficient for thermal conductivity
+-9.378132947e-36    # dP3 [W/m/PaA^3/K]: pressure^3 coefficient for thermal conductivity
+ 3.937551290e-37    # dP3T [W/m/PaA^3/K^2]: pressure^3*temperature coefficient for thermal conductivity
+-1.439938211e-39    # dP3T2 [W/m/PaA^3/K^3]: pressure^3*temperature^2 coefficient for thermal conductivity

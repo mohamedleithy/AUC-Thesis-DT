@@ -1,0 +1,13 @@
+# Table format: MULTILINES
+# Gas: sulfur hexafluoride (SF6)
+# Coefficients for specific heat (Cp in J/kg/K), specific enthalpy (h in J/kg) and specific entropy (s in J/kg/K) as a function of temperature (T in K) in the NASA 2002 format
+# Ref: NASA Glenn Coefficients for Calculating Thermodynamic Properties of Individual Species, NASA/TP-2002-211556, 2002
+200.0 1000.0 6000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+3.309527e+05 -4.737685e+03 2.247738e+01 1.046954e-02 -2.560642e-05 2.153717e-08 -6.516099e-12       # a1, a2... a7 in C_p0/r=a1/T^2+a2/T+a3+a4.T+a5.T^2+a6.T^3+a7.T^4
+-1.255361e+05                           # a8 in H_0/rT=-a1/T^2-a2/T.ln(T)+a3+a4/2.T+a5/3.T^2+a6/4.T^3+a7/5.T^4+a8/T
+-1.091760e+02                           # a9 in S_0/r=-a1/2/T^2-a2/T+a3.ln(T)+a4.T+a5/2.T^2+a6/3.T^3+a7/4.T^4+a9
+# Temperature range 1000.0 - 6000.0 K
+-7.306727e+05 -6.367057e+02 1.947443e+01 -1.894326e-04 4.178723e-08 -4.783745e-12 2.213516e-16       # a1, a2... a7 in C_p0/r=a1/T^2+a2/T+a3+a4.T+a5.T^2+a6.T^3+a7.T^4
+-1.510610e+05                           # a8 in H_0/rT=-a1/T^2-a2/T.ln(T)+a3+a4/2.T+a5/3.T^2+a6/4.T^3+a7/5.T^4+a8/T
+-8.147575e+01                           # a9 in S_0/r=-a1/2/T^2-a2/T+a3.ln(T)+a4.T+a5/2.T^2+a6/3.T^3+a7/4.T^4+a9

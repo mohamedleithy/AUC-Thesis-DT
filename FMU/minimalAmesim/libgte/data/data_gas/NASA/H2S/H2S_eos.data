@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: hydrogen sulfide (H2S)
+# Coefficients for equation of state
+3.40808800e-02          # molar mass M [kg/mol]
+373.100000              # critical temperature Tc [K]
+9.000000e+06            # critical pressure Pc [Pa]
+0.100500                # acentric factor w [-]
+187.700000              # minimal temperature [K]
+760.000000              # maximal temperature [K]
+-20600.000              # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

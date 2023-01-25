@@ -1,0 +1,44 @@
+# fluid name
+pure ethylen glycol
+# definition temperature (in degC)
+20.0
+# minimum temperature (in degC)
+-10.0
+# maximum temperature (in degC)
+190.0
+# definition pressure (in PaA)
+1e5
+# minimum pressure (in PaA)
+0.0
+# maximum pressure (in PaA)
+500e5
+# pressure coefficient for specific volume
+-1.25e-09
+# pressure * temperature coefficient for specific volume.
+0.0
+# squared pressure coefficient for specific volume..
+0.0
+# pressure coefficient for absolute viscosity
+0.0
+#   T(degC)        rho(kg/m**3)     cp(J/kg/degC)     lam(W/m/degC)    nu(m**2/s)
+ -10.0		   1134.0	    2208.0		0.312		92.6e-06
+   0.0		   1127.0           2555.0		0.305		50.0e-06
+  10.0  	   1120.0	    2502.0		0.297		29.5e-06
+  20.0		   1113.0	    2349.0		0.290		17.9e-06
+  30.0		   1106.0	    2396.0		0.282		11.7e-06
+  40.0		   1099.0           2443.0		0.275		8.37e-06
+  50.0		   1093.0           2490.0		0.267		6.13e-06
+  60.0		   1085.0	    2537.0		0.260		4.79e-06
+  70.0		   1078.0           2584.0		0.252		3.71e-06
+  80.0		   1070.0           2631.0		0.245		2.99e-06
+  90.0		   1063.0           2678.0		0.237		2.35e-06
+ 100.0		   1055.0           2725.0		0.229		1.89e-06
+ 110.0		   1047.0           2772.0		0.222		1.62e-06
+ 120.0		   1039.0           2819.0		0.214		1.39e-06
+ 130.0		   1031.0           2866.0		0.207		1.21e-06
+ 140.0		   1022.0           2913.0		0.199		1.03e-06
+ 150.0		   1014.0           2960.0		0.192		0.94e-06
+ 160.0		   1005.0           3007.0		0.184		0.82e-06
+ 170.0		    995.0           3054.0		0.177		0.75e-06
+ 180.0		    986.0           3101.0		0.169		0.68e-06
+ 190.0		    977.0           3148.0		0.162		0.61e-06

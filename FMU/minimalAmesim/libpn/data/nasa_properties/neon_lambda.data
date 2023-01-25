@@ -1,0 +1,11 @@
+# Table format: MULTILINES
+# Gas: neon (Ne)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0 15000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+6.850996e-01 1.979492e+01 -2.452554e+03 2.258614e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 1000.0 - 5000.0 K
+7.227812e-01 1.052829e+02 -2.635571e+04 1.936734e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 5000.0 - 15000.0 K
+7.758941e-01 6.128378e+02 -7.401571e+05 1.411401e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

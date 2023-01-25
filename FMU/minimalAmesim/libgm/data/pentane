@@ -1,0 +1,19 @@
+# gas name
+pentane C5H12
+# reference temperature (in K)
+500.00
+# reference pressure (absolute) (in Pa)
+1.0e5
+# minimum temperature (in K)
+350.0
+# maximum temperature (in K)
+600.0
+# density at ref. pressure and ref. temperature (in kg/m3)
+1.7501440
+#	T(K)		cp(J/kg/K)		mu(kg/m/s)		lam(W/m/K)
+3.5000E+02		1.9211E+03		8.1571E-06		1.9263E-02
+4.0000E+02		2.1311E+03		9.3018E-06		2.4749E-02
+4.5000E+02		2.3397E+03		1.0413E-05		3.0740E-02
+5.0000E+02		2.5384E+03		1.1487E-05		3.7084E-02
+5.5000E+02		2.7245E+03		1.2524E-05		4.3670E-02
+6.0000E+02		2.8976E+03		1.3525E-05		5.0416E-02

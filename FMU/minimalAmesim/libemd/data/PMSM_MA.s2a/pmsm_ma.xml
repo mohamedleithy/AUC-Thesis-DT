@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<speed2amesim>
+  <amesim>
+    <main>
+      <updated>2018-05-17T19:54:26.397Z</updated>
+      <name>PMSM_MA</name>
+      <SPEED_version>13.05.004</SPEED_version>
+      <export_version>1.1</export_version>
+    </main>
+    <model>
+      <Type>PMSM</Type>
+      <p>4</p>
+      <connectType>Wye</connectType>
+      <Rs0 units="Ohm">0.049866530591482</Rs0>
+      <T0 units="degC">20</T0>
+      <alphaRs units="1/K">0.00393</alphaRs>
+      <Lsd units="H">0.00382501743200983</Lsd>
+      <Lsq units="H">0.0148847742375594</Lsq>
+      <Lendt units="H">0.000149388435148245</Lendt>
+      <Psi0 units="mVs">385.150854561592</Psi0>
+      <TPsi0 units="degC">25</TPsi0>
+      <alphaPsi units="1/K">0</alphaPsi>
+      <Jr units="kgm**2">0.0649862212146519</Jr>
+      <Vis units="Nm/(rev/min)">0</Vis>
+      <Coul units="Nm">0</Coul>
+      <Stict units="Nm">0</Stict>
+    </model>
+  </amesim>
+</speed2amesim>

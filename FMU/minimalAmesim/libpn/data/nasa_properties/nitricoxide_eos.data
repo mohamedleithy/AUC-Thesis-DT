@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: nitric oxide (NO)
+# Coefficients for equation of state
+3.00061000e-02          # molar mass M [kg/mol]
+180.150000              # critical temperature Tc [K]
+6.485000e+06            # critical pressure Pc [Pa]
+0.585000                # acentric factor w [-]
+112.200000              # minimal temperature [K]
+2000.000000             # maximal temperature [K]
+91271.310               # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

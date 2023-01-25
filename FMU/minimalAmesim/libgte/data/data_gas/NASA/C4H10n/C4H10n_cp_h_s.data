@@ -1,0 +1,13 @@
+# Table format: MULTILINES
+# Gas: n-butane (C4H10)
+# Coefficients for specific heat (Cp in J/kg/K), specific enthalpy (h in J/kg) and specific entropy (s in J/kg/K) as a function of temperature (T in K) in the NASA 2002 format
+# Ref: NASA Glenn Coefficients for Calculating Thermodynamic Properties of Individual Species, NASA/TP-2002-211556, 2002
+200.0 1000.0 6000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+-3.175873e+05 6.176332e+03 -3.891562e+01 1.584654e-01 -1.860050e-04 1.199676e-07 -3.201671e-11       # a1, a2... a7 in C_p0/r=a1/T^2+a2/T+a3+a4.T+a5.T^2+a6.T^3+a7.T^4
+-4.540363e+04                           # a8 in H_0/rT=-a1/T^2-a2/T.ln(T)+a3+a4/2.T+a5/3.T^2+a6/4.T^3+a7/5.T^4+a8/T
+2.379489e+02                            # a9 in S_0/r=-a1/2/T^2-a2/T+a3.ln(T)+a4.T+a5/2.T^2+a6/3.T^3+a7/4.T^4+a9
+# Temperature range 1000.0 - 6000.0 K
+7.682322e+06 -3.256052e+04 5.736733e+01 -6.197917e-03 1.180186e-06 -1.221894e-10 5.250635e-15       # a1, a2... a7 in C_p0/r=a1/T^2+a2/T+a3+a4.T+a5.T^2+a6.T^3+a7.T^4
+1.774527e+05                            # a8 in H_0/rT=-a1/T^2-a2/T.ln(T)+a3+a4/2.T+a5/3.T^2+a6/4.T^3+a7/5.T^4+a8/T
+-3.587919e+02                           # a9 in S_0/r=-a1/2/T^2-a2/T+a3.ln(T)+a4.T+a5/2.T^2+a6/3.T^3+a7/4.T^4+a9

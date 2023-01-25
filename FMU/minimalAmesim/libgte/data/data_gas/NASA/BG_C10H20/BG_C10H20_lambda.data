@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: taken from Burned gas C8H18
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: J. Luche, Obtention de modèles cinétiques réduits de combustion, application à un mécanisme du kérosène
+250.00 1650.00       # boundary temperatures
+# Temperature range 250.00 - 1650.00 K
+0.91103 0.0 0.0 0.252624681        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

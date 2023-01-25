@@ -1,0 +1,26 @@
+# Table format: 0D
+2
+ 1.000e+05 definition pressure                                       [PaA]
+ 2.000e+01 definition temperature                                    [degC]
+ 1.050e+03 definition density                                        [kg/m**3]
+ 2.793e-03 definition absolute viscosity                             [kg/m/s]
+ 3.510e+03 definition specific heat                                  [J/kg/K]
+ 4.470e-01 definition thermal conductivity                           [W/m/K]
+ 0.000e+00 Minimum pressure allowed                                 [PaA]
+ 5.000e+07 Maximum pressure allowed                                 [PaA]
+-2.000e+01 Minimum temperature allowed                              [degC]
+ 1.000e+02 Maximum temperature allowed                              [degC]
+ 4.692e-04 Temperature coefficient for specific volume                    
+ 1.691e-06 Temperature squared coefficient for specific volume            
+-1.250e-09 Pressure coefficient for specific volume                       
+ 0.000e+00 Pressure * temperature coefficient for specific volume         
+ 7.812e-19 Squared pressure coefficient for specific volume               
+-1.464e-02 Temperature coefficient for absolute viscosity                 
+ 7.234e-05 Temperature squared coefficient for absolute viscosity         
+ 0.000e+00 Pressure coefficient for absolute viscosity                    
+ 1.402e-03 Temperature coefficient for specific heat                      
+-5.109e-06 Temperature squared coefficient for specific heat              
+-9.175e-13 Pressure * temperature coefficient for specific heat           
+-2.690e-10 Pressure coefficient for specific heat                         
+ 5.749e-04 Temperature coefficient for thermal conductivity               
+-4.570e-06 Temperature squared coefficient for thermal conductivity       

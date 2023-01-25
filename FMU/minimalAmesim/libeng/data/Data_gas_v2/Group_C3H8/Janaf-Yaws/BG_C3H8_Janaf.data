@@ -1,0 +1,39 @@
+# Table format: 0D
+31                    Gas properties model - Janaf
+
+ 28.309963099631	/* Molecule molar weight [g/mol] */
+
+ 200	/* Minimum temperature allowed for specific heat expression [K] */
+ 6000	/* Maximum temperature allowed for specific heat expression [K] */
+ 1000	/* Intermediate temperature allowed for specific heat expression [K] */
+
+ 3.10704537719256	/* UPPER TEMPERATURES Temp^0 coeff. for specific heat Cp [J/kg/K] */
+ 1.79839705170035E-03	/* UPPER TEMPERATURES Temp^1 coeff. for specific heat Cp */
+-5.94988470854159E-07	/* UPPER TEMPERATURES Temp^2 coeff. for specific heat Cp */
+ 9.06034398306597E-11	/* UPPER TEMPERATURES Temp^3 coeff. for specific heat Cp */
+-5.08677729037962E-15	/* UPPER TEMPERATURES Temp^4 coeff. for specific heat Cp */
+ 77.0499186717116	/* UPPER TEMPERATURES constant coeff. for enthalpie */
+ 0	/* UPPER TEMPERATURES coeff. for entropie */
+
+ 3.49976274416264	/* LOWER TEMPERATURES Temp^0 coeff. for specific heat Cp */
+ 6.38470845266899E-04	/* LOWER TEMPERATURES Temp^1 coeff. for specific heat Cp */
+-1.83380333244409E-07	/* LOWER TEMPERATURES Temp^2 coeff. for specific heat Cp */
+ 1.21005950185602E-09	/* LOWER TEMPERATURES Temp^3 coeff. for specific heat Cp */
+-7.68942142913213E-13	/* LOWER TEMPERATURES Temp^4 coeff. for specific heat Cp */
+ 0	/* LOWER TEMPERATURES constant coeff. for enthalpie */
+ 0	/* LOWER TEMPERATURES coeff. for entropie */
+
+ -83200  	/* Enthalpy of formation */
+
+ 250	/* Minimum temperature allowed for absolute viscosity expression [K] */
+ 2150	/* Maximum temperature allowed for absolute viscosity expression [K] */
+ 250	/* Minimum temperature allowed for thermal conductivity expression [K] */
+ 2150	/* Maximum temperature allowed for thermal conductivity expression [K] */
+
+ 22.9457248393101	/* Temp^0 coeff. for absolute viscosity (microP) */
+ .486664086549432	/* Temp^1 coeff. for absolute viscosity */
+-9.63467616305631E-05	/* Temp^2 coeff. for absolute viscosity */
+
+-1.78986417013061E-03	/* Temp^0 coeff. for thermal conductivity (W/m/K) */
+ 8.4110542921071E-05	/* Temp^1 coeff. for thermal conductivity */
+-1.14141252953649E-08	/* Temp^2 coeff. for thermal conductivity */

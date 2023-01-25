@@ -1,0 +1,30 @@
+30		/* gas properties degree is used for the gas */
+44		/* M molar weight [g/mol] */
+0.00		/* tmincp1 minimum temperature allowed for specific heat expression */   
+5000.00		/* tmaxcp2 maximum temperature allowed for specific heat expression */
+1000.00		/* tmidcp  intermediate temperature allowed for specific heat expression */
+7.53413680E+00		/* UPPER TEMPERATURE constant coeff. for specific heat Cp */
+1.88722390E-02		/* temperature coeff. for specific heat Cp */
+-6.27184910E-06		/* square temperature coeff. for specific heat Cp */
+9.14756490E-10		/* cubic temperature coeff. for specific heat Cp (Janaf) */
+-4.78380690E-14		/* square temperature coeff. for specific heat Cp (Janaf) */
+-2.508983588700000E+03		/* constant coefficient for enthalpie (Janaf) */
+0.00000000E+00		/* constant coefficient for entropie (Janaf) */
+9.33553810E-01		/* LOWER TEMPERATURE constant coeff. for specific heat Cp */
+2.64245790E-02		/* temperature coeff. for specific heat Cp */
+6.10597270E-06		/* square temperature coeff. for specific heat Cp */
+-2.19774990E-08		/* cubic temperature coeff. for specific heat Cp (Janaf) */
+9.51492530E-12		/* square temperature coeff. for specific heat Cp (Janaf) */
+0.000000000000000E+00		/* constant coefficient for enthalpie (Janaf) */
+0.00000000E+00		/* constant coefficient for entropie (Janaf) */
+-103.85E+03		/* enthalpy of formation (Janaf) */
+193.00		/* tminmu minimum temperature allowed for absolute viscosity expression    */
+750.00		/* tmaxmu maximum temperature allowed for absolute viscosity expression    */
+233.00		/* tminlam minimum temperature allowed for thermal conductivity expression */
+773.00		/* tmaxlam maximum temperature allowed for thermal conductivity expression */
+-5.46200E+00		/* constant coefficient for absolute viscosity (microP) */
+3.27220E-01		/* temperature coefficient for abs. viscosity (microP) */
+-1.06720E-04		/* square temperature coeff. for abs. viscosity (microP) */
+-8.69000E-03		/* constant coeff. for thermal conductivity */
+6.64090E-05		/* temperature coeff. for thermal conductivity */
+7.87600E-08		/* square temp. coeff. for thermal conductivity */

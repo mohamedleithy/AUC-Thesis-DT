@@ -1,0 +1,25 @@
+# Table format: 0D
+#************************
+#*  Janaf coefficients  *
+#************************
+# 14 cp,h,s JANAF coefficients
+#*****************************
+1e5			# reference pressure for JANAF constants [Pa]
+298.15		# reference temperature for JANAF constants [K]
+200			# minimum temperature for JANAF validity domain
+6000			# maximum temperature for JANAF validity domain
+1000			# switch temperature for JANAF regions
+4.04666411e+00
+1.53538802e-02
+-5.47039485e-06
+8.77826544e-10
+-5.23167531e-14
+-2.36238470E+03
+-9.68698313e-01
+4.29142572e+00
+-5.50154901e-03
+5.99438458e-05
+-7.08466469e-08
+2.68685836e-11
+-1.43724040E+03
+2.66678994e+00

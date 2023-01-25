@@ -1,0 +1,39 @@
+# Table format: 0D
+31                     Gas properties model - Janaf
+
+28.6554                Molar weight (M)                                                          [g/mol]
+
+200.0                  Minimum temperature allowed for specific heat expression (tmincp1)        [K]
+6000.0                 Maximum temperature allowed for specific heat expression (tmaxcp2)        [K]
+1000.0                 Intermediate temperature allowed for specific heat expression (tmidcp)    [K]
+
+3.128301522832882      UPPER TEMPERATURE constant coefficient for specific heat Cp               [null]
+0.001784078583242058   Temperature coefficient for specific heat Cp                              [null]
+-5.951058908095762e-07 Square temperature coefficient for specific heat Cp                       [null]
+9.115119247824701e-11  Cubic temperature coefficient for specific heat Cp (Janaf)                [null]
+-5.138744610222299e-15 Square temperature coefficient for specific heat Cp (Janaf)               [null]
+63.73103500769366      Constant coefficient for enthalpy (Janaf)                                 [null]
+0.0                    Constant coefficient for entropy (Janaf)                                  [null]
+
+3.473771110996916      LOWER TEMPERATURE constant coefficient for specific heat Cp               [null]
+0.0007688579726188394  Temperature coefficient for specific heat Cp                              [null]
+-3.774635171682536e-07 Square temperature coefficient for specific heat Cp                       [null]
+1.349202512893314e-09  Cubic temperature coefficient for specific heat Cp (Janaf)                [null]
+-8.110814237549173e-13 Square temperature coefficient for specific heat Cp (Janaf)               [null]
+0.0                    Constant coefficient for enthalpy (Janaf)                                 [null]
+0.0                    Constant coefficient for entropy (Janaf)                                  [null]
+
+-83185.30034           Enthalpy of formation (Janaf)                                             [J/mol]
+
+250.0                  Minimum temperature allowed for absolute viscosity expression (tminmu)    [K]
+1580.0                 Maximum temperature allowed for absolute viscosity expression (tmaxmu)    [K]
+250.0                  Minimum temperature allowed for thermal conductivity expression (tminlam) [K]
+1620.0                 Maximum temperature allowed for thermal conductivity expression (tmaxlam) [K]
+
+23.9469                Constant coefficient for absolute viscosity (microP)                      [null]
+0.4910832              Temperature coefficient for absolute viscosity                            [null]
+-8.275215e-05          Square temperature coefficient for absolute viscosity                     [null]
+
+-0.001567517           Constant coefficient for thermal conductivity                             [null]
+8.3786e-05             Temperature coefficient for thermal conductivity                          [null]
+-1.175778e-08          Square temperature coefficient for thermal conductivity                   [null]

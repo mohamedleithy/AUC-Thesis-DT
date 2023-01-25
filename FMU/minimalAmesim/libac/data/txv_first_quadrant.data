@@ -1,0 +1,6 @@
+# Table format: 1D
+# table_unit = barA
+# axis1_unit = degC
+-30.0    2
+0.0		3
+30.0		6

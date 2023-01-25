@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: isopentane (C5H12)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+300.0 510.0       # boundary temperatures
+# Temperature range 300.0 - 510.0 K
+1.867304e+00 8.937663e-01 9.995274e-01 -5.623387e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

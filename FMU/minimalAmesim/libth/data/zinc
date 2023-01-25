@@ -1,0 +1,13 @@
+# solid name
+zinc
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+420.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+-73            7140           367            118
+27             7140           389            116
+127            7140           402            111
+327	       7140           436            103

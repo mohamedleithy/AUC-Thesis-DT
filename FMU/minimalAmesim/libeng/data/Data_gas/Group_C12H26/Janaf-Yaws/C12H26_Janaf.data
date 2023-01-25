@@ -1,0 +1,31 @@
+# Table format: 0D
+30		/* gas properties degree is used for the gas */
+170		/* M molar weight [g/mol] */
+0.00		/* tmincp1 minimum temperature allowed for specific heat expression [K] */   
+6000.00		/* tmaxcp2 maximum temperature allowed for specific heat expression [K] */
+1000.00		/* tmidcp  intermediate temperature allowed for specific heat expression [K] */
+3.70187925E+01		/* UPPER TEMPERATURE constant coeff. for specific heat Cp [J/kg/K] */
+5.54721488E-02		/* temperature coeff. for specific heat Cp */
+-1.92079548E-05		/* square temperature coeff. for specific heat Cp */
+3.08175574E-09		/* cubic temperature coeff. for specific heat Cp (Janaf) */
+-1.84800617E-13		/* square temperature coeff. for specific heat Cp (Janaf) */
+-1.045094052826670E+04		/* constant coefficient for enthalpie (Janaf) */
+0.00000000E+00		/* constant coefficient for entropie (Janaf) */
+2.13264480E+01		/* LOWER TEMPERATURE constant coeff. for specific heat Cp */
+-3.86394002E-02		/* temperature coeff. for specific heat Cp */
+3.99476113E-04		/* square temperature coeff. for specific heat Cp */
+-5.06681097E-07		/* cubic temperature coeff. for specific heat Cp (Janaf) */
+2.00697878E-10		/* square temperature coeff. for specific heat Cp (Janaf) */
+0.000000000000000E+00		/* constant coefficient for enthalpie (Janaf) */
+0.00000000E+00		/* constant coefficient for entropie (Janaf) */
+-2.90900000E+05		/* enthalpy of formation [J/mol] */
+311.00		/* tminmu minimum temperature allowed for absolute viscosity expression    [K] */
+751.00		/* tmaxmu maximum temperature allowed for absolute viscosity expression    [K] */
+489.00		/* tminlam minimum temperature allowed for thermal conductivity expression [K] */
+1000.00		/* tmaxlam maximum temperature allowed for thermal conductivity expression [K] */
+-1.22170E+01		/* constant coefficient for absolute viscosity (microP) */
+1.80990E-01		/* temperature coefficient for abs. viscosity */
+-8.99490E-06		/* square temperature coeff. for abs. viscosity */
+-8.12000E-03		/* constant coeff. for thermal conductivity [W/m/K] */
+2.91500E-05		/* temperature coeff. for thermal conductivity */
+7.20850E-08		/* square temp. coeff. for thermal conductivity */

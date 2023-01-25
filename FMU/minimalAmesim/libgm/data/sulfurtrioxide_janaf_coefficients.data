@@ -1,0 +1,25 @@
+# Table format: 0D
+#************************	
+#*  Janaf coefficients  *	
+#************************	
+# 14 cp,h,s JANAF coefficients	
+#*****************************	
+1.00e+05	# reference pressure for JANAF constants [Pa]
+298.15	# reference temperature for JANAF constants [K]
+100	# minimum temperature for JANAF validity domain
+6000	# maximum temperature for JANAF validity domain
+900	# switch temperature for JANAF regions                 
+7.29677572e+00	   # UPPER TEMPERATURE constant coeff. for specific heat Cp
+2.73576437e-03	   # temperature coeff. for specific heat Cp
+-1.06377755e-06	# square temperature coeff. for specific heat Cp                  
+1.80776031e-10	   # cubic temperature coeff. for specific heat Cp (Janaf)           
+-1.12077527e-14	# square temperature coeff. for specific heat Cp (Janaf)          
+-2.69411990e+03	# constant coefficient for enthalpie (Janaf)                      
+-1.24246659e+01	# constant coefficient for entropie (Janaf)                       
+2.37461122e+00	   # LOWER TEMPERATURE constant coeff. for specific heat Cp
+1.59543297e-02	   # temperature coeff. for specific heat Cp
+-1.26322543e-05	# square temperature coeff. for specific heat Cp                  
+2.81827264e-09	   # cubic temperature coeff. for specific heat Cp (Janaf)           
+6.23371547e-13	   # square temperature coeff. for specific heat Cp (Janaf)          
+-1.31136910e+03	# constant coefficient for enthalpie (Janaf)                      
+1.31043046e+01	   # constant coefficient for entropie (Janaf)                       

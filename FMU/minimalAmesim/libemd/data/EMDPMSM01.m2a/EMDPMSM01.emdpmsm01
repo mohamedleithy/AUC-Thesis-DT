@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<motorsolve2amesim>
+  <amesim>
+    <main>
+      <name>EMDPMSM01</name>
+      <application>MotorSolve</application>
+      <version>6.2.0.0</version>
+      <export_version>1</export_version>
+      <updated>2018-08-22T15:31:13.076Z</updated>
+    </main>
+    <model target="linear PMSM">
+      
+      <p>4</p>
+      <connectType>Wye</connectType>
+      <Rs0 units="Ohm">0.06158349</Rs0>
+      <T0 units="degC">35</T0>
+      <alphaRs units="1/K">0</alphaRs>
+      <Lsd units="H">0.00157755</Lsd>
+      <Lsq units="H">0.003618514</Lsq>
+      <Lendt units="H">0.0</Lendt>
+      <Psi0 units="Wb">0.2142274</Psi0>
+      <TPsi0 units="degC">35</TPsi0>
+      <alphaPsi units="1/K">0.0</alphaPsi>
+    </model>
+    <model target="information">
+      <Jr units="kgm**2">0.0303644</Jr>
+      <Vis units="Nm/(rev/min)">0</Vis>
+      <Coul units="Nm">0</Coul>
+      <Stict units="Nm">0</Stict>
+    </model>
+  </amesim>
+</motorsolve2amesim>

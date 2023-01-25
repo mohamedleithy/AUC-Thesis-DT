@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: sulfur trioxide (SO3)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+100.0 1500.0       # boundary temperatures
+# Temperature range 100.0 - 1500.0 K
+8.354120e-01 5.665841e+00 7.878167e-02 1.160437e-01         # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

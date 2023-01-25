@@ -1,0 +1,9 @@
+# Table format: MULTILINES
+# Gas: sulfur hexafluoride (SF6)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+300.0 1000.0 5000.0       # boundary temperatures
+# Temperature range 300.0 - 1000.0 K
+4.974847e-01 -2.186408e+02 1.450999e+04 2.763196e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu
+# Temperature range 1000.0 - 5000.0 K
+6.076959e-01 -1.423098e+02 3.144931e+04 1.908614e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

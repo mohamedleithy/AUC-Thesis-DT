@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+
+<SUSPENSION type="MacPherson">
+<HARDPOINTS>
+	<point name="A" title="wheel centre">
+	  <x>1.28318</x>
+	  <y>0.76226</y>
+	  <z>-0.25</z>
+	</point>
+	<point name="B" title="contact patch">
+	  <x>1.28318</x>
+	  <y>0.76382</y>
+	  <z>-0.54</z>
+	</point>
+	<point name="C" title="damper upper bushing">
+	  <x>1.25968</x>
+	  <y>0.569</y>
+	  <z>0.2775</z>
+	</point>
+	<point name="D" title="spindle lower ball joint">
+	  <x>1.28766</x>
+	  <y>0.72282</y>
+	  <z>-0.35657</z>
+	</point>
+	<point name="E1" title="lower wishbone bushing - front">
+	  <x>1.2938</x>
+	  <y>0.40013</y>
+	  <z>-0.357</z>
+	</point>
+	<point name="E2" title="lower wishbone bushing - rear">
+	  <x>1.00395</x>
+	  <y>0.374477</y>
+	  <z>-0.35193</z>
+	</point>
+	<point name="M" title="tie rod outer ball joint">
+	  <x>1.13858</x>
+	  <y>0.69234</y>
+	  <z>-0.2725</z>
+	</point>
+	<point name="N" title="tie rod inner ball joint">
+	  <x>1.11294</x>
+	  <y>0.345</y>
+	  <z>-0.282</z>
+	</point>
+	<point name="K" title="lower strut">
+	  <x>1.27811</x>
+	  <y>0.62503</y>
+	  <z>-0.14071</z>
+	</point>
+	<point name="W" title="camber adjust (on wheel rotation axis)">
+	  <x>1.28443</x>
+	  <y>1.16226</y>
+	  <z>-0.24785</z>
+	</point>
+</HARDPOINTS>
+<BUSHINGS>
+	<point name="E1" title="lower wishbone bushing - front">
+	  <ka>4.5e+06</ka>
+	  <kr>1.4e+07</kr>
+	</point>
+	<point name="E2" title="lower wishbone bushing - rear">
+	  <ka>135000</ka>
+	  <kr>725000</kr>
+	</point>
+	<point name="C" title="damper upper bushing">
+	  <ka>3.8e+06</ka>
+	  <kr>600000</kr>
+	</point>
+</BUSHINGS>
+<PARTS>
+	<part name="spindle" title="spindle">
+	  <point>D</point>
+	  <point>M</point>
+	  <point>K</point>
+	</part>
+	<part name="lower wishbone" title="lower wishbone">
+	  <point>D</point>
+	  <point>E1</point>
+	  <point>E2</point>
+	</part>
+	<part name="tie rod" title="tie rod">
+	  <point>M</point>
+	  <point>N</point>
+	</part>
+	<part name="damper" title="damper">
+	  <point>K</point>
+	  <point>C</point>
+	</part>
+</PARTS>
+</SUSPENSION>

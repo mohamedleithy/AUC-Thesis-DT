@@ -1,0 +1,26 @@
+# Table format: 0D
+4            Gas properties model - PN
+
+100000.0     Reference pressure                                                     [PaA]
+300.0        Reference temperature                                                  [K]
+1076.01      Reference constant-pressure specific heat cp                           [J/kg/K]
+290.791      Perfect gas constant (r)                                               [J/kg/K]
+1.636e-05    Reference absolute viscosity                                           [kg/m/s]
+0.0225131    Reference thermal conductivity                                         [W/m/K]
+
+200.0        Minimum temperature allowed                                            [K]
+2500.0       Maximum temperature allowed                                            [K]
+
+0.995305     Constant coefficient for constant-pressure specific heat cp            [null]
+0.000318756  Temperature coefficient for constant-pressure specific heat cp         [null]
+-6.69422e-08 Squared temperature coefficient for constant-pressure specific heat cp [null]
+
+0.0357875    Constant coefficient for absolute viscosity                            [null]
+0.000650657  Temperature coefficient for absolute viscosity                         [null]
+-1.76859e-07 Squared temperature coefficient for absolute viscosity                 [null]
+
+1.0          Constant coefficient for thermal conductivity                          [null]
+0.00340958   Temperature coefficient for thermal conductivity                       [null]
+-5.19237e-07 Squared temperature coefficient for thermal conductivity               [null]
+
+-83197.0     Enthalpy of formation                                                  [J/mol]

@@ -1,0 +1,21 @@
+# gas name
+isobutane C4H10
+# reference temperature (in K)
+293.15
+# reference pressure (absolute) (in Pa)
+1.0e5
+# minimum temperature (in K)
+280.0
+# maximum temperature (in K)
+600.0
+# density at ref. pressure and ref. temperature (in kg/m3)
+2.4517147
+#	T(K)		cp(J/kg/K)		mu(kg/m/s)		lam(W/m/K)
+2.8000E+02		1.6261E+03		7.0478E-06		1.4210E-02
+3.0000E+02		1.7062E+03		7.5436E-06		1.6147E-02
+3.5000E+02		1.9254E+03		8.7539E-06		2.1644E-02
+4.0000E+02		2.1504E+03		9.9294E-06		2.7929E-02
+4.5000E+02		2.3674E+03		1.1075E-05		3.4814E-02
+5.0000E+02		2.5708E+03		1.2195E-05		4.2137E-02
+5.5000E+02		2.7594E+03		1.3292E-05		4.9781E-02
+6.0000E+02		2.9337E+03		1.4366E-05		5.7654E-02

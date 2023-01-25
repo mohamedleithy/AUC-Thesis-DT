@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: n-pentane (C5H12)
+# Coefficients for equation of state
+7.21487800e-02          # molar mass M [kg/mol]
+469.650000              # critical temperature Tc [K]
+3.369000e+06            # critical pressure Pc [Pa]
+0.249000                # acentric factor w [-]
+143.500000              # minimal temperature [K]
+600.000000              # maximal temperature [K]
+-146760.000             # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

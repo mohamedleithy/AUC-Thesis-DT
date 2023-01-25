@@ -1,0 +1,9 @@
+# Trajectory description format: xyR_sc v1.0
+# Simple oval reference trajectory
+    50.     0.     0.
+   150.  -100.  -100.
+    50.  -200.  -100.
+   -50.  -200.     0.
+  -150.  -100.  -100.
+   -50.     0.  -100.
+     0.     0.     0.

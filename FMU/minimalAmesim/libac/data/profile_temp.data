@@ -1,0 +1,9 @@
+# Table format: 2D
+# table_unit = K
+# axis1_unit = null
+# axis2_unit = null
+2 2
+0	1000
+0   1000
+303.15	303.15
+303.15	303.15

@@ -1,0 +1,13 @@
+# Table format: 1D
+# table_unit = null
+# axis1_unit = null
+# Each line represents a combustion mode
+# First column is the number of deactivated cylinders
+# Second column is the reference combustion mode (0 if no reference needed => data available)
+# 
+    0.00000000000000e+000     0.00000000000000e+000 
+    0.00000000000000e+000     0.00000000000000e+000 
+    1.00000000000000e+000     1.00000000000000e+000 
+    1.00000000000000e+000     2.00000000000000e+000 
+    1.00000000000000e+000     0.00000000000000e+000 
+    1.00000000000000e+000     0.00000000000000e+000 

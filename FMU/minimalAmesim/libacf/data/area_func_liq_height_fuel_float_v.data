@@ -1,0 +1,7 @@
+# Table format: 1D
+# table_unit = mm**2
+# axis1_unit = m
+# valve opening area as a function of the ditance from the orifice to the 
+# liquid free surface
+    2.00000000000000e-001     1.20000000000000e+003
+    3.00000000000000e-001     0.00000000000000e+000

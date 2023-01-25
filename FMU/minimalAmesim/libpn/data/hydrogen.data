@@ -1,0 +1,19 @@
+# Table format: 0D
+3
+1.00000e+005 Reference pressure                                                     [PaA]
+2.93150e+002 Reference temperature                                                    [K]
+1.42836e+004 Reference constant-pressure specific heat cp                        [J/kg/K]
+4.12683e+003 Perfect gas constant r                                              [J/kg/K]
+8.81178e-006 Reference absolute viscosity                                        [kg/m/s]
+1.82414e-001 Reference thermal conductivity                                       [W/m/K]
+1.00000e+002 Minimum temperature allowed                                              [K]
+4.00000e+002 Maximum temperature allowed                                              [K]
+1.00968e+000 Constant coefficient for constant-pressure specific heat cp                 
+3.53003e-004 Temperature coefficient for constant-pressure specific heat cp              
+-3.95035e-006 Squared temperature coefficient for constant-pressure specific heat cp      
+7.44011e-003 Constant coefficient for absolute viscosity                                 
+1.04250e-003 Temperature coefficient for absolute viscosity                              
+-3.11434e-006 Squared temperature coefficient for absolute viscosity                      
+1.00499e+000 Constant coefficient for thermal conductivity                               
+2.80871e-003 Temperature coefficient for thermal conductivity                            
+-2.34910e-006 Squared temperature coefficient for thermal conductivity                    

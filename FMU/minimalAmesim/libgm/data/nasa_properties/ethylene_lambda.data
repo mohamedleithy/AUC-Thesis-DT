@@ -1,0 +1,9 @@
+# Table format: MULTILINES
+# Gas: ethylene (C2H4)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+2.473665e-01 -1.058999e+03 8.991157e+04 6.445609e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 1000.0 - 5000.0 K
+5.161604e-01 -9.248635e+02 1.572389e+05 4.387384e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

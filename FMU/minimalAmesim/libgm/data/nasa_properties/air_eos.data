@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: air (0.78109 N2, 0.20954 O2, 0.00937 Ar)
+# Coefficients for equation of state
+2.89651159e-02          # molar mass M [kg/mol]
+132.450000              # critical temperature Tc [K]
+3.790000e+06            # critical pressure Pc [Pa]
+0.037                   # acentric factor w [-]
+67.900000               # minimal temperature [K]
+1790.000000             # maximal temperature [K]
+-125.530                # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

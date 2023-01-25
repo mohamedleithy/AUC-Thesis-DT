@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: exhaust (0.73268 N2, 0.12580 CO2, 0.14152 H20)
+# Coefficients for equation of state
+2.86107080e-02          # molar mass M [kg/mol]
+191.856000              # critical temperature Tc [K]
+5.247150e+06            # critical pressure Pc [Pa]
+0.104000                # acentric factor w [-]
+273.160000              # minimal temperature [K]
+1100.000000             # maximal temperature [K]
+-83725.4413             # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

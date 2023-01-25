@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: nitric acid (HNO3)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+150.0 1500.0       # boundary temperatures
+# Temperature range 150.0 - 1500.0 K
+5.720444e-01 -4.539583e+02 -5.419292e+00 3.027220e+00       # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

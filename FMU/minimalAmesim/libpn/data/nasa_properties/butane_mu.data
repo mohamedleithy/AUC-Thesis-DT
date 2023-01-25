@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: butane (C4H10)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+275.0 800.0       # boundary temperatures
+# Temperature range 275.0 - 800.0 K
+9.581400e-01 9.651200e-01 9.998400e-01 -1.152900e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

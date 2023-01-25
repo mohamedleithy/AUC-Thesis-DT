@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: heptane (C7H16)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+372.0 610.0       # boundary temperatures
+# Temperature range 372.0 - 610.0 K
+9.356566e-01 9.625109e-01 9.998351e-01 -1.207465e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

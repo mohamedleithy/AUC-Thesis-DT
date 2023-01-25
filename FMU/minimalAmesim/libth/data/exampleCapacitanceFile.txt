@@ -1,0 +1,9 @@
+Example capacitance Matrix file
+Number of nodes = 6. Thermal capacitances reported are in J/C.
+
+(capa1); 35.5;
+(capa2); 105.2;
+(capa3); 10.8;
+(capa4); 85.1;
+(capa_5); 35.0;
+(capa 6); 35.0;

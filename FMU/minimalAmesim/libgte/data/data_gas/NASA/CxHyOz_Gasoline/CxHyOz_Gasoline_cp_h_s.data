@@ -1,0 +1,13 @@
+# Table format: MULTILINES
+# Gas: CxHyOz_Gasoline with x = 6.34, y = 11.92, z = 0.1
+# Coefficients for specific heat (Cp in J/kg/K), specific enthalpy (h in J/kg) and specific entropy (s in J/kg/K) as a function of temperature (T in K) in the NASA 2002 format
+# Ref: J. Luche, Obtention de modèles cinétiques réduits de combustion, application à un mécanisme du kérosène
+300.0 1000.0 5000.0       # boundary temperatures
+# Temperature range 300.0 - 1000.0 K
+0.0 0.0 -0.864647808773957 0.0709814924692177 -4.95475584244517E-05 2.5126253704454E-08 -7.10451868004828E-12       # a1, a2... a7 in C_p0/r=a1/T^2+a2/T+a3+a4.T+a5.T^2+a6.T^3+a7.T^4
+0.0                           # a8 in H_0/rT=-a1/T^2-a2/T.ln(T)+a3+a4/2.T+a5/3.T^2+a6/4.T^3+a7/5.T^4+a8/T
+0.0                            # a9 in S_0/r=-a1/2/T^2-a2/T+a3.ln(T)+a4.T+a5/2.T^2+a6/3.T^3+a7/4.T^4+a9
+# Temperature range 1000.0 - 5000.0 K
+0.0 0.0 -0.119303654403316 0.0666943472116284 -3.53089829053539E-05 7.90333440971871E-09 -6.35141112563272E-13       # a1, a2... a7 in C_p0/r=a1/T^2+a2/T+a3+a4.T+a5.T^2+a6.T^3+a7.T^4
+-336.109055088411              # a8 in H_0/rT=-a1/T^2-a2/T.ln(T)+a3+a4/2.T+a5/3.T^2+a6/4.T^3+a7/5.T^4+a8/T
+0.0                           # a9 in S_0/r=-a1/2/T^2-a2/T+a3.ln(T)+a4.T+a5/2.T^2+a6/3.T^3+a7/4.T^4+a9

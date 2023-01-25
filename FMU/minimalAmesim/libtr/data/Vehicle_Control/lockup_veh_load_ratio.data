@@ -1,0 +1,16 @@
+# Table format: 2D
+# Columns represent lockup clutch state change (ex: 2.0 => when gear 2 is used, disengage lockup clutch when corresponding vehicle speed is reached
+#                                                   3.1 => when gear 3 is used, engage lockup clutch when corresponding vehicle speed is reached)
+# Rows represent different loads [%]
+# Data in table are vehicle speed threshold [m/s]
+# 
+# 
+# 
+# 
+# 
+8
+2
+    1.00000000000000e+000     1.10000000000000e+000     2.00000000000000e+000     2.10000000000000e+000     3.00000000000000e+000     3.10000000000000e+000     4.00000000000000e+000     4.10000000000000e+000 
+    0.00000000000000e+000     1.00000000000000e+002 
+    5.00000000000000e+000     6.00000000000000e+000     5.00000000000000e+000     2.00000000000000e+001     1.50000000000000e+001     3.80000000000000e+001     2.00000000000000e+001     4.00000000000000e+001 
+    5.00000000000000e+000     7.00000000000000e+000     5.00000000000000e+000     2.00000000000000e+001     1.50000000000000e+001     3.90000000000000e+001     2.00000000000000e+001     4.10000000000000e+001 

@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: ethylene (C2H4)
+# Coefficients for equation of state
+2.80531600e-02          # molar mass M [kg/mol]
+282.360000              # critical temperature Tc [K]
+5.032000e+06            # critical pressure Pc [Pa]
+0.085000                # acentric factor w [-]
+104.010000              # minimal temperature [K]
+1000.000000             # maximal temperature [K]
+52500.00                # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

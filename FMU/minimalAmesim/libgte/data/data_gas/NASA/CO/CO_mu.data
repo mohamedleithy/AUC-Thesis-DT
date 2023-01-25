@@ -1,0 +1,11 @@
+# Table format: MULTILINES
+# Gas: carbon monoxide (CO)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0 15000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+6.252658e-01 -3.177965e+01 -1.640798e+03 1.745499e+00       # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu
+# Temperature range 1000.0 - 5000.0 K
+8.739521e-01 5.615222e+02 -1.739481e+05 -3.933596e-01       # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu
+# Temperature range 5000.0 - 15000.0 K
+8.850355e-01 9.090217e+02 -7.312906e+05 -5.350384e-01       # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

@@ -1,0 +1,17 @@
+# solid name
+stainless steel AISI304
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+1400.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+-73            7900            402            12.6 
+27             7900            477            14.9
+127            7900            515            16.6
+327	       7900            557            19.8
+527            7900            582            22.6
+727            7900            611            25.4
+927            7900            640            38.0
+1227           7900            682            31.7

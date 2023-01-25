@@ -1,0 +1,14 @@
+#************************************************
+#  Oxydation/reduction reaction stoechiometry   *
+#   Ox + n . e- <=> Red                         *
+#   O2 + 4 H+ + 4 e- <=> 2 H2O                  *
+#************************************************
+1.23			# E0 [V] @ 298.15K
+-507.2e3    # heat of reaction [J.mol-1] @ 298.15K
+-4          # electron
+-4          # electrolyte ion: H+
+-1          # mixture species 1: O2
+2			# mixture species 2: H2O
+0           # mixture species 4: N2
+
+

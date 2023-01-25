@@ -1,0 +1,10 @@
+#  diffusion data file for Fuller, Schettler and Giddings   				
+#  2 gas icon, anode, mixture 30				
+#  5 species in the gas mixture : H2, H2O, CO2, N2, CO				
+#  T = 353 K	P = 3 bar			
+5				
+2.06E-05	2.25E-05	1.73E-05	2.01E-05	1.99E-05
+2.25E-05	4.18E-05	3.81E-05	4.10E-05	4.24E-05
+1.73E-05	3.81E-05	3.96E-05	3.98E-05	4.27E-05
+2.01E-05	4.10E-05	3.98E-05	4.14E-05	4.36E-05
+1.99E-05	4.24E-05	4.27E-05	4.36E-05	4.65E-05

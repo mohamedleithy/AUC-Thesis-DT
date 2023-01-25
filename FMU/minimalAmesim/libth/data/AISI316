@@ -1,0 +1,14 @@
+# solid name
+stainless steel AISI316
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+1400.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+27             8238            468            13.4
+127            8238            504            15.2
+327	       8238            550            18.3
+527            8238            576            21.3
+727            8238            602            24.2

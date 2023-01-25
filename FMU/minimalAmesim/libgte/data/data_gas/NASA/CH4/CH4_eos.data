@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: methane (CH4)
+# Coefficients for equation of state
+1.60424600e-02          # molar mass M [kg/mol]
+190.564000              # critical temperature Tc [K]
+4.599200e+06            # critical pressure Pc [Pa]
+0.011420                # acentric factor w [-]
+90.700000               # minimal temperature [K]
+625.000000              # maximal temperature [K]
+-74600.00               # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

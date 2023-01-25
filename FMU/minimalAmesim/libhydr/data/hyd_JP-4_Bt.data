@@ -1,0 +1,1106 @@
+# Table format: MULTILINES
+# In mode 1 density and bulk modulus are defined from a reference
+# density and a table of bulk modulus values.
+#
+# Note that all lines started with a '#' are comments.
+#
+# First we have the mode.
+1
+# Then the number of temperature values. This must be greater
+# than zero. If it is one, it is assumed that density and bulk
+# modulus do not vary with temperature.
+23
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 1 [degC]).
+7.985254e+02 0.000000e+00
+
+# Temperature number 1 [degC].
+-4.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.508456e+04
+2.500000e+01  1.528574e+04
+5.000000e+01  1.548654e+04
+7.500000e+01  1.568698e+04
+1.000000e+02  1.588706e+04
+1.250000e+02  1.608678e+04
+1.500000e+02  1.628616e+04
+1.750000e+02  1.648519e+04
+2.000000e+02  1.668389e+04
+2.500000e+02  1.708027e+04
+3.000000e+02  1.747535e+04
+3.500000e+02  1.786916e+04
+4.000000e+02  1.826173e+04
+4.500000e+02  1.865309e+04
+5.000000e+02  1.904327e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 2 [degC]).
+7.908871e+02 0.000000e+00
+
+# Temperature number 2 [degC].
+-3.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.401934e+04
+2.500000e+01  1.422066e+04
+5.000000e+01  1.442158e+04
+7.500000e+01  1.462210e+04
+1.000000e+02  1.482225e+04
+1.250000e+02  1.502201e+04
+1.500000e+02  1.522140e+04
+1.750000e+02  1.542042e+04
+2.000000e+02  1.561907e+04
+2.500000e+02  1.601532e+04
+3.000000e+02  1.641017e+04
+3.500000e+02  1.680367e+04
+4.000000e+02  1.719586e+04
+4.500000e+02  1.758676e+04
+5.000000e+02  1.797641e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 3 [degC]).
+7.832281e+02 0.000000e+00
+
+# Temperature number 3 [degC].
+-2.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.304041e+04
+2.500000e+01  1.324187e+04
+5.000000e+01  1.344291e+04
+7.500000e+01  1.364353e+04
+1.000000e+02  1.384374e+04
+1.250000e+02  1.404354e+04
+1.500000e+02  1.424294e+04
+1.750000e+02  1.444194e+04
+2.000000e+02  1.464056e+04
+2.500000e+02  1.503666e+04
+3.000000e+02  1.543128e+04
+3.500000e+02  1.582446e+04
+4.000000e+02  1.621624e+04
+4.500000e+02  1.660666e+04
+5.000000e+02  1.699576e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 4 [degC]).
+7.755504e+02 0.000000e+00
+
+# Temperature number 4 [degC].
+-1.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.214285e+04
+2.500000e+01  1.234447e+04
+5.000000e+01  1.254564e+04
+7.500000e+01  1.274636e+04
+1.000000e+02  1.294663e+04
+1.250000e+02  1.314647e+04
+1.500000e+02  1.334588e+04
+1.750000e+02  1.354487e+04
+2.000000e+02  1.374345e+04
+2.500000e+02  1.413940e+04
+3.000000e+02  1.453377e+04
+3.500000e+02  1.492662e+04
+4.000000e+02  1.531798e+04
+4.500000e+02  1.570791e+04
+5.000000e+02  1.609643e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 5 [degC]).
+7.678562e+02 0.000000e+00
+
+# Temperature number 5 [degC].
+0.000000e+00
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.132177e+04
+2.500000e+01  1.152356e+04
+5.000000e+01  1.172486e+04
+7.500000e+01  1.192568e+04
+1.000000e+02  1.212602e+04
+1.250000e+02  1.232590e+04
+1.500000e+02  1.252533e+04
+1.750000e+02  1.272431e+04
+2.000000e+02  1.292285e+04
+2.500000e+02  1.331863e+04
+3.000000e+02  1.371275e+04
+3.500000e+02  1.410525e+04
+4.000000e+02  1.449618e+04
+4.500000e+02  1.488560e+04
+5.000000e+02  1.527354e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 6 [degC]).
+7.601486e+02 0.000000e+00
+
+# Temperature number 6 [degC].
+1.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.057227e+04
+2.500000e+01  1.077424e+04
+5.000000e+01  1.097567e+04
+7.500000e+01  1.117660e+04
+1.000000e+02  1.137702e+04
+1.250000e+02  1.157694e+04
+1.500000e+02  1.177638e+04
+1.750000e+02  1.197534e+04
+2.000000e+02  1.217383e+04
+2.500000e+02  1.256946e+04
+3.000000e+02  1.296331e+04
+3.500000e+02  1.335546e+04
+4.000000e+02  1.374595e+04
+4.500000e+02  1.413484e+04
+5.000000e+02  1.452218e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 7 [degC]).
+7.524308e+02 0.000000e+00
+
+# Temperature number 7 [degC].
+2.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  9.889452e+03
+2.500000e+01  1.009160e+04
+5.000000e+01  1.029318e+04
+7.500000e+01  1.049421e+04
+1.000000e+02  1.069470e+04
+1.250000e+02  1.089467e+04
+1.500000e+02  1.109412e+04
+1.750000e+02  1.129307e+04
+2.000000e+02  1.149152e+04
+2.500000e+02  1.188698e+04
+3.000000e+02  1.228056e+04
+3.500000e+02  1.267234e+04
+4.000000e+02  1.306239e+04
+4.500000e+02  1.345075e+04
+5.000000e+02  1.383748e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 8 [degC]).
+7.447064e+02 0.000000e+00
+
+# Temperature number 8 [degC].
+3.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  9.268414e+03
+2.500000e+01  9.470742e+03
+5.000000e+01  9.672471e+03
+7.500000e+01  9.873615e+03
+1.000000e+02  1.007419e+04
+1.250000e+02  1.027420e+04
+1.500000e+02  1.047367e+04
+1.750000e+02  1.067260e+04
+2.000000e+02  1.087100e+04
+2.500000e+02  1.126629e+04
+3.000000e+02  1.165960e+04
+3.500000e+02  1.205101e+04
+4.000000e+02  1.244060e+04
+4.500000e+02  1.282842e+04
+5.000000e+02  1.321454e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 9 [degC]).
+7.369792e+02 0.000000e+00
+
+# Temperature number 9 [degC].
+4.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  8.704257e+03
+2.500000e+01  8.906775e+03
+5.000000e+01  9.108655e+03
+7.500000e+01  9.309913e+03
+1.000000e+02  9.510564e+03
+1.250000e+02  9.710623e+03
+1.500000e+02  9.910103e+03
+1.750000e+02  1.010902e+04
+2.000000e+02  1.030738e+04
+2.500000e+02  1.070249e+04
+3.000000e+02  1.109553e+04
+3.500000e+02  1.148657e+04
+4.000000e+02  1.187570e+04
+4.500000e+02  1.226298e+04
+5.000000e+02  1.264848e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 10 [degC]).
+7.292525e+02 0.000000e+00
+
+# Temperature number 10 [degC].
+5.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  8.192083e+03
+2.500000e+01  8.394794e+03
+5.000000e+01  8.596827e+03
+7.500000e+01  8.798201e+03
+1.000000e+02  8.998933e+03
+1.250000e+02  9.199038e+03
+1.500000e+02  9.398533e+03
+1.750000e+02  9.597431e+03
+2.000000e+02  9.795747e+03
+2.500000e+02  1.019068e+04
+3.000000e+02  1.058344e+04
+3.500000e+02  1.097411e+04
+4.000000e+02  1.136278e+04
+4.500000e+02  1.174952e+04
+5.000000e+02  1.213440e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 11 [degC]).
+7.215296e+02 0.000000e+00
+
+# Temperature number 11 [degC].
+6.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  7.726992e+03
+2.500000e+01  7.929899e+03
+5.000000e+01  8.132088e+03
+7.500000e+01  8.333579e+03
+1.000000e+02  8.534393e+03
+1.250000e+02  8.734545e+03
+1.500000e+02  8.934054e+03
+1.750000e+02  9.132936e+03
+2.000000e+02  9.331205e+03
+2.500000e+02  9.725966e+03
+3.000000e+02  1.011845e+04
+3.500000e+02  1.050874e+04
+4.000000e+02  1.089695e+04
+4.500000e+02  1.128315e+04
+5.000000e+02  1.166742e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 12 [degC]).
+7.138127e+02 0.000000e+00
+
+# Temperature number 12 [degC].
+7.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  7.304085e+03
+2.500000e+01  7.507189e+03
+5.000000e+01  7.709536e+03
+7.500000e+01  7.911146e+03
+1.000000e+02  8.112041e+03
+1.250000e+02  8.312241e+03
+1.500000e+02  8.511764e+03
+1.750000e+02  8.710629e+03
+2.000000e+02  8.908853e+03
+2.500000e+02  9.303438e+03
+3.000000e+02  9.695639e+03
+3.500000e+02  1.008557e+04
+4.000000e+02  1.047332e+04
+4.500000e+02  1.085898e+04
+5.000000e+02  1.124264e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 13 [degC]).
+7.061030e+02 0.000000e+00
+
+# Temperature number 13 [degC].
+8.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  6.918460e+03
+2.500000e+01  7.121765e+03
+5.000000e+01  7.324270e+03
+7.500000e+01  7.525999e+03
+1.000000e+02  7.726977e+03
+1.250000e+02  7.927224e+03
+1.500000e+02  8.126762e+03
+1.750000e+02  8.325611e+03
+2.000000e+02  8.523788e+03
+2.500000e+02  8.918198e+03
+3.000000e+02  9.310122e+03
+3.500000e+02  9.699679e+03
+4.000000e+02  1.008697e+04
+4.500000e+02  1.047211e+04
+5.000000e+02  1.085517e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 14 [degC]).
+6.984001e+02 0.000000e+00
+
+# Temperature number 14 [degC].
+9.000000e+01
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  6.565215e+03
+2.500000e+01  6.768722e+03
+5.000000e+01  6.971387e+03
+7.500000e+01  7.173237e+03
+1.000000e+02  7.374298e+03
+1.250000e+02  7.574593e+03
+1.500000e+02  7.774146e+03
+1.750000e+02  7.972977e+03
+2.000000e+02  8.171108e+03
+2.500000e+02  8.565343e+03
+3.000000e+02  8.956991e+03
+3.500000e+02  9.346180e+03
+4.000000e+02  9.733025e+03
+4.500000e+02  1.011763e+04
+5.000000e+02  1.050009e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 15 [degC]).
+6.907021e+02 0.000000e+00
+
+# Temperature number 15 [degC].
+1.000000e+02
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  6.239446e+03
+2.500000e+01  6.443159e+03
+5.000000e+01  6.645986e+03
+7.500000e+01  6.847957e+03
+1.000000e+02  7.049102e+03
+1.250000e+02  7.249445e+03
+1.500000e+02  7.449013e+03
+1.750000e+02  7.647828e+03
+2.000000e+02  7.845912e+03
+2.500000e+02  8.239972e+03
+3.000000e+02  8.631344e+03
+3.500000e+02  9.020165e+03
+4.000000e+02  9.406560e+03
+4.500000e+02  9.790640e+03
+5.000000e+02  1.017251e+04
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 16 [degC]).
+6.830047e+02 0.000000e+00
+
+# Temperature number 16 [degC].
+1.100000e+02
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  5.936248e+03
+2.500000e+01  6.140170e+03
+5.000000e+01  6.343162e+03
+7.500000e+01  6.545257e+03
+1.000000e+02  6.746487e+03
+1.250000e+02  6.946879e+03
+1.500000e+02  7.146462e+03
+1.750000e+02  7.345260e+03
+2.000000e+02  7.543298e+03
+2.500000e+02  7.937180e+03
+3.000000e+02  8.328273e+03
+3.500000e+02  8.716726e+03
+4.000000e+02  9.102669e+03
+4.500000e+02  9.486224e+03
+5.000000e+02  9.867499e+03
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 17 [degC]).
+6.753009e+02 0.000000e+00
+
+# Temperature number 17 [degC].
+1.200000e+02
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  5.650711e+03
+2.500000e+01  5.854849e+03
+5.000000e+01  6.058011e+03
+7.500000e+01  6.260234e+03
+1.000000e+02  6.461550e+03
+1.250000e+02  6.661993e+03
+1.500000e+02  6.861591e+03
+1.750000e+02  7.060372e+03
+2.000000e+02  7.258361e+03
+2.500000e+02  7.652063e+03
+3.000000e+02  8.042874e+03
+3.500000e+02  8.430952e+03
+4.000000e+02  8.816438e+03
+4.500000e+02  9.199461e+03
+5.000000e+02  9.580136e+03
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 18 [degC]).
+6.675810e+02 0.000000e+00
+
+# Temperature number 18 [degC].
+1.300000e+02
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  5.377924e+03
+2.500000e+01  5.582288e+03
+5.000000e+01  5.785628e+03
+7.500000e+01  5.987982e+03
+1.000000e+02  6.189390e+03
+1.250000e+02  6.389884e+03
+1.500000e+02  6.589498e+03
+1.750000e+02  6.788261e+03
+2.000000e+02  6.986201e+03
+2.500000e+02  7.379717e+03
+3.000000e+02  7.770237e+03
+3.500000e+02  8.157929e+03
+4.000000e+02  8.542946e+03
+4.500000e+02  8.925424e+03
+5.000000e+02  9.305484e+03
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 19 [degC]).
+6.598314e+02 0.000000e+00
+
+# Temperature number 19 [degC].
+1.400000e+02
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  5.112971e+03
+2.500000e+01  5.317576e+03
+5.000000e+01  5.521104e+03
+7.500000e+01  5.723598e+03
+1.000000e+02  5.925102e+03
+1.250000e+02  6.125651e+03
+1.500000e+02  6.325282e+03
+1.750000e+02  6.524026e+03
+2.000000e+02  6.721914e+03
+2.500000e+02  7.115235e+03
+3.000000e+02  7.505449e+03
+3.500000e+02  7.892739e+03
+4.000000e+02  8.277267e+03
+4.500000e+02  8.659176e+03
+5.000000e+02  9.038598e+03
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 20 [degC]).
+6.520342e+02 0.000000e+00
+
+# Temperature number 20 [degC].
+1.500000e+02
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  4.850932e+03
+2.500000e+01  5.055798e+03
+5.000000e+01  5.259529e+03
+7.500000e+01  5.462176e+03
+1.000000e+02  5.663783e+03
+1.250000e+02  5.864391e+03
+1.500000e+02  6.064040e+03
+1.750000e+02  6.262764e+03
+2.000000e+02  6.460596e+03
+2.500000e+02  6.853708e+03
+3.000000e+02  7.243597e+03
+3.500000e+02  7.630458e+03
+4.000000e+02  8.014464e+03
+4.500000e+02  8.395771e+03
+5.000000e+02  8.774515e+03
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 21 [degC]).
+6.441656e+02 0.000000e+00
+
+# Temperature number 21 [degC].
+1.600000e+02
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  4.586881e+03
+2.500000e+01  4.792036e+03
+5.000000e+01  4.995994e+03
+7.500000e+01  5.198808e+03
+1.000000e+02  5.400529e+03
+1.250000e+02  5.601202e+03
+1.500000e+02  5.800871e+03
+1.750000e+02  5.999573e+03
+2.000000e+02  6.197344e+03
+2.500000e+02  6.590227e+03
+3.000000e+02  6.979760e+03
+3.500000e+02  7.366155e+03
+4.000000e+02  7.749595e+03
+4.500000e+02  8.130247e+03
+5.000000e+02  8.508257e+03
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 22 [degC]).
+6.361936e+02 0.000000e+00
+
+# Temperature number 22 [degC].
+1.700000e+02
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  4.315881e+03
+2.500000e+01  4.521367e+03
+5.000000e+01  4.725581e+03
+7.500000e+01  4.928585e+03
+1.000000e+02  5.130435e+03
+1.250000e+02  5.331182e+03
+1.500000e+02  5.530872e+03
+1.750000e+02  5.729549e+03
+2.000000e+02  5.927252e+03
+2.500000e+02  6.319880e+03
+3.000000e+02  6.709016e+03
+3.500000e+02  7.094890e+03
+4.000000e+02  7.477702e+03
+4.500000e+02  7.857627e+03
+5.000000e+02  8.234825e+03
+# Now the reference density [kg/m**3], and the gauge pressure [bar] where this density is given.
+# (the temperature being temperature number 23 [degC]).
+6.280749e+02 0.000000e+00
+
+# Temperature number 23 [degC].
+1.800000e+02
+# Then the number N of pressure [bar] - bulk modulus [bar] pairs (greater than 0),
+# followed by the N pressure [bar] - bulk modulus [bar] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  4.032986e+03
+2.500000e+01  4.238857e+03
+5.000000e+01  4.443370e+03
+7.500000e+01  4.646595e+03
+1.000000e+02  4.848595e+03
+1.250000e+02  5.049427e+03
+1.500000e+02  5.249143e+03
+1.750000e+02  5.447792e+03
+2.000000e+02  5.645416e+03
+2.500000e+02  6.037750e+03
+3.000000e+02  6.426433e+03
+3.500000e+02  6.811713e+03
+4.000000e+02  7.193809e+03
+4.500000e+02  7.572910e+03
+5.000000e+02  7.949186e+03
+
+
+
+# The definition of bulk modulus and density is now complete.
+# Next we define the absolute viscosity in mode 1.
+# In mode 1 the absolute viscosity is defined from tables of
+# absolute viscosities.
+# Mode for viscosity.
+1
+# Then the number of temperature values. This must be greater
+# than zero. If it is one, it is assumed that absolute viscosity
+# does not vary with temperature.
+23
+
+# Temperature number 1 [degC].
+-4.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  2.188769e+00
+2.500000e+01  2.188769e+00
+5.000000e+01  2.188769e+00
+7.500000e+01  2.188769e+00
+1.000000e+02  2.188769e+00
+1.250000e+02  2.188769e+00
+1.500000e+02  2.188769e+00
+1.750000e+02  2.188769e+00
+2.000000e+02  2.188769e+00
+2.500000e+02  2.188769e+00
+3.000000e+02  2.188769e+00
+3.500000e+02  2.188769e+00
+4.000000e+02  2.188769e+00
+4.500000e+02  2.188769e+00
+5.000000e+02  2.188769e+00
+
+# Temperature number 2 [degC].
+-3.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.709612e+00
+2.500000e+01  1.709612e+00
+5.000000e+01  1.709612e+00
+7.500000e+01  1.709612e+00
+1.000000e+02  1.709612e+00
+1.250000e+02  1.709612e+00
+1.500000e+02  1.709612e+00
+1.750000e+02  1.709612e+00
+2.000000e+02  1.709612e+00
+2.500000e+02  1.709612e+00
+3.000000e+02  1.709612e+00
+3.500000e+02  1.709612e+00
+4.000000e+02  1.709612e+00
+4.500000e+02  1.709612e+00
+5.000000e+02  1.709612e+00
+
+# Temperature number 3 [degC].
+-2.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.371821e+00
+2.500000e+01  1.371821e+00
+5.000000e+01  1.371821e+00
+7.500000e+01  1.371821e+00
+1.000000e+02  1.371821e+00
+1.250000e+02  1.371821e+00
+1.500000e+02  1.371821e+00
+1.750000e+02  1.371821e+00
+2.000000e+02  1.371821e+00
+2.500000e+02  1.371821e+00
+3.000000e+02  1.371821e+00
+3.500000e+02  1.371821e+00
+4.000000e+02  1.371821e+00
+4.500000e+02  1.371821e+00
+5.000000e+02  1.371821e+00
+
+# Temperature number 4 [degC].
+-1.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.127653e+00
+2.500000e+01  1.127653e+00
+5.000000e+01  1.127653e+00
+7.500000e+01  1.127653e+00
+1.000000e+02  1.127653e+00
+1.250000e+02  1.127653e+00
+1.500000e+02  1.127653e+00
+1.750000e+02  1.127653e+00
+2.000000e+02  1.127653e+00
+2.500000e+02  1.127653e+00
+3.000000e+02  1.127653e+00
+3.500000e+02  1.127653e+00
+4.000000e+02  1.127653e+00
+4.500000e+02  1.127653e+00
+5.000000e+02  1.127653e+00
+
+# Temperature number 5 [degC].
+0.000000e+00
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  9.469084e-01
+2.500000e+01  9.469084e-01
+5.000000e+01  9.469084e-01
+7.500000e+01  9.469084e-01
+1.000000e+02  9.469084e-01
+1.250000e+02  9.469084e-01
+1.500000e+02  9.469084e-01
+1.750000e+02  9.469084e-01
+2.000000e+02  9.469084e-01
+2.500000e+02  9.469084e-01
+3.000000e+02  9.469084e-01
+3.500000e+02  9.469084e-01
+4.000000e+02  9.469084e-01
+4.500000e+02  9.469084e-01
+5.000000e+02  9.469084e-01
+
+# Temperature number 6 [degC].
+1.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  8.099752e-01
+2.500000e+01  8.099752e-01
+5.000000e+01  8.099752e-01
+7.500000e+01  8.099752e-01
+1.000000e+02  8.099752e-01
+1.250000e+02  8.099752e-01
+1.500000e+02  8.099752e-01
+1.750000e+02  8.099752e-01
+2.000000e+02  8.099752e-01
+2.500000e+02  8.099752e-01
+3.000000e+02  8.099752e-01
+3.500000e+02  8.099752e-01
+4.000000e+02  8.099752e-01
+4.500000e+02  8.099752e-01
+5.000000e+02  8.099752e-01
+
+# Temperature number 7 [degC].
+2.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  7.037897e-01
+2.500000e+01  7.037897e-01
+5.000000e+01  7.037897e-01
+7.500000e+01  7.037897e-01
+1.000000e+02  7.037897e-01
+1.250000e+02  7.037897e-01
+1.500000e+02  7.037897e-01
+1.750000e+02  7.037897e-01
+2.000000e+02  7.037897e-01
+2.500000e+02  7.037897e-01
+3.000000e+02  7.037897e-01
+3.500000e+02  7.037897e-01
+4.000000e+02  7.037897e-01
+4.500000e+02  7.037897e-01
+5.000000e+02  7.037897e-01
+
+# Temperature number 8 [degC].
+3.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  6.194382e-01
+2.500000e+01  6.194382e-01
+5.000000e+01  6.194382e-01
+7.500000e+01  6.194382e-01
+1.000000e+02  6.194382e-01
+1.250000e+02  6.194382e-01
+1.500000e+02  6.194382e-01
+1.750000e+02  6.194382e-01
+2.000000e+02  6.194382e-01
+2.500000e+02  6.194382e-01
+3.000000e+02  6.194382e-01
+3.500000e+02  6.194382e-01
+4.000000e+02  6.194382e-01
+4.500000e+02  6.194382e-01
+5.000000e+02  6.194382e-01
+
+# Temperature number 9 [degC].
+4.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  5.506977e-01
+2.500000e+01  5.506977e-01
+5.000000e+01  5.506977e-01
+7.500000e+01  5.506977e-01
+1.000000e+02  5.506977e-01
+1.250000e+02  5.506977e-01
+1.500000e+02  5.506977e-01
+1.750000e+02  5.506977e-01
+2.000000e+02  5.506977e-01
+2.500000e+02  5.506977e-01
+3.000000e+02  5.506977e-01
+3.500000e+02  5.506977e-01
+4.000000e+02  5.506977e-01
+4.500000e+02  5.506977e-01
+5.000000e+02  5.506977e-01
+
+# Temperature number 10 [degC].
+5.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  4.931342e-01
+2.500000e+01  4.931342e-01
+5.000000e+01  4.931342e-01
+7.500000e+01  4.931342e-01
+1.000000e+02  4.931342e-01
+1.250000e+02  4.931342e-01
+1.500000e+02  4.931342e-01
+1.750000e+02  4.931342e-01
+2.000000e+02  4.931342e-01
+2.500000e+02  4.931342e-01
+3.000000e+02  4.931342e-01
+3.500000e+02  4.931342e-01
+4.000000e+02  4.931342e-01
+4.500000e+02  4.931342e-01
+5.000000e+02  4.931342e-01
+
+# Temperature number 11 [degC].
+6.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  4.435372e-01
+2.500000e+01  4.435372e-01
+5.000000e+01  4.435372e-01
+7.500000e+01  4.435372e-01
+1.000000e+02  4.435372e-01
+1.250000e+02  4.435372e-01
+1.500000e+02  4.435372e-01
+1.750000e+02  4.435372e-01
+2.000000e+02  4.435372e-01
+2.500000e+02  4.435372e-01
+3.000000e+02  4.435372e-01
+3.500000e+02  4.435372e-01
+4.000000e+02  4.435372e-01
+4.500000e+02  4.435372e-01
+5.000000e+02  4.435372e-01
+
+# Temperature number 12 [degC].
+7.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  3.995622e-01
+2.500000e+01  3.995622e-01
+5.000000e+01  3.995622e-01
+7.500000e+01  3.995622e-01
+1.000000e+02  3.995622e-01
+1.250000e+02  3.995622e-01
+1.500000e+02  3.995622e-01
+1.750000e+02  3.995622e-01
+2.000000e+02  3.995622e-01
+2.500000e+02  3.995622e-01
+3.000000e+02  3.995622e-01
+3.500000e+02  3.995622e-01
+4.000000e+02  3.995622e-01
+4.500000e+02  3.995622e-01
+5.000000e+02  3.995622e-01
+
+# Temperature number 13 [degC].
+8.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  3.595047e-01
+2.500000e+01  3.595047e-01
+5.000000e+01  3.595047e-01
+7.500000e+01  3.595047e-01
+1.000000e+02  3.595047e-01
+1.250000e+02  3.595047e-01
+1.500000e+02  3.595047e-01
+1.750000e+02  3.595047e-01
+2.000000e+02  3.595047e-01
+2.500000e+02  3.595047e-01
+3.000000e+02  3.595047e-01
+3.500000e+02  3.595047e-01
+4.000000e+02  3.595047e-01
+4.500000e+02  3.595047e-01
+5.000000e+02  3.595047e-01
+
+# Temperature number 14 [degC].
+9.000000e+01
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  3.221565e-01
+2.500000e+01  3.221565e-01
+5.000000e+01  3.221565e-01
+7.500000e+01  3.221565e-01
+1.000000e+02  3.221565e-01
+1.250000e+02  3.221565e-01
+1.500000e+02  3.221565e-01
+1.750000e+02  3.221565e-01
+2.000000e+02  3.221565e-01
+2.500000e+02  3.221565e-01
+3.000000e+02  3.221565e-01
+3.500000e+02  3.221565e-01
+4.000000e+02  3.221565e-01
+4.500000e+02  3.221565e-01
+5.000000e+02  3.221565e-01
+
+# Temperature number 15 [degC].
+1.000000e+02
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  2.867132e-01
+2.500000e+01  2.867132e-01
+5.000000e+01  2.867132e-01
+7.500000e+01  2.867132e-01
+1.000000e+02  2.867132e-01
+1.250000e+02  2.867132e-01
+1.500000e+02  2.867132e-01
+1.750000e+02  2.867132e-01
+2.000000e+02  2.867132e-01
+2.500000e+02  2.867132e-01
+3.000000e+02  2.867132e-01
+3.500000e+02  2.867132e-01
+4.000000e+02  2.867132e-01
+4.500000e+02  2.867132e-01
+5.000000e+02  2.867132e-01
+
+# Temperature number 16 [degC].
+1.100000e+02
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  2.527107e-01
+2.500000e+01  2.527107e-01
+5.000000e+01  2.527107e-01
+7.500000e+01  2.527107e-01
+1.000000e+02  2.527107e-01
+1.250000e+02  2.527107e-01
+1.500000e+02  2.527107e-01
+1.750000e+02  2.527107e-01
+2.000000e+02  2.527107e-01
+2.500000e+02  2.527107e-01
+3.000000e+02  2.527107e-01
+3.500000e+02  2.527107e-01
+4.000000e+02  2.527107e-01
+4.500000e+02  2.527107e-01
+5.000000e+02  2.527107e-01
+
+# Temperature number 17 [degC].
+1.200000e+02
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  2.199737e-01
+2.500000e+01  2.199737e-01
+5.000000e+01  2.199737e-01
+7.500000e+01  2.199737e-01
+1.000000e+02  2.199737e-01
+1.250000e+02  2.199737e-01
+1.500000e+02  2.199737e-01
+1.750000e+02  2.199737e-01
+2.000000e+02  2.199737e-01
+2.500000e+02  2.199737e-01
+3.000000e+02  2.199737e-01
+3.500000e+02  2.199737e-01
+4.000000e+02  2.199737e-01
+4.500000e+02  2.199737e-01
+5.000000e+02  2.199737e-01
+
+# Temperature number 18 [degC].
+1.300000e+02
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.885670e-01
+2.500000e+01  1.885670e-01
+5.000000e+01  1.885670e-01
+7.500000e+01  1.885670e-01
+1.000000e+02  1.885670e-01
+1.250000e+02  1.885670e-01
+1.500000e+02  1.885670e-01
+1.750000e+02  1.885670e-01
+2.000000e+02  1.885670e-01
+2.500000e+02  1.885670e-01
+3.000000e+02  1.885670e-01
+3.500000e+02  1.885670e-01
+4.000000e+02  1.885670e-01
+4.500000e+02  1.885670e-01
+5.000000e+02  1.885670e-01
+
+# Temperature number 19 [degC].
+1.400000e+02
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.587394e-01
+2.500000e+01  1.587394e-01
+5.000000e+01  1.587394e-01
+7.500000e+01  1.587394e-01
+1.000000e+02  1.587394e-01
+1.250000e+02  1.587394e-01
+1.500000e+02  1.587394e-01
+1.750000e+02  1.587394e-01
+2.000000e+02  1.587394e-01
+2.500000e+02  1.587394e-01
+3.000000e+02  1.587394e-01
+3.500000e+02  1.587394e-01
+4.000000e+02  1.587394e-01
+4.500000e+02  1.587394e-01
+5.000000e+02  1.587394e-01
+
+# Temperature number 20 [degC].
+1.500000e+02
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.308592e-01
+2.500000e+01  1.308592e-01
+5.000000e+01  1.308592e-01
+7.500000e+01  1.308592e-01
+1.000000e+02  1.308592e-01
+1.250000e+02  1.308592e-01
+1.500000e+02  1.308592e-01
+1.750000e+02  1.308592e-01
+2.000000e+02  1.308592e-01
+2.500000e+02  1.308592e-01
+3.000000e+02  1.308592e-01
+3.500000e+02  1.308592e-01
+4.000000e+02  1.308592e-01
+4.500000e+02  1.308592e-01
+5.000000e+02  1.308592e-01
+
+# Temperature number 21 [degC].
+1.600000e+02
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  1.053418e-01
+2.500000e+01  1.053418e-01
+5.000000e+01  1.053418e-01
+7.500000e+01  1.053418e-01
+1.000000e+02  1.053418e-01
+1.250000e+02  1.053418e-01
+1.500000e+02  1.053418e-01
+1.750000e+02  1.053418e-01
+2.000000e+02  1.053418e-01
+2.500000e+02  1.053418e-01
+3.000000e+02  1.053418e-01
+3.500000e+02  1.053418e-01
+4.000000e+02  1.053418e-01
+4.500000e+02  1.053418e-01
+5.000000e+02  1.053418e-01
+
+# Temperature number 22 [degC].
+1.700000e+02
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  8.257538e-02
+2.500000e+01  8.257538e-02
+5.000000e+01  8.257538e-02
+7.500000e+01  8.257538e-02
+1.000000e+02  8.257538e-02
+1.250000e+02  8.257538e-02
+1.500000e+02  8.257538e-02
+1.750000e+02  8.257538e-02
+2.000000e+02  8.257538e-02
+2.500000e+02  8.257538e-02
+3.000000e+02  8.257538e-02
+3.500000e+02  8.257538e-02
+4.000000e+02  8.257538e-02
+4.500000e+02  8.257538e-02
+5.000000e+02  8.257538e-02
+
+# Temperature number 23 [degC].
+1.800000e+02
+# Then the number M of pressure [bar] - absolute viscosity [cP] pairs (greater than 0)
+# followed by the M pressure [bar] - absolute viscosity [cP] pairs themselves.
+# The pressure values must form a strictly monotically increasing sequence.
+15
+0.000000e+00  6.285358e-02
+2.500000e+01  6.285358e-02
+5.000000e+01  6.285358e-02
+7.500000e+01  6.285358e-02
+1.000000e+02  6.285358e-02
+1.250000e+02  6.285358e-02
+1.500000e+02  6.285358e-02
+1.750000e+02  6.285358e-02
+2.000000e+02  6.285358e-02
+2.500000e+02  6.285358e-02
+3.000000e+02  6.285358e-02
+3.500000e+02  6.285358e-02
+4.000000e+02  6.285358e-02
+4.500000e+02  6.285358e-02
+5.000000e+02  6.285358e-02

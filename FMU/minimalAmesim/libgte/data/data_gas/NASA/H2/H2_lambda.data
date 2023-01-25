@@ -1,0 +1,11 @@
+# Table format: MULTILINES
+# Gas: (di)hydrogen (H2)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0 15000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+1.005946e+00 2.795126e+02 -2.979202e+04 1.199625e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 1000.0 - 5000.0 K
+1.058245e+00 2.487537e+02 1.173691e+04 8.275870e-01         # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 5000.0 - 15000.0 K
+-2.236442e-01 -6.965044e+03 -7.777131e+04 1.318937e+01      # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

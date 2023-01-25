@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: (di)hydrogen (H2)
+# Coefficients for equation of state
+2.01588000e-03          # molar mass M [kg/mol]
+33.190000               # critical temperature Tc [K]
+1.315000e+06            # critical pressure Pc [Pa]
+-0.214000               # acentric factor w [-]
+14.000000               # minimal temperature [K]
+400.000000              # maximal temperature [K]
+0.000                   # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

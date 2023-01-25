@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: sulfuric acid (H2SO4)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+190.0 1500.0       # boundary temperatures
+# Temperature range 190.0 - 1500.0 K
+9.179098e-01 -1.389276e+02 7.878033e-02 -5.006813e-01       # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

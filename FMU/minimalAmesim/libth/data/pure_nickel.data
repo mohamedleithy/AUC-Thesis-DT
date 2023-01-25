@@ -1,0 +1,13 @@
+# Table format: 0D
+2.700e+001 Reference temperature                                    [degC]
+8.900e+003 Reference density                                        [kg/m**3]
+4.440e+002 Reference specific heat                                  [J/kg/K]
+9.070e+001 Reference thermal conductivity                           [W/m/K]
+-1.000e+002 Minimum temperature allowed                              [degC]
+1.455e+003 Maximum temperature allowed                              [degC]
+0.000e+000 Temperature coefficient for density                             
+0.000e+000 Temperature squared coefficient for density                     
+9.127e-004 Temperature coefficient for specific heat                       
+-6.511e-007 Temperature squared coefficient for specific heat               
+-1.172e-003 Temperature coefficient for thermal conductivity                
+1.127e-006 Temperature squared coefficient for thermal conductivity        

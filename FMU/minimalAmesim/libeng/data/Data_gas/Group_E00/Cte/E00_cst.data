@@ -1,0 +1,7 @@
+# Table format: 0D
+ 300	/* Gas properties degree used for the gas */
+ 2208.56913301927	/* Constant pressure specific heat Cp [J/kg/K]*/
+ 7.54762819925028E-06	/* Absolute viscosity [kg/m/s] */
+ .025208924875002	/* Thermal conductivity [W/m/K] */
+ 87.4707088411522	/* Perfect gas constant r [J/kg/K] */
+-1.06487E+05	/* Enthalpy of formation [J/mol] */

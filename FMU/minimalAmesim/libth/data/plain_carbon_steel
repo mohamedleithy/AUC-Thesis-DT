@@ -1,0 +1,14 @@
+# solid name
+plain carbon steel (Mn <= 1%, Si<=0.1%)
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+1540.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+27             7854            434            60.5
+127            7854            487            56.7
+327	       7854            559            48.0
+527            7854            685            39.2
+727            7854           1169            30.0

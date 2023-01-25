@@ -1,0 +1,16 @@
+# solid name
+pure aluminum
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+660.0
+#  T(degC)  rho(kg/m**3)       cp(J/kg/degC)   lam(W/m/degC)
+-73          2702               798             237
+0            2702               853             238
+27           2702               903             238
+127          2702               949             239
+327          2702              1033             231
+527          2702              1146             218
+627          2702              1203             211

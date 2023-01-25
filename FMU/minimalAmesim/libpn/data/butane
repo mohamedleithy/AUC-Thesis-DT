@@ -1,0 +1,19 @@
+# gas name
+butane C4H10
+# reference temperature (in K)
+293.15
+# reference pressure (absolute) (in Pa)
+1.0e5
+# minimum temperature (in K)
+280.0
+# maximum temperature (in K)
+500.0
+# density at ref. pressure and ref. temperature (in kg/m3)
+2.4626257
+#	T(K)		cp(J/kg/K)		mu(kg/m/s)		lam(W/m/K)
+2.8000E+02		1.6673E+03		6.9451E-06		1.4421E-02
+3.0000E+02		1.7408E+03		7.4522E-06		1.6421E-02
+3.5000E+02		1.9438E+03		8.6907E-06		2.2028E-02
+4.0000E+02		2.1548E+03		9.8987E-06		2.8416E-02
+4.5000E+02		2.3615E+03		1.1083E-05		3.5447E-02
+5.0000E+02		2.5582E+03		1.2248E-05		4.2982E-02

@@ -1,0 +1,11 @@
+# Table format: MULTILINES
+# Gas: oxygen (O2)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0 15000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+7.722917e-01 6.846321e+00 -5.893338e+03 1.221037e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 1000.0 - 5000.0 K
+9.091735e-01 2.912418e+02 -7.965017e+04 6.485163e-02        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 5000.0 - 15000.0 K
+-1.121826e+00 -1.928638e+04 2.329501e+07 2.034204e+01       # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

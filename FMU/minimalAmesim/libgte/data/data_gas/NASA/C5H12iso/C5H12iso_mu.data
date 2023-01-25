@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: isopentane (C5H12)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+300.0 510.0       # boundary temperatures
+# Temperature range 300.0 - 510.0 K
+9.950240e-01 9.583589e-01 9.998134e-01 -1.383215e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

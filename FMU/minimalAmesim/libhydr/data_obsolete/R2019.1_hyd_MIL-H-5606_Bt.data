@@ -1,0 +1,326 @@
+# Table format: MULTILINES
+#   MIL-H-5606
+#   Pressure operating range: 0 ... 600 [bar]
+#   Temperature operating range: -50 ... 200 [°C]
+#__________________________________________________________________
+#This file shows how to organise data to define
+#properties using table in mode 1.
+#
+#In mode 1 density and bulk modulus are defined from a reference
+#density and a table of bulk modulus values.
+#
+#Note all lines started with a '#' are comments.
+#
+#First we have the mode.
+1
+#Then the number of temperature values. This must be greater
+#than zero. If it is one, it is assumed that density and bulk 
+#modulus do not vary with temperature.
+9
+#Now the ref. density in kg/m**3 and pressure in bar gauge.
+907.88      0.0
+#Next the first temperature in Celsius.
+-50.0
+#Then the number of pressure-bulk modulus pairs N (greater than 0)
+#followed by N pressure-bulk modulus pairs. The pressure values
+#must form a strictly monotonically increasing sequence.
+#The pressure is in bar gauge and the bulk modulus also in bar.
+5
+#The first bulk modulus table.
+0.0      20744.09
+137.9    22297.61
+275.8    23796.58
+413.7    25308.06
+551.6    26799.72
+#
+#your temperature number 2.
+#The ref. density and pressure.
+886.148     0.0
+#The temperature is:
+-20.0
+#The number of pressures.
+5
+#The bulk modulus table for this temperature is:
+0.0      17704.97
+137.9    19235.47
+275.8    20754.04
+413.7    22261.61
+551.6    23759.0
+#
+#your temperature number 3
+#The ref. density and pressure.
+844.4286    0.0
+#The temperature is:
+40.0
+#The number of pressures.
+5
+#The bulk modulus table for this temperature is:
+0.0      12689.19
+137.9    14217.29
+275.8    15729.26
+413.7    17226.8
+551.6    18711.27
+#
+#your temperature number 4
+#The ref. density and pressure.
+828.196     0.0
+#The temperature is:
+60.0
+#The number of pressures.
+5
+#The bulk modulus table for this temperature is:
+0.0      11299.75
+137.9    12826.83
+275.8    14336.04
+413.7    15829.44
+551.6    17308.66
+#
+#your temperature number 5
+#The ref. density and pressure.
+813.708     0.0
+#The temperature is:
+80.0
+#The number of pressures.
+5
+#The bulk modulus table for this temperature is:
+0.0      10036.89
+137.9    11562.8
+275.8    13068.91
+413.7    14557.7
+551.6    16031.12
+#
+#your temperature number 6
+#The ref. density and pressure.
+799.2857    0.0
+#The temperature is:
+100.0
+#The number of pressures.
+5
+#The bulk modulus table for this temperature is:
+0.0      8891.782
+137.9    10416.36
+275.8    11918.98
+413.7    13402.66
+551.6    14869.68
+#
+#your temperature number 7
+#The ref. density and pressure.
+784.732     0.0
+#The temperature is:
+120.0
+#The number of pressures.
+5
+#The bulk modulus table for this temperature is:
+0.0      7855.623
+137.9    9378.69
+275.8    10877.38
+413.7    12355.36
+551.6    13815.35
+#
+#your temperature number 8
+#The ref. density and pressure.
+770.244     0.0
+#The temperature is:
+140.0
+#The number of pressures.
+5
+#The bulk modulus table for this temperature is:
+0.0      6919.604
+137.9    8440.939
+275.8    9935.208
+413.7    11406.87
+551.6    12859.12
+#your temperature number 9
+#The ref. density and pressure.
+724.9063     0.0
+#The temperature is:
+200.0
+#The number of pressures.
+5
+#The bulk modulus table for this temperature is:
+0        4624.294
+137.9    6137.617
+275.8    7613.85
+413.7    9060.914
+551.6    10483.93
+#
+#
+#
+#The definition of bulk modulus and density is now complete.
+#Next we define the kinematic viscosity in mode 2.
+#In mode 2 the kinematic viscosity is defined from tables of
+#kinematic viscosities.
+#Mode for viscosity.
+2
+#Then the number of temperature values. This must be greater
+#than zero. If it is one, it is assumed that kinematic viscosity 
+#does not vary with temperature.
+13
+#Temperature point number 1:
+-45.6
+#Then the number of pressure-kinematic viscosity pairs M
+#(greater than 0) followed by M pressure-kinematic viscosity pairs.
+#The pressure values must form a strictly monotonically increasing 
+#sequence. The pressure is in bar gauge and the kinematic viscosity
+#in cSt.
+7
+#The first kinematic viscosity table.
+0.0         707.78033
+100.59346   1047.8445
+199.77875   1520.5527
+301.25485   2121.5525
+400.44012   3020.726
+498.517     4385.704
+598.987     6120.73
+#
+#Temperature point number: 2
+-30.0
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         221.4427
+100.59346   301.3336
+199.77875   410.7648
+301.25485   560.0437
+400.44012   762.5336
+498.517     1035.218
+598.987     1399.164
+#
+#Temperature point number: 3
+-17.8
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         94.23194
+100.59346   123.97316
+199.77875   159.82764
+301.25485   210.1099
+400.44012   276.35312
+498.517     370.8309
+598.987     468.4841
+#
+#Temperature point number: 4
+0.0
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         44.65635
+100.59346   55.48817
+199.77875   70.09179
+301.25485   89.42532
+400.44012   114.4883
+498.517     146.1345
+598.987     184.7656
+#
+#Temperature point number: 5
+10.0
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         29.955912
+100.59346   37.11365
+199.77875   46.00533
+301.25485   58.13552
+400.44012   72.06361
+498.517     92.95368
+598.987     112.910805
+#
+#Temperature point number: 6
+25.0
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         18.23978
+100.59346   21.77837
+199.77875   26.48263
+301.25485   32.56793
+400.44012   40.22368
+498.517     49.54611
+598.987     60.44363
+#
+#Temperature point number: 7
+37.8
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         14.133354
+100.59346   16.510983
+199.77875   19.663445
+301.25485   24.368141
+400.44012   29.615194
+498.517     36.710392
+598.987     42.875095
+#
+#Temperature point number: 8
+50.0
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         10.04479
+100.59346   11.78485
+199.77875   14.02822
+301.25485   16.84845
+400.44012   20.30438
+498.517     24.41698
+598.987     29.13885
+#
+#Temperature point number: 9
+65.6
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         7.966146
+100.59346   9.494451
+199.77875   11.080286
+301.25485   12.94763
+400.44012   15.731525
+498.517     18.744799
+598.987     22.329504
+#
+#Temperature point number: 10
+93.3
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         5.259074
+100.59346   6.2680273
+199.77875   7.320604
+301.25485   8.54774
+400.44012   9.985711
+498.517     11.668589
+598.987     13.621066
+#
+#Temperature point number: 11
+121.1
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         3.9089837
+100.59346   4.3918786
+199.77875   5.128079
+301.25485   6.1087594
+400.44012   7.136425
+498.517     8.339116
+598.987     9.731978
+#
+#Temperature point number: 12
+148.9
+#The number of pressures.
+7
+#The kinematic viscosity table at this temperature:
+0.0         2.9657571
+100.59346   3.330418
+199.77875   3.88669
+301.25485   4.4539833
+400.44012   5.203269
+498.517     6.077043
+598.987     6.9586678
+#
+#Temperature point number: 13
+180.0
+#The number of pressures.
+2
+#The kinematic viscosity table at this temperature:
+0.0         2.2316475
+551.0       4.855188
+#

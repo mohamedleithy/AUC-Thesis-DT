@@ -1,0 +1,5 @@
+# Table format: 1D
+# table_unit = barA
+# axis1_unit = mm
+0.0		3
+0.5		1

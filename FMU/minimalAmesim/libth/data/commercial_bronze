@@ -1,0 +1,13 @@
+# solid name
+commercial bronze (90% Cu, 10% Al)
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+1020.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+-73            8800           785            42
+27             8800           420            52
+127            8800           460            52
+327	       8800           545            59

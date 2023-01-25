@@ -1,0 +1,36 @@
+# fluid name
+ethylen glycol 50% water 50% mixture
+# definition temperature (in degC)
+20.0
+# minimum temperature (in degC)
+-40.0
+# maximum temperature (in degC)
+110.0
+# definition pressure (in PaA)
+1e5
+# minimum pressure (in PaA)
+0.0
+# maximum pressure (in PaA)
+500e5
+# pressure coefficient for specific volume
+-1.25e-09
+# pressure * temperature coefficient for specific volume.
+0.0
+# squared pressure coefficient for specific volume..
+0.0
+# pressure coefficient for absolute viscosity
+0.0
+#   T(degC)     rho(kg/m**3)        cp(J/kg/degC)       lam(W/m/degC)   nu(m**2/s)
+ -20	        1089.36	            3030.0	            0.4258	        0.00002315
+-10	            1084.57	            3110.0	            0.4232	        0.00001476
+0	            1079.51	            3180.0	            0.4207	        0.0000095
+10	            1074.17	            3250.0	            0.4181	        0.00000626
+20	            1068.57	            3310.0	            0.4156	        0.00000427
+30	            1062.68	            3370.0              0.413	        0.00000303
+40	            1056.52	            3420.0	            0.4105	        0.00000224
+50	            1050.09	            3470.0	            0.4079	        0.00000171
+60	            1043.39	            3520.0	            0.4054	        0.00000136
+70	            1036.41	            3560.0	            0.4028	        0.00000112
+80	            1029.15	            3590.0	            0.4003	        0.00000097
+90	            1021.62	            3620.0	            0.3977	        0.00000087
+100	            1013.82	            3650.0              0.3952	        0.0000008

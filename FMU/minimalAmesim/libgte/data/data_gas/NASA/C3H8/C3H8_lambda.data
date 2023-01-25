@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: propane (C3H8)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+230.0 660.0       # boundary temperatures
+# Temperature range 230.0 - 660.0 K
+1.805370e+00 8.941333e-01 9.995296e-01 -5.080480e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

@@ -1,0 +1,14 @@
+# solid name
+stainless steel AISI302
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+1400.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+27             8055            480            15.1
+127            8055            512            17.3
+327	       8055            559            20.0
+527            8055            585            22.8
+727            8055            606            25.4

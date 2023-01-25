@@ -1,0 +1,15 @@
+% Date    : Wed Feb 13 15:04:23 2013
+%
+% Parameters for submodel "ENG_GASOLINE_UNLEADED"
+% used in the system "C:/Users/tsangui/Documents/6_Trainning/AE_Training/03_Combustion_Tools/02_CFM/Engine_GDI_Turbocharged_Tool".
+%
+% The fields in each line is : title units dimension value
+%
+  "mixture index"                                  "#noUNITS#"  "1" "-1"
+  "index of liquid fuel"                           "#noUNITS#"  "1" "-1"
+  "liquid fuel properties"                         "#noUNITS#"  "2" "-1"
+  "gas properties"                                 "#noUNITS#"  "4" "-1"
+  "fuel heating value"                             "kJ/kg"      "4.43100000000000e+004" "-1"
+%
+% End of file
+%

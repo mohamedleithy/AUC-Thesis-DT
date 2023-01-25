@@ -1,0 +1,22 @@
+#architecture:	3
+#orientation:	Vertical
+#height:	400
+#width:	300
+#int_fluid:	Air
+#int_pressure:	1.5
+#ext_fluid:	Air
+#ext_pressure:	1.013
+Text	Tint	Vext	dmint	P	
+degC	degC	m/s	kg/s	kW	
+30	150	2.00	0.05	4.30
+30	150	2.00	0.1	5.90
+30	150	2.00	0.15	6.8
+30	150	2.00	0.2	7.3
+30	150	4.00	0.05	5.2
+30	150	4.00	0.1	8.30
+30	150	4.00	0.15	9.5
+30	150	4.00	0.2	10.1
+30	150	6.00	0.05	5.70
+30	150	6.00	0.1	9.10
+30	150	6.00	0.15	11.50
+30	150	6.00	0.2	12.80

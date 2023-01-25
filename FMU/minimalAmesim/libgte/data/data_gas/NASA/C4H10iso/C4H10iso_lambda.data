@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: isobutane (C4H10)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+262.0 580.0       # boundary temperatures
+# Temperature range 262.0 - 580.0 K
+1.821930e+00 8.939945e-01 9.995288e-01 -5.254529e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

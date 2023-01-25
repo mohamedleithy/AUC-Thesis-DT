@@ -1,0 +1,9 @@
+# Table format: MULTILINES
+# Gas: methane (CH4)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+5.764362e-01 -9.370408e+01 8.699239e+02 1.733335e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu
+# Temperature range 1000.0 - 5000.0 K
+6.640004e-01 1.086084e+01 -7.630784e+03 1.032398e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

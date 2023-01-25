@@ -1,0 +1,15 @@
+# Table format: 2D
+# table_unit = rev/min
+# axis1_unit = null
+# axis2_unit = null
+# First column: engine speed for disengaging lockup clutch [rev/min]
+# Second column: engine speed for engaging lockup clutch [rev/min]
+# Each row represents a load value [%]
+# 
+2
+3
+    0                         1 
+    0.00000000000000e+000     5.00000000000000e+001     1.00000000000000e+002 
+    1.50000000000000e+003     3.00000000000000e+003 
+    1.60000000000000e+003     3.50000000000000e+003 
+    1.70000000000000e+003     4.00000000000000e+003 

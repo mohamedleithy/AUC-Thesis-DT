@@ -1,0 +1,318 @@
+# Table format: MULTILINES
+#   MIL-H-8446 with adiabatic bulk
+#	Pressure operating range: 0 ... 500 [bar]
+#	Temperature operating range: -50 ... 100 [°C]
+#__________________________________________________________________
+#This file shows how to organise data to define
+#properties using table in mode 1.
+#
+#In mode 1 density and bulk modulus are defined from a reference
+#density and a table of bulk modulus values.
+#
+#Note all lines started with a '#' are comments.
+#
+#First we have the mode.
+1 
+#Then the number of temperature values. This must be greater
+#than zero. If it is one, it is assumed that density and bulk 
+#modulus do not vary with temperature.
+10
+#
+#
+#
+#Now the ref. density in kg/m**3 and pressure in bar gauge.
+1.0286E+03	0.000000e+000
+#Next the first temperature in Celsius.
+-100.000000
+#Then the number of pressure-bulk modulus pairs N (greater than 0)
+#followed by N pressure-bulk modulus pairs. The pressure values
+#must form a strictly monotically increasing sequence.
+#The pressure is in bar gauge and the bulk modulus also in bar. 
+7
+#The first bulk modulus table.
+0.0000E+00	2.2132E+04
+1.0000E+02	2.4898E+04
+2.0000E+02	2.8372E+04
+3.0000E+02	3.2916E+04
+4.0000E+02	3.9093E+04
+5.0000E+02	4.8057E+04
+6.0000E+02	2.3302E+03
+#
+#
+#
+#your temperature number 2.
+#The ref. density and pressure.
+9.9576E+02  0.000000e+000
+#The temperature is :
+-50.000000
+#The number of pressures.
+7
+#The bulk modulus table for this temperature is :.
+0.0000E+00	1.8538E+04
+1.0000E+02	2.0211E+04
+2.0000E+02	2.2201E+04
+3.0000E+02	2.4612E+04
+4.0000E+02	2.7607E+04
+5.0000E+02	3.1419E+04
+6.0000E+02	3.6450E+04
+#
+#
+#
+#your temperature number 7.
+#The ref. density and pressure.
+9.6099E+02	0.000000e+000
+#The temperature is :
+0.000000
+#The number of pressures.
+7
+#The bulk modulus table for this temperature is :.
+0.0000E+00	1.5201E+04
+1.0000E+02	1.6313E+04
+2.0000E+02	1.7610E+04
+3.0000E+02	1.9145E+04
+4.0000E+02	2.0981E+04
+5.0000E+02	2.3237E+04
+6.0000E+02	2.6054E+04
+#
+#
+#
+#your temperature number 12.
+#The ref. density and pressure.
+9.2494E+02	0.000000e+000
+#The temperature is :
+50.000000
+#The number of pressures.
+7
+#The bulk modulus table for this temperature is :.
+0.0000E+00	1.2463E+04
+1.0000E+02	1.3294E+04
+2.0000E+02	1.4268E+04
+3.0000E+02	1.5408E+04
+4.0000E+02	1.6776E+04
+5.0000E+02	1.8429E+04
+6.0000E+02	2.0486E+04
+#
+#
+#
+#your temperature number 17.
+#The ref. density and pressure.
+8.8815E+02	0.000000e+000
+#The temperature is :
+100.000000
+#The number of pressures.
+7
+#The bulk modulus table for this temperature is :.
+0.0000E+00	1.0323E+04
+1.0000E+02	1.1009E+04
+2.0000E+02	1.1814E+04
+3.0000E+02	1.2768E+04
+4.0000E+02	1.3915E+04
+5.0000E+02	1.5313E+04
+6.0000E+02	1.7060E+04
+#
+#
+#
+#your temperature number 19.
+#The ref. density and pressure.
+8.5110E+02	0.000000e+000
+#The temperature is :
+150.000000
+#The number of pressures.
+7
+#The bulk modulus table for this temperature is :.
+0.0000E+00	8.6770E+03
+1.0000E+02	9.2797E+03
+2.0000E+02	9.9917E+03
+3.0000E+02	1.0843E+04
+4.0000E+02	1.1876E+04
+5.0000E+02	1.3149E+04
+6.0000E+02	1.4756E+04
+#
+#
+#
+#your temperature number 20.
+#The ref. density and pressure.
+8.1420E+02	0.000000e+000
+#The temperature is :
+200.000000
+#The number of pressures.
+7
+#The bulk modulus table for this temperature is :.
+0.0000E+00	7.4089E+03
+1.0000E+02	7.9587E+03
+2.0000E+02	8.6115E+03
+3.0000E+02	9.4009E+03
+4.0000E+02	1.0366E+04
+5.0000E+02	1.1572E+04
+6.0000E+02	1.3122E+04
+#
+#
+#
+#your temperature number 21.
+#The ref. density and pressure.
+7.7781E+02	0.000000e+000
+#The temperature is :
+250.000000
+#The number of pressures.
+7
+#The bulk modulus table for this temperature is :.
+0.0000E+00	6.4238E+03
+1.0000E+02	6.9354E+03
+2.0000E+02	7.5483E+03
+3.0000E+02	8.2932E+03
+4.0000E+02	9.2152E+03
+5.0000E+02	1.0385E+04
+6.0000E+02	1.1911E+04
+#
+#
+#
+#your temperature number 22.
+#The ref. density and pressure.
+7.4219E+02	0.000000e+000
+#The temperature is :
+300.000000
+#The number of pressures.
+7
+#The bulk modulus table for this temperature is :.
+0.0000E+00	5.6487E+03
+1.0000E+02	6.1313E+03
+2.0000E+02	6.7130E+03
+3.0000E+02	7.4254E+03
+4.0000E+02	8.3160E+03
+5.0000E+02	9.4601E+03
+6.0000E+02	1.0984E+04
+#
+#
+#
+#your temperature number 23.
+#The ref. density and pressure.
+7.0756E+02	0.000000e+000
+#The temperature is :
+350.000000
+#The number of pressures.
+7
+#The bulk modulus table for this temperature is :.
+0.0000E+00	5.0301E+03
+1.0000E+02	5.4896E+03
+2.0000E+02	6.0460E+03
+3.0000E+02	6.7332E+03
+4.0000E+02	7.6000E+03
+5.0000E+02	8.7295E+03
+6.0000E+02	1.0261E+04
+#
+#
+#
+#Next we define the absolute viscosity in mode 1.
+#In mode 1 the absolute viscosity is defined from tables of
+#absolute viscosities.
+#Mode for viscosity.
+1
+#Then the number of temperature values. This must be greater
+#than zero. If it is one, it is assumed that absolute viscosity 
+#does not vary with temperature.
+8
+#Temperature point number 1:.
+-50.0
+#Then the number of pressure-absolute viscosity pairs M
+#(greater than 0) followed by M pressure-absolute viscosity pairs.
+#The pressure values must form a strictly monotically increasing 
+#sequence. The pressure is in bar gauge and the absolute viscosity
+#in cP. 
+7
+#The first absolute viscosity table.
+100	1433.741
+200	1458.955
+300	1626.475
+400	1929.772
+500	2367.854
+600	2918.864
+690	3453.3
+#Temperature point number : 2.
+-17.8
+#The number of pressures.
+8
+#The absolute viscosity table at this temperature :.
+0	149.1588685
+100	172.3824371
+200	203.8192075
+300	235.7127464
+400	278.5372574
+500	328.6098461
+600	378.9513044
+690	438.6401687
+#Temperature point number : 3.
+10.0
+#The number of pressures.
+8
+#The absolute viscosity table at this temperature :.
+0	39.48543641
+100	44.74026133
+200	50.69479466
+300	58.67030507
+400	67.94092832
+500	75.51196446
+600	85.37492917
+690	96.65941585
+#Temperature point number : 4.
+37.8
+#The number of pressures.
+8
+#The absolute viscosity table at this temperature :.
+0	15.79699783
+100	17.94577174
+200	20.31788894
+300	23.57604554
+400	26.75685573
+500	29.71954021
+600	34.31984618
+690	38.14956672
+#Temperature point number : 5.
+65.6
+#The number of pressures.
+8
+#The absolute viscosity table at this temperature :.
+0	8.460875151
+100	9.604802643
+200	10.90295231
+300	12.38108292
+400	14.38616178
+500	16.32119358
+600	18.47647661
+690	20.51760376
+#Temperature point number : 6.
+93.3
+#The number of pressures.
+8
+#The absolute viscosity table at this temperature :.
+0	5.121243508
+100	5.819604531
+200	6.623935908
+300	7.52900118
+400	8.740646252
+500	9.925603973
+600	11.4988933
+690	12.77694655
+#Temperature point number : 7.
+148.9
+#The number of pressures.
+8
+#The absolute viscosity table at this temperature :.
+0	2.50870461
+100	2.862005279
+200	3.192509661
+300	3.64137081
+400	4.148719537
+500	4.815846218
+600	5.361261377
+690	5.964202443
+#Temperature point number : 8.
+204.4
+#The number of pressures.
+6
+#The absolute viscosity table at this temperature :.
+200	1.806083387
+300	2.030037316
+400	2.316567899
+500	2.639215654
+600	2.942154594
+690	3.282091954

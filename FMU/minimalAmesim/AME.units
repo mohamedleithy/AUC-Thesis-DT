@@ -1,0 +1,582 @@
+#dimensionless [0,0,0,0,0,0,0]
+null
+#density [-3,0,1,0,0,0,0]
+kg/m**3
+g/dm**3 -> kg/m**3 *1.0
+g/L -> kg/m**3 *1.0
+tonne/m**3 -> kg/m**3 *1.0e3
+lb/ft**3 -> kg/m**3 *4.882427636383050*3.280839895
+lb/in**3 -> kg/m**3 *7.030695796391593e2*39.37007874
+lb/yd**3 -> kg/m**3 *5.9327641875e-1
+oz/in**3 -> kg/m**3 *1.7299940371e3
+#density of heat flow rate [0,-3,1,0,0,0,0]
+W/m**2
+Btu/ft**2/h -> W/m**2 *3.1545908867280700
+Btu/ft**2/min -> W/m**2 *1.8927545320368400e2
+Btu/ft**2/s -> W/m**2 *1.135652719222100e4
+Btu/in**2/s -> W/m**2 *1.6353399156798300e6
+cal/cm**2/min -> W/m**2 *6.97800e2
+cal/cm**2/s -> W/m**2 *4.186800e4
+met -> W/m**2 *5.81500e1
+#electrical current [0,0,0,0,1,0,0]
+A
+mA -> A *1.0e-3
+uA -> A *1.0e-6
+kA -> A *1.0e3
+#electrical RMS current [0,0,0,0,1,0,0]
+Arms
+mArms -> Arms *1.0e-3
+uArms -> Arms *1.0e-6
+kArms -> Arms *1.0e3
+#electrical resistance [2,-3,1,0,-2,0,0]
+Ohm
+mOhm -> Ohm *1.0e-3
+kOhm -> Ohm *1.0e3
+MOhm -> Ohm *1.0e6
+#electrical conductance [-2,3,-1,0,2,0,0]
+S
+mS -> S *1.0e-3
+kS -> S *1.0e3
+MS -> S *1.0e6
+#electrical voltage [2,-3,1,0,-1,0,0]
+V
+mV -> V *1.0e-3
+uV -> V *1.0e-6
+kV -> V *1.0e3
+MV -> V *1.0e6
+#electrical RMS voltage [2,-3,1,0,-1,0,0]
+Vrms
+mVrms -> Vrms *1.0e-3
+uVrms -> Vrms *1.0e-6
+kVrms -> Vrms *1.0e3
+MVrms -> Vrms *1.0e6
+#electrical apparent power [2,-3,1,0,0,0,0]
+VA
+mVA -> VA *1.0e-3
+uVA -> VA *1.0e-6
+kVA -> VA *1.0e3
+MVA -> VA *1.0e6
+#electrical capacitance [-2,4,-1,0,2,0,0]
+F
+mF -> F *1.0e-3
+uF -> F *1.0e-6
+nF -> F *1.0e-9
+pF -> F *1.0e-12
+#electrical inductance [2,-2,1,0,-2,0,0]
+H
+mH -> H *1.0e-3
+uH -> H *1.0e-6
+Vs/A -> H *1.0
+#electrical charge [0,1,0,0,1,0,0]
+C
+As -> C *1.0
+Ah -> C *3600.0
+#electrical conductivity [-3,3,-1,0,2,0,0]
+S/m
+mS/m -> S/m *1.0e-3
+kS/m -> S/m *1.0e3
+S/cm -> S/m *1.0e2
+#current density [-2,0,0,0,1,0,0]
+A/m**2
+mA/m**2 -> A/m**2 *1.0e-3
+uA/m**2 -> A/m**2 *1.0e-6
+kA/m**2 -> A/m**2 *1.0e3
+A/dm**2 -> A/m**2 *1.0e2
+A/cm**2 -> A/m**2 *1.0e4
+A/mm**2 -> A/m**2 *1.0e6
+mA/cm**2 -> A/m**2 *1.0e1
+#area specific resistance [4,-3,1,0,-2,0,0]
+Ohmm**2
+Ohmcm**2 -> Ohmm**2 *1.0e-4
+mOhmm**2 -> Ohmm**2 *1.0e-3
+kOhmm**2 -> Ohmm**2 *1.0e3
+MOhmm**2 -> Ohmm**2 *1.0e6
+#electromotive force coefficient [2,-2,1,0,-1,0,0]
+V*s/rad
+V/Hz -> V*s/rad /2.0/M_PI
+V*min/rev -> V*s/rad *30.0/M_PI
+V/rpm -> V*s/rad *30.0/M_PI
+#RMS electromotive force coefficient [2,-2,1,0,-1,0,0]
+Vrms*s/rad
+Vrms/Hz -> Vrms*s/rad /2.0/M_PI
+Vrms*min/rev -> Vrms*s/rad *30.0/M_PI
+Vrms/rpm -> Vrms*s/rad *30.0/M_PI
+#fluid absolute viscosity [-1,-1,1,0,0,0,0]
+Ns/m**2
+cP -> Ns/m**2 *1.0e-3
+P -> Ns/m**2 *1.0e-1
+kg/m/s -> Ns/m**2 *1.0
+Pas -> Ns/m**2 *1.0
+lb/ft/s -> Ns/m**2 *1.4881639
+reyn -> Ns/m**2 *6.89475729e3
+kg/m/h -> Ns/m**2 *2.7777777778e-4
+#fluid bulk modulus (see hyd/pneu pressure)
+#fluid kinematic viscosity [2,-1,0,0,0,0,0]
+m**2/s
+mm**2/s -> m**2/s *1.0e-6
+cm**2/s -> m**2/s *1.0e-4
+St -> m**2/s *1.0e-4
+cSt -> m**2/s *1.0e-6
+ft**2/s -> m**2/s *9.290304e-2
+in**2/s -> m**2/s *6.4516e-4
+m**2/h -> m**2/s /3600.0
+#frequency [0,-1,0,0,0,0,0]
+rad/s
+Hz -> rad/s *2.0*M_PI
+kHz -> rad/s *2.0e3*M_PI
+MHz -> rad/s *2.0e6*M_PI
+rad/min -> rad/s /60.0
+rev/min -> rad/s *M_PI/30.0
+rpm -> rad/s *M_PI/30.0
+degree/s -> rad/s *2*M_PI/360.0
+degree/min -> rad/s *2*M_PI/360.0/60.0
+#geometrical angle [0,0,0,0,0,0,0]
+rad
+degree -> rad *M_PI/180.0
+rev -> rad *2*M_PI
+grad -> rad *1.5707963268e-2
+arcmin -> rad *2.9088820867e-4
+arcsec -> rad *4.8481368111e-6
+#geometrical area [2,0,0,0,0,0,0]
+m**2
+mm**2 -> m**2 *1.0e-6
+cm**2 -> m**2 *1.0e-4
+dm**2 -> m**2 *1.0e-2
+km**2 -> m**2 *1.0e6
+ft**2 -> m**2 *9.290304e-2
+in**2 -> m**2 *6.4516e-4
+yd**2 -> m**2 *8.3612736e-1
+mi**2 -> m**2 *2.5899881103e6
+ha -> m**2 *1e4
+#geometrical distance [1,0,0,0,0,0,0]
+m
+um -> m *1.0e-6
+mm -> m *1.0e-3
+cm -> m *1.0e-2
+dm -> m *1.0e-1
+km -> m *1.0e3
+ft -> m *3.048e-1
+in -> m *2.54e-2
+uin -> m *2.54e-8
+yd -> m *9.144e-1
+mi -> m *1.609344e3
+NM -> m *1852.0
+nmi -> m *1852.0
+#geometrical volume [3,0,0,0,0,0,0]
+m**3
+mm**3 -> m**3 *1.0e-9
+cm**3 -> m**3 *1.0e-6
+dm**3 -> m**3 *1.0e-3
+cc -> m**3 *1.0e-6
+L -> m**3 *1.0e-3
+mL -> m**3 *1.0e-6
+ft**3 -> m**3 *2.8316846592e-2
+in**3 -> m**3 *1.6387064e-5
+yd**3 -> m**3 *7.64554857984e-1
+USgal -> m**3 *3.785411784e-3
+UKgal -> m**3 *4.54609e-3
+USpt -> m**3 *4.73176473e-4
+UKpt -> m**3 *5.6826125e-4
+USfloz -> m**3 *2.9573529563e-5
+UKfloz -> m**3 *2.84130625e-5
+#fin geometrical density [-1,0,0,0,0,0,0]
+fins/m
+fins/in -> fins/m /2.54e-2
+#enthalpy flow rate and power [2,-3,1,0,0,0,0]
+W
+J/s -> W *1.0
+J/h -> W /3600.0
+kW -> W *1.0e3
+MW -> W *1.0e6
+Nm/s -> W *1.0
+hp -> W *7.4569987e2
+kcal/h -> W *1.163
+kcal/s -> W *4.1868e3
+Btu/h -> W *2.9307107e-1
+Btu/min -> W *1.75842642e1
+Btu/s -> W *1.055055852e3
+ft*lbf/s -> W *1.3558179
+ft*lbf/min -> W *2.2596965e-2
+ft*lbf/h -> W *3.7661608333e-4
+#heat capacity [2,-2,1,-1,0,0,0]
+J/K
+J/degC -> J/K *1.0
+kJ/K -> J/K *1.0e3
+kJ/degC -> J/K *1.0e3
+mJ/K -> J/K *1.0e-3
+mJ/degC -> J/K *1.0e-3
+Btu/degF -> J/K *1.89910062e3
+#hyd/pneu leakage coefficient & sonic conductance [4,1,-1,0,0,0,0]
+m**3/s/Pa
+m**4/s/kg -> m**3/s/Pa *1.0
+m**3/s/bar -> m**3/s/Pa *1e-5
+m**3/s/MPa -> m**3/s/Pa *1e-6
+L/min/bar -> m**3/s/Pa /60.0e8
+L/min/Pa -> m**3/s/Pa /60.0e3
+L/min/MPa -> m**3/s/Pa /60.0e9
+L/s/barA -> m**3/s/Pa /1.0e8
+L/s/bar -> m**3/s/Pa /1.0e8
+L/s/Pa -> m**3/s/Pa /1.0e3
+L/s/MPa -> m**3/s/Pa /1.0e9
+#hyd/pneu mass flow rate [0,-1,1,0,0,0,0]
+kg/s
+kg/h -> kg/s /3600.0
+kg/hr -> kg/s /3600.0
+kg/min -> kg/s /60.0
+g/s -> kg/s *1.0e-3
+g/ms -> kg/s *1.0
+g/min -> kg/s /6.0e4
+g/h -> kg/s /3.6e6
+mg/s -> kg/s *1.0e-6
+lb/h -> kg/s *1.2599788055555556e-4
+lb/hr -> kg/s *1.2599788055555556e-4
+lb/min -> kg/s *7.5598728333333333e-3
+lb/s -> kg/s *4.5359237e-1
+#hyd/pneu pressure & bulk modulus [-1,-2,1,0,0,0,0]
+Pa -> PaA *1+1.013e5 => barA
+<bar> -> Pa *1.0e5
+mbar -> Pa *1.0e2
+kbar -> Pa *1.0e8
+hPa -> Pa *1.0e2
+kPa -> Pa *1.0e3
+MPa -> Pa *1.0e6
+N/m/m -> Pa *1.0
+N/m**2 -> Pa *1.0
+N/mm/mm -> Pa *1.0e6
+N/mm**2 -> Pa *1.0e6
+psi -> Pa *6.894757293168361e3
+psig -> Pa *6.894757293168361e3
+lbf/in**2 -> Pa *6.894757293168361e3
+lbf/ft**2 -> Pa *4.788025898033583e1
+mmHg -> Pa *1.333224e2
+inHg -> Pa *3.386389e3
+torr -> Pa *1.3332237e2
+dyn/cm**2 -> Pa *1.0e-1
+inAq -> Pa *2.48843e2
+#hyd/pneu pressure (absolute) [-1,-2,1,0,0,0,0]
+PaA -> Pa *1-1.013e5
+<barA> -> PaA *1.0e5
+mbarA -> PaA *1.0e2
+kPaA -> PaA *1.0e3
+MPaA -> PaA *1.0e6
+psiA -> PaA *6.894757293168361e3
+mmHgA -> PaA *1.333224e2
+inHgA -> PaA *3.386389e3
+torrA -> PaA *1.3332237e2
+inAqA -> PaA *2.48843e2
+#hyd/pneu pump/motor displacement [3,0,0,0,0,0,0]
+m**3/rad
+cc/rev -> m**3/rad *1.0e-6/2.0/M_PI
+L/rev -> m**3/rad *1.0e-3/2.0/M_PI
+in**3/rev -> m**3/rad *1.63870640693e-5/2.0/M_PI
+#hyd/pneu pressure/flow rate gradient [-4,-1,1,0,0,0,0]
+Pa/(m**3/s)
+bar/(m**3/s) -> Pa/(m**3/s) *1.0e5
+MPa/(m**3/s) -> Pa/(m**3/s) *1.0e6
+Pa/(L/min) -> Pa/(m**3/s) *1.0*60000.0
+<bar/(L/min)> -> Pa/(m**3/s) *1.0e5*60000.0
+MPa/(L/min) -> Pa/(m**3/s) *1.0e6*60000.0
+#hyd/pneu volumetric flow rate [3,-1,0,0,0,0,0]
+m**3/s
+mm**3/s -> m**3/s *1.0e-9
+cm**3/s -> m**3/s *1.0e-6
+dm**3/s -> m**3/s *1.0e-3
+dm**3/min -> m**3/s /6.0e4
+m**3/min -> m**3/s /60.0
+m**3/h -> m**3/s /3600.0
+L/s -> m**3/s *1.0e-3
+<L/min> -> m**3/s *1.0e-3/60.0
+L/h -> m**3/s *1.0e-3/3600.0
+L/hr -> m**3/s *1.0e-3/3600.0
+gpm -> m**3/s *6.309019639999999e-5
+USgal/min -> m**3/s *6.309019639999999e-5
+USgal/s -> m**3/s *3.785411784e-3
+USgal/h -> m**3/s *1.0515032733e-6
+UKgal/min -> m**3/s *7.5768166667e-5
+UKgal/s -> m**3/s *4.54609e-3
+UKgal/h -> m**3/s *1.2628027778e-6
+in**3/min -> m**3/s *2.7311773727e-7
+in**3/s -> m**3/s *1.6387064e-5
+ft**3/min -> m**3/s *4.719474432e-4
+ft**3/s -> m**3/s *2.8316846592e-2
+yd**3/min -> m**3/s *1.27425809664e-2
+yd**3/s -> m**3/s *7.64554857984e-1
+#linear acceleration [1,-2,0,0,0,0,0]
+m/s/s
+mm/s/s -> m/s/s *1.0e-3
+cm/s/s -> m/s/s *1.0e-2
+km/s/s -> m/s/s *1.0e3
+km/h/s -> m/s/s *1000.0/3600.0
+ft/s/s -> m/s/s *3.048e-1
+in/s/s -> m/s/s *2.54e-2
+yd/s/s -> m/s/s *9.144e-1
+mi/s/s -> m/s/s *1.609344e3
+mi/h/s -> m/s/s *4.4704e-1
+gn -> m/s/s *9.80665
+#linear motion damping coefficient [0,-3,1,0,0,0,0]
+N/(m/s)
+N/(cm/s) -> N/(m/s) *1.0e2
+N/(mm/s) -> N/(m/s) *1.0e3
+N/(km/h) -> N/(m/s) *3.6
+N/(km/hr) -> N/(m/s) *3.6
+daN/(m/s) -> N/(m/s) *1.0e1
+kN/(m/s) -> N/(m/s) *1.0e3
+kN/(mm/s) -> N/(m/s) *1.0e6
+#linear force [1,-2,1,0,0,0,0]
+N
+daN -> N *1.0e1
+kN -> N *1.0e3
+MN -> N *1.0e6
+lbf -> N *4.448221615260500
+kp -> N *9.80665
+ozf -> N *2.7801385e-1
+#linear stiffness [0,-2,1,0,0,0,0]
+N/m
+N/mm -> N/m *1.0e3
+N/cm -> N/m *1.0e2
+daN/m -> N/m *1.0e1
+daN/mm -> N/m *1.0e4
+kN/m -> N/m *1.0e3
+kN/mm -> N/m *1.0e6
+kN/cm -> N/m *1.0e5
+lbf/ft -> N/m *1.459390293720636e1
+lbf/in -> N/m *1.751268352464764e2
+#linear velocity [1,-1,0,0,0,0,0]
+m/s
+mm/s -> m/s *1.0e-3
+cm/s -> m/s *1.0e-2
+km/h -> m/s *1.0e3/3.6e3
+km/hr -> m/s *1.0e3/3.6e3
+ft/s -> m/s *3.048e-1
+in/s -> m/s *2.54e-2
+mph -> m/s *4.4704e-1
+knot -> m/s *5.144444e-1
+yd/s -> m/s *9.144e-1
+mi/s -> m/s *1.609344e3
+ft/min -> m/s *5.08e-3
+km/s -> m/s *1.0e3
+#linear windage coefficient [-1,0,1,0,0,0,0]
+N/(m/s)**2
+N/(cm/s)**2 -> N/(m/s)**2 *1.0e4
+N/(mm/s)**2 -> N/(m/s)**2 *1.0e6
+N/(km/h)**2 -> N/(m/s)**2 *1.296e1
+N/(km/hr)**2 -> N/(m/s)**2 *1.296e1
+#mass [0,0,1,0,0,0,0]
+kg
+tonne -> kg *1.0e3
+Mg -> kg *1.0e3
+g -> kg *1.0e-3
+mg -> kg *1.0e-6
+lb -> kg *4.5359237e-1
+oz -> kg *2.8349523125e-2
+stone -> kg *6.35029318
+slug -> kg *14.593903
+#magnetic field [-1,0,0,0,1,0,0]
+A/m
+mA/m -> A/m *1.0e-3
+A/dm -> A/m *1.0e1
+A/cm -> A/m *1.0e2
+A/mm -> A/m *1.0e3
+Oe -> A/m *7.957747e1
+#magnetic flux [2,-2,1,0,-1,0,0]
+Wb
+uWb -> Wb *1.0e-6
+Mx -> Wb *1.0e-8
+Vs -> Wb *1.0
+#magnetic flux density [0,-2,1,0,-1,0,0]
+T
+Vs/m**2 -> T *1.0
+Gamma -> T *1.0e-9
+Gs -> T *1.0e-4
+#magnetic flux rate [2,-3,1,0,-1,0,0]
+Wb/s
+uWb/s -> Wb/s *1.0e-6
+#magnetomotive voltage [2,-3,1,0,-1,0,0]
+At
+kAt -> At *1.0e3
+#molar mass [0,0,1,0,0,-1,0]
+kg/mol
+g/mol -> kg/mol *1.0e-3
+#moment of inertia [2,0,1,0,0,0,0]
+kgm**2
+gm**2 -> kgm**2 *1.0e-3
+kgcm**2 -> kgm**2 *1.0e-4
+gcm**2 -> kgm**2 *1.0e-7
+kgmm**2 -> kgm**2 *1.0e-6
+gmm**2 -> kgm**2 *1.0e-9
+lbft**2 -> kgm**2 *4.214011009380481e-2
+lbin**2 -> kgm**2 *2.926396534292000e-4
+slugin**2 -> kgm**2 *9.41540245948e-3
+#variation of moment of inertia [2,-1,1,0,0,0,0]
+kgm**2/s
+gm**2/s -> kgm**2/s *1.0e-3
+kgcm**2/s -> kgm**2/s *1.0e-4
+gcm**2/s -> kgm**2/s *1.0e-7
+kgmm**2/s -> kgm**2/s *1.0e-6
+lbft**2/s -> kgm**2/s *4.214011009380481e-2
+lbin**2/s -> kgm**2/s *2.926396534292000e-4
+slugin**2/s -> kgm**2/s *9.41540245948e-3
+kgm**2/min -> kgm**2/s /60.0
+kgm**2/h -> kgm**2/s /3600.0
+#rotary acceleration [0,-2,0,0,0,0,0]
+rad/s/s
+<rev/min/s> -> rad/s/s *2.0*M_PI/60.0
+rev/min/min -> rad/s/s *2.0*M_PI/3600.0
+degree/s/s -> rad/s/s *M_PI/180.0
+#rotary damping coefficient [2,-1,1,0,0,0,0]
+Nm/(rad/s)
+Nm/(degree/s) -> Nm/(rad/s) *180.0/M_PI
+Nm/(rev/min) -> Nm/(rad/s) *30.0/M_PI
+#rotary stiffness [2,-2,1,0,0,0,0]
+Nm/rad
+Nm/rev -> Nm/rad /2.0/M_PI
+Nm/degree -> Nm/rad /M_PI*180.0
+kNm/degree -> Nm/rad /M_PI*180.0e3
+lbfft/degree -> Nm/rad /M_PI*180*1.3558179483314
+lbfft/rad -> Nm/rad *1.3558179483314
+#rotary torque [2,-2,1,0,0,0,0]
+Nm
+daNm -> Nm *1.0e1
+kNm -> Nm *1.0e3
+Ncm -> Nm *1.0e-2
+Nmm -> Nm *1.0e-3
+lbfft -> Nm *1.3558179483314
+lbfin -> Nm *1.129848290276167e-1
+#rotary velocity [0,-1,0,0,0,0,0]
+rad/s
+Hz -> rad/s *2.0*M_PI
+kHz -> rad/s *2.0e3*M_PI
+MHz -> rad/s *2.0e6*M_PI
+rad/min -> rad/s /60.0
+<rev/min> -> rad/s *2*M_PI/60.0
+rpm -> rad/s *2*M_PI/60.0
+degree/s -> rad/s *2*M_PI/360.0
+degree/min -> rad/s *2*M_PI/360.0/60.0
+#rotary windage coefficient [2,0,1,0,0,0,0]
+Nm/(rad/s)**2
+Nm/(rev/min)**2 -> Nm/(rad/s)**2 *900.0/M_PI/M_PI
+#specific work or energy or enthalpy [2,-2,0,0,0,0,0]
+J/kg
+Nm/kg -> J/kg *1.0
+Ws/kg -> J/kg *1.0
+kJ/kg -> J/kg *1.0e3
+J/g -> J/kg *1.0e3
+kJ/g -> J/kg *1.0e6
+cal/kg -> J/kg *4.186
+cal/g -> J/kg *4186.0
+Btu/lb -> J/kg *2.326e3
+Btu/kg -> J/kg *1.05505585262e3
+Btu/g -> J/kg *1.05505585262e6
+#specific heat capacity [2,-2,0,-1,0,0,0]
+J/kg/K
+kJ/kg/K -> J/kg/K *1.0e3
+J/kg/degC -> J/kg/K *1.0
+kJ/kg/degC -> J/kg/K *1.0e3
+Btu/lb/degF -> J/kg/K *4.18680018802e3
+#temperature [0,0,0,1,0,0,0]
+K
+degC -> K *1+273.15
+degK -> K *1
+degR -> K *5.0/9.0
+degF -> K *5.0/9.0-160.0/9.0+273.15
+degRe -> K *1.25+273.15
+#thermal exchange coefficient [0,-3,1,-1,0,0,0]
+W/m**2/K
+W/m**2/degC -> W/m**2/K *1.0
+J/m**2/K/s -> W/m**2/K *1.0
+kcal/m**2/K/h -> W/m**2/K *1.163
+Btu/ft**2/degF/h -> W/m**2/K *5.67826
+#thermal insulance [0,3,-1,1,0,0,0]
+m**2/(W/degK)
+m**2/(W/degC) -> m**2/(W/degK) *1.0
+ft**2/(Btu/degF/h) -> m**2/(W/degK) *1.7611018368230600e-1
+clo -> m**2/(W/degK) *1.5500e-1
+#thermal resistance [-2,3,-1,1,0,0,0]
+degC/W
+degC/mW -> degC/W *1.0e+3
+degC/kW -> degC/W *1.0e-3
+#thermal conductivity [1,-3,1,-1,0,0,0]
+W/m/K
+mW/m/K -> W/m/K *1.0e-3
+W/m/degC -> W/m/K *1.0
+mW/m/degC -> W/m/K *1.0e-3
+Btu/h/ft/degF -> W/m/K *1.73073474409449
+#time [0,1,0,0,0,0,0]
+s
+us -> s *1.0e-6
+ms -> s *1.0e-3
+min -> s *60.0
+h -> s *3600.0
+hr -> s *3600.0
+day -> s *8.64e4
+week -> s *6.048e5
+month -> s *2.628e6
+year -> s *3.1536e7
+#work or energy or heat [2,-2,1,0,0,0,0]
+J
+mJ -> J *1.0e-3
+kJ -> J *1.0e3
+MJ -> J *1.0e6
+Ws -> J *1.0
+Wh -> J *3.6e3
+Whr -> J *3.6e3
+kWs -> J *1.0e3
+kWh -> J *3.6e6
+kWhr -> J *3.6e6
+ftlbf -> J *1.355817948331400
+cal -> J *4.1868
+kcal -> J *4.1868e3
+Btu -> J *1.0550559e3
+hph -> J *2.6845195e6
+kpm -> J *9.80665
+eV -> J *1.6021773e-19
+MeV -> J *1.6021773e-13
+therm -> J *1.05480400e8
+#cf index [0,0,0,0,0,0,0]
+cfnull
+#tpf node index [0,0,0,0,0,0,0]
+tpfnull
+#pn node index [0,0,0,0,0,0,0]
+thpnull
+#thh node index [0,0,0,0,0,0,0]
+tfnode
+#thh flow index [0,0,0,0,0,0,0]
+tfflow
+#gas node index [0,0,0,0,0,0,0]
+gasnode
+#gas flow index [0,0,0,0,0,0,0]
+gasflow
+#mass fraction [0,0,0,0,0,0,0]
+g/g
+mg/kg -> g/g *1.0e-6
+#activation energy [2,-2,1,0,0,-1,0]
+J/mol
+kJ/mol -> J/mol *1.0e3
+cal/mol -> J/mol *4.1868
+kcal/mol -> J/mol *4.1868e3
+Btu/mol -> J/mol *1.0550559e3
+#fraction [0,0,0,0,0,0,0]
+fraction
+pu -> fraction *1.0
+perunit -> fraction *1.0
+percent -> fraction *1.0e-2
+permill -> fraction *1.0e-3
+#number of particles [0,0,0,0,0,1,0]
+mol
+#luminous intensity [0,0,0,0,0,0,1]
+cd
+#power specific fuel consumption [-2,2,0,0,0,0,0]
+kg/W/s
+kg/kW/h -> kg/W/s *1.0e-3/3600.0
+kg/kW/min -> kg/W/s *1.0e-3/60.0
+<lb/hp/h> -> kg/W/s *4.5359237e-1/7.4569987e2/3600.0
+#thrust specific fuel consumption [-1,1,0,0,0,0,0]
+kg/N/s
+g/kN/s -> kg/N/s *1.0e-6
+<lb/lbf/h> -> kg/N/s *4.5359237e-1/4.448221615260500/3600.0
+#thrust coefficient [0,0,0,0,0,0,0]
+1/rad**2
+1/rev**2 -> 1/rad**2 /4/3.14159265359**2
+#power coefficient [0,0,0,0,0,0,0]
+1/rad**3
+1/rev**3 -> 1/rad**3 /8/3.14159265359**3

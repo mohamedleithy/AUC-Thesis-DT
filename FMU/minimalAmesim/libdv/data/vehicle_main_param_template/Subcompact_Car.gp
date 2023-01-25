@@ -1,0 +1,44 @@
+# integer parameters
+# real parameters
+Grav Constant_of_gravity 9.80665    -1.00000000000000e+006     1.00000000000000e+006 0 m/s/s 
+Xg X_position_of_carbody_center_of_gravity_(grid_frame) 990    -1.00000000000000e+006     1.00000000000000e+006 0 mm 
+Zg Z_position_of_carbody_center_of_gravity_(grid_frame) 350    -1.00000000000000e+006     1.00000000000000e+006 0 mm 
+V0 Carbody_initial_velocity_-_X_axis_-_Galilean_frame 5    -1.00000000000000e+006     1.00000000000000e+006 0 m/s 
+Msprung Sprung_mass_(Carbody_+_steering_rack) 1000    -1.00000000000000e+006     1.00000000000000e+006 0 kg 
+Msteer Steering_rack_mass 2    -1.00000000000000e+006     1.00000000000000e+006 0 kg 
+Mcar Carbody_mass Msprung-Msteer    -1.00000000000000e+006     1.00000000000000e+006 0 kg 
+Msp_front Spindle_mass_(front_axle) 15    -1.00000000000000e+006     1.00000000000000e+006 0 kg 
+Mwh_front Wheel_mass_(front_axle) 13    -1.00000000000000e+006     1.00000000000000e+006 0 kg 
+Msp_rear Spindle_mass_(rear_axle) 12    -1.00000000000000e+006     1.00000000000000e+006 0 kg 
+Mwh_rear Wheel_mass_(rear_axle) 11    -1.00000000000000e+006     1.00000000000000e+006 0 kg 
+Isprung_xx Sprung_mass_inertia_-_roll 200    -1.00000000000000e+006     1.00000000000000e+006 0 kgm**2 
+Isprung_yy Sprung_mass_inertia_-_pitch 700    -1.00000000000000e+006     1.00000000000000e+006 0 kgm**2 
+Isprung_zz Sprung_mass_inertia_-_yaw 1000    -1.00000000000000e+006     1.00000000000000e+006 0 kgm**2 
+Isprung_xy Sprung_mass_product_of_inertia_-_Ixy 0    -1.00000000000000e+006     1.00000000000000e+006 0 kgm**2 
+Isprung_xz Sprung_mass_product_of_inertia_-_Ixz -20    -1.00000000000000e+006     1.00000000000000e+006 0 kgm**2 
+Isprung_yz Sprung_mass_product_of_inertia_-_Iyz 0    -1.00000000000000e+006     1.00000000000000e+006 0 kgm**2 
+Zref_front Z_ref_suspension_(front_axle) 50    -1.00000000000000e+006     1.00000000000000e+006 0 mm 
+Zref_rear Z_ref_suspension_(rear_axle) 50    -1.00000000000000e+006     1.00000000000000e+006 0 mm 
+Zref_cine_front Z_ref_kinematic_(front_axle) Zref_front    -1.00000000000000e+006     1.00000000000000e+006 0 mm 
+Zref_cine_rear Z_ref_kinematic_(rear_axle) Zref_rear    -1.00000000000000e+006     1.00000000000000e+006 0 mm 
+wheelbase Wheelbase 2200    -1.00000000000000e+006     1.00000000000000e+006 0 mm 
+track_front track_(front_axle) 1400    -1.00000000000000e+006     1.00000000000000e+006 0 mm 
+track_rear track_(rear_axle) 1400    -1.00000000000000e+006     1.00000000000000e+006 0 mm 
+Rpinion Radius_of_steering_rack_pinion 6    -1.00000000000000e+006     1.00000000000000e+006 0 mm 
+Fzref_front Reference_load_case_(front_axle) round(Msprung*Grav*(wheelbase-Xg)/wheelbase/2)    -1.00000000000000e+006     1.00000000000000e+006 0 N 
+Fzref_rear Reference_load_case_(rear_axle) round(Msprung*Grav*Xg/wheelbase/2)    -1.00000000000000e+006     1.00000000000000e+006 0 N 
+Ksusp_front Suspension_stiffness_(front_axle) 17000    -1.00000000000000e+006     1.00000000000000e+006 0 N/m 
+Ksusp_rear Suspension_stiffness_(rear_axle) 17000    -1.00000000000000e+006     1.00000000000000e+006 0 N/m 
+Rsusp_front Suspension_damping_(front_axle) 1500    -1.00000000000000e+006     1.00000000000000e+006 0 N/(m/s) 
+Rsusp_rear Suspension_damping_(rear_axle) 1200    -1.00000000000000e+006     1.00000000000000e+006 0 N/(m/s) 
+Kantiroll_front Antiroll_bar_stiffness_(front_axle) 20000    -1.00000000000000e+006     1.00000000000000e+006 0 Nm/rad 
+Kantiroll_rear Antiroll_bar_stiffness_(rear_axle) 12000    -1.00000000000000e+006     1.00000000000000e+006 0 Nm/rad 
+Rfree Free_radius_of_the_tire 0.274    -1.00000000000000e+006     1.00000000000000e+006 0 m 
+Rroll Rolling_radius_of_the_tire 0.27    -1.00000000000000e+006     1.00000000000000e+006 0 m 
+Ktire Vertical_tire_stiffness 180000    -1.00000000000000e+006     1.00000000000000e+006 0 N/m 
+Rtire Vertical_tire_damping 100    -1.00000000000000e+006     1.00000000000000e+006 0 N/(m/s) 
+a1 Tire_-_peak_factor_D -50    -1.00000000000000e+006     1.00000000000000e+006 0 null 
+a2 Tire_-_peak_factor_D 1150    -1.00000000000000e+006     1.00000000000000e+006 0 null 
+a3 Tire_-_slope_at_the_origin_BCD_(when_no_Sh_and_no_Sv) 800    -1.00000000000000e+006     1.00000000000000e+006 0 null 
+a4 Tire_-_slope_at_the_origin_BCD_(when_no_Sh_and_no_Sv) 4.5    -1.00000000000000e+006     1.00000000000000e+006 0 null 
+# text parameters

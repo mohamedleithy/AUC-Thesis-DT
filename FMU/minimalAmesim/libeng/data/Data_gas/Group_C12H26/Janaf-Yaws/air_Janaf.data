@@ -1,0 +1,39 @@
+# Table format: 0D
+30                /* gas properties degree is used for the gas         */
+   
+28.84             /* M molar weight [g/mol]		                 */
+
+200.              /* tmincp1 minimum temperature allowed for specific heat expression   		[K] */
+6000.             /* tmaxcp2 maximum temperature allowed for specific heat expression   		[K] */
+1000.             /* tmidcp  intermediate temperature allowed for specific heat expression   	[K] */
+
+3.101309002540008e+000			/* UPPER TEMPERATURE constant coeff. for specific heat Cp          [J/kg/K] */
+1.241374715060810e-003			/* temperature coeff. for specific heat	Cp	                   	   */
+-4.188156394140088e-007 		/* square temperature coeff. for specific heat Cp                  */
+6.641580453016122e-011  		/* cubic temperature coeff. for specific heat Cp (Janaf)           */
+-3.912740041572936e-015  		/* square temperature coeff. for specific heat Cp (Janaf)          */
+6.526352509453091e+001			/* constant coefficient for enthalpie (Janaf)                      */
+0.0000000000000000e+000			/* constant coefficient for entropie (Janaf)                       */
+
+3.583776381205955e+000    		/* LOWER TEMPERATURE constant coeff. for specific heat Cp	       */
+-7.270059260448645e-004			/* temperature coeff. for specific heat	Cp	                       */
+1.670571377714792e-006    		/* square temperature coeff. for specific heat Cp                  */
+-1.092065667229988e-010 		/* cubic temperature coeff. for specific heat Cp (Janaf)           */
+-4.317641362826855e-013    		/* square temperature coeff. for specific heat Cp (Janaf)          */
+0.0000000000000000e+000			/* constant coefficient for enthalpie (Janaf)                      */
+0.0000000000000000e+000			/* constant coefficient for entropie (Janaf)                       */
+
+0.00000000e+00    /* enthalpy of formation (Janaf)                                   [J/mol] */
+
+150.0             /* tminmu minimum temperature allowed for absolute viscosity expression    [K] */
+1550.0            /* tmaxmu maximum temperature allowed for absolute viscosity expression    [K] */
+250.0             /* tminlam minimum temperature allowed for thermal conductivity expression [K] */
+1500.0            /* tmaxlam maximum temperature allowed for thermal conductivity expression [K] */
+
+4.233443e+01	/* constant coefficient for absolute viscosity  (microP)       */
+4.980166e-01	/* temperature coefficient for abs. viscosity			       */
+-8.649005e-05	/* square temperature coeff. for abs. viscosity			       */
+
+2.684611e-03	/* constant coeff. for thermal conductivity           [W/m/K] */
+7.820067e-05	/* temperature coeff. for thermal conductivity        		  */
+-1.153014e-08	/* square temp. coeff. for thermal conductivity	      		  */

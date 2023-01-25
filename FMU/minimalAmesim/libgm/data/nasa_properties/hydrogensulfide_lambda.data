@@ -1,0 +1,9 @@
+# Table format: MULTILINES
+# Gas: hydrogen sulfide (H2S)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+300.0 1000.0 5000.0       # boundary temperatures
+# Temperature range 300.0 - 1000.0 K
+9.944213e-01 -1.984938e+02 1.838094e+04 -1.994776e-01       # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 1000.0 - 5000.0 K
+6.059788e-01 -5.635758e+02 6.702731e+03 2.860549e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

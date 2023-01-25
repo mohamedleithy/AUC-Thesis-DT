@@ -1,0 +1,20 @@
+# Table format: 0D
+ 3	/* Gas properties degree used for the gas */
+ 100000	/* Reference pressure [PaA] */
+ 300	/* Reference temperature [K] */
+ 1093.1309083715	/* Reference constant-pressure specific heat Cp [J/kg/K] */
+ 293.890044426937	/* Perfect gas constant r [J/kg/K] */
+ 1.58674316744424E-05	/* Reference absolute viscosity [kg/m/s] */
+ 2.23788847382145E-02	/* Reference thermal conductivity [W/m/K] */
+ 200	/* Minimum temperature allowed [K] */
+ 1100	/* Maximum temperature allowed [K] */
+ .999477664765282	/* Temp^0 coeff. for specific heat Cp */
+ 2.61108291387169E-04	/* Temp^1 coeff. for specific heat Cp */
+ 2.25023290240469E-08	/* Temp^2 coeff. for specific heat Cp */
+ 2.03934181900954E-02	/* Temp^0 coeff. for absolute viscosity */
+ 7.93987178184807E-04	/* Temp^1 coeff. for absolute viscosity */
+-3.13581248632994E-07	/* Temp^2 coeff. for absolute viscosity */
+ 1.00000000000005	/* Temp^0 coeff. for thermal conductivity */
+ 3.43712636895062E-03	/* Temp^1 coeff. for thermal conductivity */
+-4.66443998880487E-07	/* Temp^2 coeff. for thermal conductivity */
+-9.101769639E+04	/* Enthalpy of formation [J/mol] */

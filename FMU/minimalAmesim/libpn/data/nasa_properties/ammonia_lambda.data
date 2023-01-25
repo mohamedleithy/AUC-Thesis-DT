@@ -1,0 +1,9 @@
+# Table format: MULTILINES
+# Gas: ammonia (NH3)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+1.749839e+00 2.919525e+02 -3.303374e+04 -5.094499e+00       # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 1000.0 - 5000.0 K
+6.447767e-01 -9.129472e+02 1.689018e+04 3.693975e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

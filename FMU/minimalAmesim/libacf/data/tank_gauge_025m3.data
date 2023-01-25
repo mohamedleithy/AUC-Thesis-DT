@@ -1,0 +1,10 @@
+# Table format: XY
+# axis1_unit = m
+# axis2_unit = m
+# axis3_unit = m
+# axis4_unit = m
+# axis5_unit = m
+# axis6_unit = m
+0.5 0 -0.25 0.5 0 0.25
+-0.5 -0.25 -0.25 0.5 0.25 0.25
+0 -0.25 -0.25 0 -0.25 0.25

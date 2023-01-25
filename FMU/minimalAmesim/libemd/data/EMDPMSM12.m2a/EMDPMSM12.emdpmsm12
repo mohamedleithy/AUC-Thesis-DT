@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<motorsolve2amesim>
+  <amesim>
+    <main>
+      <name>EMDPMSM12</name>
+      <application>MotorSolve</application>
+      <version>6.2.0.0</version>
+      <export_version>1</export_version>
+      <updated>2018-08-22T15:30:48.512Z</updated>
+    </main>
+    <model target="non linear PMSM">
+      <p>4</p>
+      <connectType>Wye</connectType>
+      <Rs0 units="Ohm">0.06158349</Rs0>
+      <T0 units="degC">35</T0>
+      <alphaRs units="1/K">0</alphaRs>
+      <Lendt units="H">0.0</Lendt>
+      <filePsisdP>EMDPMSM12, FluxLinkageD.data</filePsisdP>
+      <filePsisqP>EMDPMSM12, FluxLinkageQ.data</filePsisqP>
+      <fileIronLP>EMDPMSM12, Ironloss.data</fileIronLP>
+    </model>
+    <model target="information">
+      <Jr units="kgm**2">0.0303644</Jr>
+      <Vis units="Nm/(rev/min)">0</Vis>
+      <Coul units="Nm">0</Coul>
+      <Stict units="Nm">0</Stict>
+    </model>
+  </amesim>
+</motorsolve2amesim>

@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: E00 (CxHyOz with x = 6.76, y = 12.48, z = 0.08)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Gas properties model derived from Janaf formulation implemented in libeng
+400.00 1600.00       # boundary temperatures
+# Temperature range 400.00 - 1600.00 K
+1.9064 0.0 0.0 -6.340568226        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

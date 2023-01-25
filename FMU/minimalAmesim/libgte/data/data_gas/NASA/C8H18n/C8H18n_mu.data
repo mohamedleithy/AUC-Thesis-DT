@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: octane (C8H18)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+400.0 600.0       # boundary temperatures
+# Temperature range 400.0 - 600.0 K
+9.924580e-01 9.602003e-01 9.998251e-01 -1.622690e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

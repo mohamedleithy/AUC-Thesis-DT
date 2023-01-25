@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: Sulfur dioxide (SO2)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Gas properties model derived from Janaf formulation implemented in libexh
+200.00 1000.00       # boundary temperatures
+# Temperature range 200.00 - 1000.00 K
+1.2739 0.0 0.0 -2.69920444        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

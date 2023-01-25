@@ -1,0 +1,142 @@
+<?xml version="1.0" ?>
+
+<SUSPENSION type="Multi-Link (5-link)">
+<HARDPOINTS>
+	<point name="A" title="wheel center" label="">
+	  <x>0</x>
+	  <y>705</y>
+	  <z>302</z>
+	</point>
+	<point name="B" title="tire contact patch" label="">
+	  <x>0</x>
+	  <y>705</y>
+	  <z>0</z>
+	</point>
+	<point name="A1" title="link #1 joint to chassis (inner)" label="">
+	  <x>-102</x>
+	  <y>205</y>
+	  <z>231</z>
+	</point>
+	<point name="A2" title="link #2 joint to chassis (inner)" label="">
+	  <x>321</x>
+	  <y>496</y>
+	  <z>251</z>
+	</point>
+	<point name="A3" title="link #3 (tie rod) joint to chassis (inner)" label="">
+	  <x>209</x>
+	  <y>404</y>
+	  <z>296</z>
+	</point>
+	<point name="A4" title="link #4 joint to chassis (inner)" label="">
+	  <x>209</x>
+	  <y>437</y>
+	  <z>402</z>
+	</point>
+	<point name="A5" title="link #5 joint to chassis (inner)" label="">
+	  <x>-5</x>
+	  <y>356</y>
+	  <z>416</z>
+	</point>
+	<point name="A6" title="damper joint to chassis" label="">
+	  <x>-109</x>
+	  <y>428</y>
+	  <z>411</z>
+	</point>
+	<point name="B1" title="link #1 joint to wheel carrier (outer)" label="">
+	  <x>-43</x>
+	  <y>662</y>
+	  <z>208</z>
+	</point>
+	<point name="B2" title="link #2 joint to wheel carrier (outer)" label="">
+	  <x>44</x>
+	  <y>632</y>
+	  <z>163</z>
+	</point>
+	<point name="B3" title="link #3 (tie rod) joint to wheel carrier (outer)" label="">
+	  <x>141</x>
+	  <y>666</y>
+	  <z>269</z>
+	</point>
+	<point name="B4" title="link #4 joint to wheel carrier (outer)" label="">
+	  <x>78</x>
+	  <y>662</y>
+	  <z>397</z>
+	</point>
+	<point name="B5" title="link #5 joint to wheel carrier (outer)" label="">
+	  <x>-5</x>
+	  <y>666</y>
+	  <z>427</z>
+	</point>
+	<point name="B6" title="wheel carrier reference point" label="">
+	  <x>-0.4</x>
+	  <y>605</y>
+	  <z>300.5</z>
+	</point>
+	<point name="C1" title="damper joint to wheel carrier" label="">
+	  <x>-72.5</x>
+	  <y>433.5</y>
+	  <z>219.5</z>
+	</point>
+	<point name="W" title="virtual point for static toe and camber adjustment" label="">
+	  <x>3</x>
+	  <y>1500</y>
+	  <z>314</z>
+	</point>
+</HARDPOINTS>
+<BUSHINGS>
+	<point name="A1" title="link #1 bushing">
+	  <ka>1.0e+06</ka>
+	  <kr>1.0e+06</kr>
+	</point>
+	<point name="A2" title="link #2 bushing">
+	  <ka>1.0e+06</ka>
+	  <kr>1.0e+06</kr>
+	</point>
+	<point name="A4" title="link #4 bushing">
+	  <ka>1.0e+06</ka>
+	  <kr>1.0e+06</kr>
+	</point>
+	<point name="A5" title="link #5 bushing">
+	  <ka>1.0e+06</ka>
+	  <kr>1.0e+06</kr>
+	</point>
+	<point name="A6" title="damper bushing">
+	  <ka>1.0e+06</ka>
+	  <kr>1.0e+06</kr>
+	</point>
+</BUSHINGS>
+<PARTS>
+	<part name="wheel carrier" title="wheel carrier body">
+	  <point>B1</point>
+	  <point>B2</point>
+	  <point>B3</point>
+	  <point>B4</point>
+	  <point>B5</point>
+	  <point>B6</point>
+	</part>
+	<part name="link1" title="rear lower link A1-B1">
+	  <point>A1</point>
+	  <point>B1</point>
+	</part>
+	<part name="link2" title="front lower link A2-B2">
+	  <point>A2</point>
+	  <point>B2</point>
+	</part>
+	<part name="link3" title="tie rod link A3-B3">
+	  <point>A3</point>
+	  <point>B3</point>
+	</part>
+	<part name="link4" title="front upper link A4-B4">
+	  <point>A4</point>
+	  <point>B4</point>
+	</part>
+	<part name="link5" title="rear upper link A5-B5">
+	  <point>A5</point>
+	  <point>B5</point>
+	</part>
+	<part name="damper" title="shock absorber">
+	  <point>A6</point>
+	  <point>C1</point>
+	</part>
+</PARTS>
+</SUSPENSION>

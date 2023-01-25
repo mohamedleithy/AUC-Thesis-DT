@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: oxygen (O2)
+# Coefficients for equation of state
+3.19988000e-02          # molar mass M [kg/mol]
+154.581000              # critical temperature Tc [K]
+5.043000e+06            # critical pressure Pc [Pa]
+0.022200                # acentric factor w [-]
+54.400000               # minimal temperature [K]
+1000.000000             # maximal temperature [K]
+0.000                   # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

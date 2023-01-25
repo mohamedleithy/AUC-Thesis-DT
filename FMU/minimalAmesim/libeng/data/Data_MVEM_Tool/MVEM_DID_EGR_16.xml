@@ -1,0 +1,251 @@
+<XML>
+<!--- xml for Diesel, direct injection, EGR -->
+<!--- implemented with Simcenter Amesim 16 : pumping loss model + combeff  -->
+  <MAPS>
+    <MAP name="VolEffTable_N_Pi" format="M1D">
+      <AXIS var="N" unit="rev/min" id="1"/>
+      <AXIS var="Pin" unit="barA" id="2"/>
+      <AXIS var="Voleff" unit="null" id="3"/>
+    </MAP>
+<!---    <MAP name="VolEffTable_N_rhoi" format="M1D">
+      <AXIS var="N" unit="rev/min" id="1"/>
+      <AXIS var="rho" unit="kg/m**3" id="2"/>
+      <AXIS var="Voleff" unit="null" id="3"/>
+    </MAP> -->
+    <MAP name="IndEffPumpTable_N_minj" format="M1D">
+      <AXIS var="N" unit="rev/min" id="1"/>
+      <AXIS var="MassFuel" unit="mg" id="2"/>
+      <AXIS var="IndeffCorr" unit="null" id="3"/>
+      </MAP>
+    <MAP name="IndEffTable_N_minj" format="M1D">
+      <AXIS var="N" unit="rev/min" id="1"/>
+      <AXIS var="MassFuel" unit="mg" id="2"/>
+      <AXIS var="IndeffRef" unit="null" id="3"/>
+    </MAP>
+    <MAP name="ExhEffTable_N_minj" format="M1D">
+      <AXIS var="N" unit="rev/min" id="1"/>
+      <AXIS var="MassFuel" unit="mg" id="2"/>
+      <AXIS var="Exheff" unit="null" id="3"/>
+    </MAP>
+    <MAP name="ExhTempTable_N_minj" format="M1D">
+      <AXIS var="N" unit="rev/min" id="1"/>
+      <AXIS var="MassFuel" unit="mg" id="2"/>
+      <AXIS var="Te" unit="K" id="3"/>
+    </MAP>
+<!---    <MAP name="ThermalEffTable_N_minj" format="M1D">
+      <AXIS var="N" unit="rev/min" id="1"/>
+      <AXIS var="MassFuel" unit="mg" id="2"/>
+      <AXIS var="Thermaleff" unit="null" id="3"/>
+    </MAP> -->
+  </MAPS>
+
+  <EXPRESSIONS>
+  </EXPRESSIONS>
+
+  <COMPOUNDS>
+    <COMPOUND key="Voleff" unit="null" formula="4 * Pi * (dMassAir + dMassEGR) / (N * nbcyl * Vcyl * rho)" title="Volumetric efficiency">
+      <ARG key="N" unit="rad/s"/>
+      <ARG key="dMassAir" unit="kg/s"/>
+      <ARG key="dMassEGR" unit="kg/s"/>
+      <ARG key="Vcyl" unit="m**3"/>
+      <ARG key="nbcyl" unit="null"/>
+      <ARG key="rho" unit="kg/m**3"/>
+    </COMPOUND>
+    <COMPOUND key="rho" unit="kg/m**3" formula="Pin / ((r_air * Xi_air + r_gb * Xi_bg )* Tin)" title="Intake gas density">
+      <ARG key="Pin" unit="PaA"/>
+      <ARG key="r_air" unit="J/(kg*K)"/>
+      <ARG key="r_gb" unit="J/(kg*K)"/>
+      <ARG key="Tin" unit="K"/>
+      <ARG key="Xi_bg" unit="null"/>
+      <ARG key="Xi_air" unit="null"/>
+    </COMPOUND>
+    <COMPOUND key="Thermaleff" unit="null" formula="min(1.0, 1.0 - IndEffRef - ExhEff)" title="Estimated thermal efficiency">
+      <ARG key="IndeffRef" unit="null"/>
+      <ARG key="Exheff" unit="null"/>
+    </COMPOUND>   
+    <COMPOUND key="IndeffRef" unit="null" formula="indTorq * N / (dMassFuelInj *  Qlhv * Combeff)" title="Indicated efficiency (reference)">
+      <ARG key="indTorq" unit="Nm"/>
+      <ARG key="N" unit="rad/s"/>
+      <ARG key="dMassFuelInj" unit="kg/s"/>
+      <ARG key="Qlhv" unit="J/kg"/>
+      <ARG key="Combeff" unit="null"/>
+    </COMPOUND>
+    <COMPOUND key="IndeffCorr" unit="null" formula="(indTorq * N - Wpump)/ (dMassFuelInj * Qlhv * Combeff)" title="Indicated efficiency corrected with pumping losses">
+      <ARG key="indTorq" unit="Nm"/>
+      <ARG key="N" unit="rad/s"/>
+      <ARG key="dMassFuelInj" unit="kg/s"/>
+      <ARG key="Qlhv" unit="J/kg"/>
+      <ARG key="Wpump" unit="W"/>
+      <ARG key="Combeff" unit="null"/>
+    </COMPOUND>
+    <COMPOUND key="Wpump" unit="W" formula="(N / 120)* nbcyl * Vcyl * ((Pin - Pe) * (1 - (N/Nmax)) - Pe * ((N/Nmax)**2) - 0.35 * Pin)" title="Pumping losses">
+      <ARG key="N" unit="rev/min"/>
+      <ARG key="nbcyl" unit="null"/>
+      <ARG key="Vcyl" unit="m**3"/>
+      <ARG key="Pe" unit="PaA"/>
+      <ARG key="Pin" unit="PaA"/>
+      <ARG key="Nmax" unit="rev/min"/>
+     </COMPOUND>
+     <COMPOUND key="Exheff" unit="null" formula="(dMassExh * He - (dMassAir + dMassEGR) * Hi - dMassFuelInj * h_fuel) / (dMassFuelInj *  Qlhv * Combeff)" title="Exhaust efficiency">
+      <ARG key="dMassExh" unit="kg/s"/>
+      <ARG key="He" unit="J/kg"/>
+      <ARG key="Hi" unit="J/kg"/>
+      <ARG key="dMassAir" unit="kg/s"/>
+      <ARG key="dMassEGR" unit="kg/s"/>
+      <ARG key="dMassFuelInj" unit="kg/s"/>
+      <ARG key="h_fuel" unit="J/kg"/>
+      <ARG key="Qlhv" unit="J/kg"/>
+      <ARG key="Combeff" unit="null"/>
+    </COMPOUND>
+    <COMPOUND key="Combeff" unit="null" formula="min(Combeffmax , Combeffmax / R)" title="Combustion efficiency">
+      <ARG key="Combeffmax" unit="null"/>
+      <ARG key="R" unit="null"/>
+    </COMPOUND>
+    <COMPOUND key="R" unit="null" formula="dMassFuelInj * AFRs / dMassAir" title="Richness">
+      <ARG key="dMassAir" unit="kg/s"/>
+      <ARG key="dMassFuelInj" unit="kg/s"/>
+      <ARG key="AFRs" unit="null"/>
+    </COMPOUND>
+    <COMPOUND key="dMassExh" unit="kg/s" formula="dMassAir + dMassEGR + dMassFuelInj" title="Exhaust mass flow rate">
+      <ARG key="dMassAir" unit="kg/s"/>
+      <ARG key="dMassEGR" unit="kg/s"/>
+      <ARG key="dMassFuelInj" unit="kg/s"/>
+    </COMPOUND>
+    <COMPOUND key="dMassEGR" unit="kg/s" formula="EGRrate / (1 - EGRrate) * dMassAir" title="EGR mass flow rate">
+      <ARG key="dMassAir" unit="kg/s"/>
+      <ARG key="EGRrate" unit="null"/>
+    </COMPOUND>
+    <COMPOUND key="MassFuel" unit="kg" formula=" 120 / N * dMassFuelInj / nbcyl" title="Injected mass per stroke">
+      <ARG key="N" unit="rev/min"/>
+      <ARG key="nbcyl" unit="null"/>
+      <ARG key="dMassFuelInj" unit="kg/s"/>
+    </COMPOUND>
+    <COMPOUND key="dMasse_air" unit="kg/s" formula="dMassAir - min(dMassFuelInj * AFRs , dMassAir)" title="Air mass at the exhaust">
+      <ARG key="dMassFuelInj" unit="kg/s"/>
+      <ARG key="AFRs" unit="null"/>
+      <ARG key="dMassAir" unit="kg/s"/>
+    </COMPOUND>
+    <COMPOUND key="dMasse_bg" unit="kg/s" formula="dMassFuelInj + min(dMassFuelInj * AFRs , dMassAir)" title="Burned gas mass at the exhaust">
+      <ARG key="dMassFuelInj" unit="kg/s"/>
+      <ARG key="AFRs" unit="null"/>
+      <ARG key="dMassAir" unit="kg/s"/>
+    </COMPOUND>
+    <COMPOUND key="Xe_air" unit="null" formula="dMasse_air / (dMasse_air + dMasse_bg)" title="Air mass fraction at the exhaust">
+      <ARG key="dMasse_air" unit="kg/s"/>
+      <ARG key="dMasse_bg" unit="kg/s"/>
+    </COMPOUND>		
+    <COMPOUND key="Xe_bg" unit="null" formula="dMasse_bg / (dMasse_air + dMasse_bg)" title="Burned gas mass fraction at the exhaust">
+      <ARG key="dMasse_bg" unit="kg/s"/>
+      <ARG key="dMasse_air" unit="kg/s"/>
+    </COMPOUND>		
+    <COMPOUND key="dMassi_air" unit="kg/s" formula=" dMassAir + dMassEGR * Xe_air" title="Total air mass flow rate at the intake">
+      <ARG key="dMassAir" unit="kg/s"/>
+      <ARG key="dMassEGR" unit="kg/s"/>
+      <ARG key="Xe_air" unit="null"/>
+    </COMPOUND>				
+    <COMPOUND key="dMassi_bg" unit="kg/s" formula=" dMassEGR * Xe_bg" title="Total burned gas mass flow rate at the intake">
+      <ARG key="dMassEGR" unit="kg/s"/>
+      <ARG key="Xe_bg" unit="null"/>
+    </COMPOUND>	
+    <COMPOUND key="Xi_air" unit="null" formula="dMassi_air / (dMassi_air + dMassi_bg)" title="Air mass fraction at the intake">
+      <ARG key="dMassi_air" unit="kg/s"/>
+      <ARG key="dMassi_bg" unit="kg/s"/>
+    </COMPOUND>		
+    <COMPOUND key="Xi_bg" unit="null" formula="dMassi_bg / (dMassi_air + dMassi_bg)" title="Burned gas mass fraction at the intake">
+      <ARG key="dMassi_air" unit="kg/s"/>
+      <ARG key="dMassi_bg" unit="kg/s"/>
+    </COMPOUND>
+    <COMPOUND key="Hi" unit="J/kg" formula="Hi_air * Xi_air + Hi_bg * Xi_bg" title="Enthalpy at the intake">
+      <ARG key="Hi_air" unit="J/kg"/>
+      <ARG key="Hi_bg" unit="J/kg"/>
+      <ARG key="Xi_air" unit="null"/>
+      <ARG key="Xi_bg" unit="null"/>
+    </COMPOUND>
+    <COMPOUND key="He" unit="J/kg" formula="He_air * Xe_air + He_bg * Xe_bg" title="Enthalpy at the exhaust">
+      <ARG key="He_air" unit="J/kg"/>
+      <ARG key="He_bg" unit="J/kg"/>
+      <ARG key="Xe_air" unit="null"/>
+      <ARG key="Xe_bg" unit="null"/>
+    </COMPOUND>		
+    <COMPOUND key="Hi_air" unit="J/kg" formula="Cp0k_air * (Tin-298.15) + 0.5 * (Cpe_air-Cpi_air) / (700.-295.) * (Tin*Tin-298.15*298.15)" title="Enthalpy of the air at the intake">
+      <ARG key="Te" unit="K"/>
+      <ARG key="Tin" unit="K"/>
+      <ARG key="Cpi_air" unit="J/kg/K"/>
+      <ARG key="Cpe_air" unit="J/kg/K"/>
+      <ARG key="Cp0k_air" unit="J/kg/K"/>
+    </COMPOUND>
+    <COMPOUND key="Hi_bg" unit="J/kg" formula="Cp0k_bg * (Tin-298.15) + 0.5 * (Cpe_bg-Cpi_bg) / (700.-295.) * (Tin*Tin-298.15*298.15)" title="Enthalpy of the burned gas at the intake">
+      <ARG key="Te" unit="K"/>
+      <ARG key="Tin" unit="K"/>
+      <ARG key="Cpi_bg" unit="J/kg/K"/>
+      <ARG key="Cpe_bg" unit="J/kg/K"/>
+      <ARG key="Cp0k_bg" unit="J/kg/K"/>
+    </COMPOUND>
+    <COMPOUND key="He_air" unit="J/kg" formula="Cp0k_air * (Te-298.15) + 0.5 * (Cpe_air-Cpi_air) / (700.-295.) * (Te*Te-298.15*298.15)" title="Enthalpy of the air at the exhaust">
+      <ARG key="Te" unit="K"/>
+      <ARG key="Tin" unit="K"/>
+      <ARG key="Cpi_air" unit="J/kg/K"/>
+      <ARG key="Cpe_air" unit="J/kg/K"/>
+      <ARG key="Cp0k_air" unit="J/kg/K"/>
+    </COMPOUND>
+    <COMPOUND key="He_bg" unit="J/kg" formula="Cp0k_bg * (Te-298.15) + 0.5 * (Cpe_bg-Cpi_bg) / (700.-295.) * (Te*Te-298.15*298.15)" title="Enthalpy of the burned gas at the exhaust">
+      <ARG key="Te" unit="K"/>
+      <ARG key="Tin" unit="K"/>
+      <ARG key="Cpi_bg" unit="J/kg/K"/>
+      <ARG key="Cpe_bg" unit="J/kg/K"/>
+      <ARG key="Cp0k_bg" unit="J/kg/K"/>
+    </COMPOUND>
+    <COMPOUND key="Cp0k_air" unit="J/kg/K" formula="Cpi_air - 295.0 *(Cpe_air-Cpi_air) / (700.-295.)" title="Specific heat of air at 0K">
+      <ARG key="Cpi_air" unit="J/kg/K"/>
+      <ARG key="Cpe_air" unit="J/kg/K"/>
+    </COMPOUND>
+    <COMPOUND key="Cp0k_bg" unit="J/kg/K" formula="Cpi_bg - 295.0 *(Cpe_bg-Cpi_bg) / (700.-295.)" title="Specific heat of burned gas at 0K">
+      <ARG key="Cpi_bg" unit="J/kg/K"/>
+      <ARG key="Cpe_bg" unit="J/kg/K"/>
+    </COMPOUND>
+  </COMPOUNDS>
+
+  <VARIABLES>
+    <VARIABLE key="N" title="Engine speed" unit="rev/min"/>
+    <VARIABLE key="indTorq" title="Indicated torque" unit="Nm"/>
+    <VARIABLE key="dMassFuelInj" title="Fuel mass flow rate" unit="kg/s"/>
+    <VARIABLE key="Te" title="Exhaust temperature" unit="K"/>
+    <VARIABLE key="Tin" title="Intake temperature" unit="K"/>
+    <VARIABLE key="EGRrate" title="EGR rate" unit="null"/>
+    <VARIABLE key="dMassAir" title="Air mass flow rate" unit="kg/s"/>
+    <VARIABLE key="Pin" title="Intake pressure" unit="barA"/>
+    <VARIABLE key="Pe" title="Exhaust pressure (for pumping losses)" unit="barA"/>
+  </VARIABLES>
+
+  <SINGLES_VALUES>
+    <!---  Properties for Diesel Europe (Diesel group) -->
+    <FIXED key="r_air" title="air r" unit="J/(kg*K)" defaultvalue="288.195"/>
+    <FIXED key="r_gb" title="burned gas r" unit="J/(kg*K)" defaultvalue="287.51"/>		
+    <FIXED key="Cpi_air" title="air Cp at 295K" unit="J/kg/K" defaultvalue="1011.53"/>
+    <FIXED key="Cpe_air" title="air Cp at 700K" unit="J/kg/K" defaultvalue="1081.79"/>
+    <FIXED key="Cpi_bg" title="burned gas Cp at 295K" unit="J/kg/K" defaultvalue="1064.45"/>
+    <FIXED key="Cpe_bg" title="burned Cp at 700K" unit="J/kg/K" defaultvalue="1181.05"/>		
+    <FIXED key="Cpi_fuel" title="vapor fuel Cp at 295K" unit="J/kg/K" defaultvalue="1494.10"/>
+    <FIXED key="Cpe_fuel" title="vapor fuel Cp at 700K" unit="J/kg/K" defaultvalue="2904.97"/>		
+    <!---  enthalpy of the liquid Diesel at 1500 bar, 70°C from IFP-Engine -->
+    <FIXED key="h_fuel" title="liquid fuel specific enthalpy" unit="J/kg" defaultvalue="27941.0"/>
+
+    <PARAMETER key="nbcyl" title="number of cylinders" unit="null" defaultvalue="4"/>
+    <PARAMETER key="bore" title="bore" unit="m" defaultvalue="0.05"/>
+    <PARAMETER key="stroke" title="stroke" unit="m" defaultvalue="0.05"/>
+    <PARAMETER key="Qlhv" title="fuel heating value" unit="kJ/kg" defaultvalue="43882.0"/>
+    <PARAMETER key="AFRs" title="stoichio A/F ratio" unit="null" defaultvalue="14.41"/> 
+    <PARAMETER key="Combeffmax" title="maximum combustion efficiency" defaultvalue="1.0" unit="null"/>
+    <PARAMETER key="Nmax" title="maximum engine speed" defaultvalue="6000.0" unit="rev/min"/>
+        
+    <COMPUTED key="Vcyl" title="cylinder displacement" unit="cm**3" formula="Pi * (bore / 2)**2 * stroke">
+      <ARG key="bore" unit="cm"/>
+      <ARG key="stroke" unit="cm"/>
+    </COMPUTED>
+    <COMPUTED key="Vtot" title="engine displacement" unit="cm**3" formula="Pi * (bore / 2)**2 * stroke * nbcyl">
+      <ARG key="bore" unit="cm"/>
+      <ARG key="stroke" unit="cm"/>
+      <ARG key="nbcyl" unit="null"/>			
+    </COMPUTED>
+  </SINGLES_VALUES>
+</XML>

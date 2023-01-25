@@ -1,0 +1,14 @@
+# solid name
+AISI 1010
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+1540.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+27             7832            434            63.9
+127            7832            487            58.7
+327	       7832            559            48.8
+527            7832            685            39.2
+727            7832           1168            31.3

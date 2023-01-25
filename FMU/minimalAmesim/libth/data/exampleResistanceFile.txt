@@ -1,0 +1,11 @@
+Example resistance Matrix file
+Number of nodes = 6. Thermal resistances reported in C/W.
+
+Node;			(Ambient);	(capa1); 	(capa2); 	(capa3); 	(capa4); 	(capa_5); 	(capa 6); 
+(Ambient);		0.;			1000000;	1000000;		35.5;			1000000;	INF;			0.4;
+(capa1); 		1000000;	0.;			0.6;			INF;			1000000;	2.4;			20.8;
+(capa2); 	1000000;	0.6;		0.;				5.8;			1000000;	1000000;		1000000;
+(capa3);	35.5;		INF;		5.8;			0.;				INF;		5.7;			1000000;
+(capa4); 		1000000;	1000000;	1000000;		INF;			0.;			1000000;		1000000;
+(capa_5);	INF;		2.4;		1000000; 		5.7;			1000000;	0.;				52.8;
+(capa 6);	0.4;		20.8;		1000000;		1000000;		1000000;	52.8;			0.;

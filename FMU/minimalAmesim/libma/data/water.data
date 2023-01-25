@@ -1,0 +1,26 @@
+# Table format: 0D
+2
+1.000e+005 Reference pressure                                       [PaA]
+2.000e+001 Reference temperature                                    [degC]
+9.980e+002 Reference density                                        [kg/m**3]
+1.005e-003 Reference absolute viscosity                             [kg/m/s]
+4.183e+003 Reference specific heat                                  [J/kg/K]
+5.980e-001 Reference thermal conductivity                           [W/m/K]
+0.000e+000 Minimum pressure allowed                                 [PaA]
+5.000e+007 Maximum pressure allowed                                 [PaA]
+0.000e+000 Minimum temperature allowed                              [degC]
+1.000e+002 Maximum temperature allowed                              [degC]
+2.115e-004 Temperature coefficient for specific volume                    
+3.831e-006 Temperature squared coefficient for specific volume            
+-4.600e-010 Pressure coefficient for specific volume                       
+0.000e+000 Pressure * temperature coefficient for specific volume         
+1.058e-019 Squared pressure coefficient for specific volume               
+-1.059e-002 Temperature coefficient for absolute viscosity                 
+4.522e-005 Temperature squared coefficient for absolute viscosity         
+4.600e-010 Pressure coefficient for absolute viscosity                    
+-1.922e-004 Temperature coefficient for specific heat                      
+3.437e-006 Temperature squared coefficient for specific heat              
+-1.836e-012 Pressure * temperature coefficient for specific heat           
+-5.381e-010 Pressure coefficient for specific heat                         
+2.952e-003 Temperature coefficient for thermal conductivity               
+-1.448e-005 Temperature squared coefficient for thermal conductivity       

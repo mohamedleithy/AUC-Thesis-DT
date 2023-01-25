@@ -1,0 +1,216 @@
+<TpfCycleModel version="2110">
+  <MediaSelectionModel version="2110">
+    <ELEMENTS>
+      <FluidSelectionModel index="0" version="1910">
+        <FluidIdsModel version="2110">
+          <SELECTED_INDEX>30</SELECTED_INDEX>
+        </FluidIdsModel>
+        <EosIdsModel version="2110">
+          <SELECTED_INDEX>0</SELECTED_INDEX>
+        </EosIdsModel>
+      </FluidSelectionModel>
+      <MixtureCompositionTableModel index="1" version="2110">
+        <ROW_COUNT>2</ROW_COUNT>
+        <COLUMN_COUNT>2</COLUMN_COUNT>
+        <TABLE>
+          <ConstituentFluidIdsModel i="0" j="0" version="2110">
+            <SELECTED_INDEX>3</SELECTED_INDEX>
+          </ConstituentFluidIdsModel>
+          <ConstituentFluidIdsModel i="1" j="0" version="2110">
+            <SELECTED_INDEX>4</SELECTED_INDEX>
+          </ConstituentFluidIdsModel>
+          <RealParam i="0" j="1" version="1910">
+            <NAME>massFraction0</NAME>
+            <TITLE>mass fraction of constituent #0</TITLE>
+            <TEXT>50.0</TEXT>
+            <UNIT>null</UNIT>
+          </RealParam>
+          <RealParam i="1" j="1" version="1910">
+            <NAME>massFraction1</NAME>
+            <TITLE>mass fraction of constituent #1</TITLE>
+            <TEXT>50.0</TEXT>
+            <UNIT>null</UNIT>
+          </RealParam>
+        </TABLE>
+        <SELECTED_TOP_LEFT>None</SELECTED_TOP_LEFT>
+      </MixtureCompositionTableModel>
+    </ELEMENTS>
+    <SELECTED_INDEX>0</SELECTED_INDEX>
+  </MediaSelectionModel>
+  <DiagramPreferencesModel version="2110">
+    <IS_VALIDITY_DOMAIN_VISIBLE>False</IS_VALIDITY_DOMAIN_VISIBLE>
+  </DiagramPreferencesModel>
+  <TpfTransformationsListModel version="2110">
+    <ELEMENTS length="2">
+      <TpfTransformationModel index="0" version="2110">
+        <NAME>Expansion device</NAME>
+        <TransformationCharacteristicsModel version="2110">
+          <PowerTypeModel version="2110">
+            <SELECTED_INDEX>0</SELECTED_INDEX>
+          </PowerTypeModel>
+          <MassFlowRateOrPowerTypeModel version="2110">
+            <SELECTED_INDEX>0</SELECTED_INDEX>
+          </MassFlowRateOrPowerTypeModel>
+          <RealParam version="1910">
+            <NAME>transformationDm</NAME>
+            <TITLE>mass flow rate</TITLE>
+            <TEXT>31.8</TEXT>
+            <UNIT>g/s</UNIT>
+          </RealParam>
+          <RealParam version="1910">
+            <NAME>transformationPower</NAME>
+            <TITLE>power</TITLE>
+            <TEXT>2540.0</TEXT>
+            <UNIT>W</UNIT>
+          </RealParam>
+          <RealParam version="1910">
+            <NAME>transformationDmRatio</NAME>
+            <TITLE>ratio on mass flow rate</TITLE>
+            <TEXT>55.8</TEXT>
+            <UNIT>%</UNIT>
+          </RealParam>
+          <TransformationsListModel version="2110">
+            <SELECTED_INDEX>None</SELECTED_INDEX>
+          </TransformationsListModel>
+        </TransformationCharacteristicsModel>
+        <StateTypeModel io="IN" version="2110">
+          <SELECTED_INDEX>0</SELECTED_INDEX>
+        </StateTypeModel>
+        <TpfStateModel version="2110">
+          <ThermoPairsModel version="2110">
+            <SELECTED_INDEX>8</SELECTED_INDEX>
+          </ThermoPairsModel>
+          <RealParam version="1910">
+            <NAME>tSatC</NAME>
+            <TITLE>saturation temperature</TITLE>
+            <TEXT>45.00158048466869</TEXT>
+            <UNIT>degC</UNIT>
+          </RealParam>
+          <RealParam version="1910">
+            <NAME>shsc</NAME>
+            <TITLE>superheat/subcooling</TITLE>
+            <TEXT>-5.001580484668864</TEXT>
+            <UNIT>degC</UNIT>
+          </RealParam>
+        </TpfStateModel>
+        <ThermoListModel io="IN" version="1910">
+          <SELECTED_INDEX>None</SELECTED_INDEX>
+        </ThermoListModel>
+        <StateTypeModel io="OUT" version="2110">
+          <SELECTED_INDEX>0</SELECTED_INDEX>
+        </StateTypeModel>
+        <TpfStateOutModel version="2110">
+          <ThermoPairsModel version="2110">
+            <SELECTED_INDEX>2</SELECTED_INDEX>
+          </ThermoPairsModel>
+          <RealParam version="1910">
+            <NAME>pressA</NAME>
+            <TITLE>pressure</TITLE>
+            <TEXT>5.726995557640837</TEXT>
+            <UNIT>barA</UNIT>
+          </RealParam>
+          <RealParam version="1910">
+            <NAME>deltaHspe</NAME>
+            <TITLE>gap on specific enthalpy</TITLE>
+            <TEXT>0.0</TEXT>
+            <UNIT>kJ/kg</UNIT>
+          </RealParam>
+          <ThermoPropsOptionModel version="2110">
+            <SELECTED_INDEX>0</SELECTED_INDEX>
+          </ThermoPropsOptionModel>
+          <ThermoPropsOptionModel version="2110">
+            <SELECTED_INDEX>1</SELECTED_INDEX>
+          </ThermoPropsOptionModel>
+        </TpfStateOutModel>
+        <ThermoListModel io="OUT" version="1910">
+          <SELECTED_INDEX>None</SELECTED_INDEX>
+        </ThermoListModel>
+      </TpfTransformationModel>
+      <TpfTransformationModel index="1" version="2110">
+        <NAME>Evaporator</NAME>
+        <TransformationCharacteristicsModel version="2110">
+          <PowerTypeModel version="2110">
+            <SELECTED_INDEX>2</SELECTED_INDEX>
+          </PowerTypeModel>
+          <MassFlowRateOrPowerTypeModel version="2110">
+            <SELECTED_INDEX>2</SELECTED_INDEX>
+          </MassFlowRateOrPowerTypeModel>
+          <RealParam version="1910">
+            <NAME>transformationDm</NAME>
+            <TITLE>mass flow rate</TITLE>
+            <TEXT>40.0</TEXT>
+            <UNIT>g/s</UNIT>
+          </RealParam>
+          <RealParam version="1910">
+            <NAME>transformationPower</NAME>
+            <TITLE>power</TITLE>
+            <TEXT>2540.0</TEXT>
+            <UNIT>W</UNIT>
+          </RealParam>
+          <RealParam version="1910">
+            <NAME>transformationDmRatio</NAME>
+            <TITLE>ratio on mass flow rate</TITLE>
+            <TEXT>100.0</TEXT>
+            <UNIT>%</UNIT>
+          </RealParam>
+          <TransformationsListModel version="2110">
+            <SELECTED_INDEX>0</SELECTED_INDEX>
+          </TransformationsListModel>
+        </TransformationCharacteristicsModel>
+        <StateTypeModel io="IN" version="2110">
+          <SELECTED_INDEX>1</SELECTED_INDEX>
+        </StateTypeModel>
+        <TpfStateModel version="2110">
+          <ThermoPairsModel version="2110">
+            <SELECTED_INDEX>0</SELECTED_INDEX>
+          </ThermoPairsModel>
+          <RealParam version="1910">
+            <NAME>pressA</NAME>
+            <TITLE>pressure</TITLE>
+            <TEXT>3.0</TEXT>
+            <UNIT>barA</UNIT>
+          </RealParam>
+          <RealParam version="1910">
+            <NAME>rho</NAME>
+            <TITLE>density</TITLE>
+            <TEXT>450.0</TEXT>
+            <UNIT>kg/m**3</UNIT>
+          </RealParam>
+        </TpfStateModel>
+        <ThermoListModel io="IN" version="1910">
+          <SELECTED_INDEX>1</SELECTED_INDEX>
+        </ThermoListModel>
+        <StateTypeModel io="OUT" version="2110">
+          <SELECTED_INDEX>0</SELECTED_INDEX>
+        </StateTypeModel>
+        <TpfStateOutModel version="2110">
+          <ThermoPairsModel version="2110">
+            <SELECTED_INDEX>8</SELECTED_INDEX>
+          </ThermoPairsModel>
+          <RealParam version="1910">
+            <NAME>tSatC</NAME>
+            <TITLE>saturation temperature</TITLE>
+            <TEXT>-10.0</TEXT>
+            <UNIT>degC</UNIT>
+          </RealParam>
+          <RealParam version="1910">
+            <NAME>shsc</NAME>
+            <TITLE>superheat/subcooling</TITLE>
+            <TEXT>5.0</TEXT>
+            <UNIT>degC</UNIT>
+          </RealParam>
+          <ThermoPropsOptionModel version="2110">
+            <SELECTED_INDEX>0</SELECTED_INDEX>
+          </ThermoPropsOptionModel>
+          <ThermoPropsOptionModel version="2110">
+            <SELECTED_INDEX>0</SELECTED_INDEX>
+          </ThermoPropsOptionModel>
+        </TpfStateOutModel>
+        <ThermoListModel io="OUT" version="1910">
+          <SELECTED_INDEX>0</SELECTED_INDEX>
+        </ThermoListModel>
+      </TpfTransformationModel>
+    </ELEMENTS>
+    <SELECTED_INDEX>1</SELECTED_INDEX>
+  </TpfTransformationsListModel>
+</TpfCycleModel>

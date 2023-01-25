@@ -1,0 +1,83 @@
+# Table format: 0D
+#
+# This file allows to define the thermodynamic properties (density, specific
+# heat or speed of sound) and transport properties (dynamic viscosity, thermal
+# conductivity) of a liquid.
+# It has to be used in the TFFD4 submodel, with "fluid type" parameter set to
+# "database or user-defined file" and "reference database" parameter set to
+# "user-defined file".
+#
+# The following regression expressions are used to define the
+# density ρ [kg/m^3], the specific heat at constant pressure cp
+# [J/kg/K], the thermal conductivity λ [W/m/K], and the dynamic
+# viscosity μ [kg/m/s = Pa.s = 1000 cP]:
+#
+# Δp = p-p0
+# ΔT = T-T0
+# ρ(p,T) = ρb*(1 - α*T) / ( 1-A*log( 1 + Δp/(B1+B2*T+B3*T^2+B4*T^3)))
+# cp(p0,T) = cp00 + cp0t*ΔT + cp0t2*ΔT^2
+# where T and T0 are temperatures in K, p and p0 pressures in barA.
+# 'log' is the natural (base e) logarithm.
+# cp(p,T) is obtained from cp(p0,T) and ρ(p,T) using energy conservation (see
+# TFFD4 documentation for more information).
+#
+# μ(p,T) = μ0   . 10^(bp Δp + bT ΔT + bT2 ΔT^2 + bpT ΔpΔT + bp2 Δp^2 + bp2T Δp^2ΔT
+#                       + bp2T2 Δp^2ΔT^2 + bpT2 ΔpΔT^2 + bp3 Δp^3 + bp3T Δp^3ΔT
+#                       + bp3T2 Δp^3ΔT^2 + bT3 ΔT^3 + bpT3 ΔpΔT^3 + bp2T3 Δp^2ΔT^3
+#                       + bp3T3 Δp^3ΔT^3)
+# λ(p,T) = λ0   . (1 + dT ΔT + dT2 ΔT^2 + dp Δp + dpT ΔpΔT + dp2 Δp^2 + dp2T Δp^2ΔT
+#                     + dp2T2 Δp^2ΔT^2 + dpT2 ΔpΔT^2 + dp3 Δp^3 + dp3T Δp^3ΔT
+#                     + dp3T2 Δp^3ΔT^2)
+# where T and T0 are temperatures in K or degC, p and p0 pressures in PaA.
+#
+# Because it is somewhat difficult and error-prone to obtain the quantities
+# given below, it is strongly advised to use the Media Property Assistant
+# (MPA) to build this file, starting from a set of measures. See TFFD4 and MPA
+# documentation for more information.
+#
+300
+ 1.013000000e+00    # p0 [barA]: definition pressure
+ 1.000000000e+01    # T0 [degC]: definition temperature
+ 0.000000000e+00    # pmin [barA]: minimum pressure allowed
+ 3.000000000e+03    # pmax [barA]: maximum pressure allowed
+ 1.000000000e+01    # Tmin [degC]: minimum temperature allowed
+ 1.200000000e+02    # Tmax [degC]: maximum temperature allowed
+ 1.050508700e+03    # rhob [kg/m**3]
+ 6.317900000e-04    # alpha [1/K]
+ 8.073800000e-02    # A [null]
+ 2.517127200e+03    # B1 [barA]
+-3.949100000e+00    # B2 [barA/K]
+ 0.000000000e+00    # B3 [barA/K**2]
+ 0.000000000e+00    # B4 [barA/K**3]
+ 1                  # cporcs [null]
+ 1.892341640e+03    # cp00 [J/kg/K]
+ 6.243500510e+00    # cp0t [J/kg/K**2]
+-1.374083200e-02    # cp0t2 [J/kg/K**3]
+ 5.439126057e-03    # μ0 [kg/m/s]: definition absolute viscosity
+-9.737648711e-03    # bT [1/K]: temperature coefficient for absolute viscosity
+ 3.752124019e-05    # bT2 [1/K^2]: temperature^2 coefficient for absolute viscosity
+ 4.625611852e-09    # bp [1/PaA]: pressure coefficient for absolute viscosity
+-1.645076893e-11    # bpT [1/PaA/K]: pressure * temperature coefficient for absolute viscosity
+-4.187484309e-18    # bp2 [1/PaA^2]: pressure^2 coefficient for absolute viscosity
+-1.668433471e-20    # bp2T [1/PaA^2/K]: pressure^2*temperature coefficient for absolute viscosity
+ 1.271942387e-22    # bp2T2 [1/PaA^2/K^2]: pressure^2*temperature^2 coefficient for absolute viscosity
+ 1.113526171e-13    # bpT2 [1/PaA/K^2]: pressure*temperature^2 coefficient for absolute viscosity
+ 1.102720169e-26    # bp3 [1/PaA^3]: pressure^3 coefficient for absolute viscosity
+-3.491340081e-29    # bp3T [1/PaA^3/K]: pressure^3*temperature coefficient for absolute viscosity
+ 1.067049423e-31    # bp3T2 [1/PaA^3/K^2]: pressure^3*temperature^2 coefficient for absolute viscosity
+-8.594965967e-08    # bT3 [1/K^3]: temperature^3 coefficient for absolute viscosity
+ 1.681110893e-16    # bpT3 [1/PaA/K^3]: pressure*temperature^3 coefficient for absolute viscosity
+-2.510361669e-24    # bp2T3 [1/PaA^2/K^3]: pressure^2*temperature^3 coefficient for absolute viscosity
+ 5.489014421e-33    # bp3T3 [1/PaA^3/K^3]: pressure^3*temperature^3 coefficient for absolute viscosity
+ 1.261925122e-01    # λ0 [W/m/K]: definition thermal conductivity
+-1.001324690e-03    # dT [1/K]: temperature coefficient for thermal conductivity
+-2.531829880e-06    # dT2 [1/K^2]: temperature^2 coefficient for thermal conductivity
+ 2.355959913e-09    # dp [1/PaA]: pressure coefficient for thermal conductivity
+ 6.430654654e-12    # dpT [1/PaA/K]: pressure*temperature coefficient for thermal conductivity
+-6.693127954e-18    # dp2 [1/PaA^2]: pressure^2 coefficient for thermal conductivity
+-1.392446077e-20    # dp2T [1/PaA^2/K]: pressure^2*temperature coefficient for thermal conductivity
+-2.120463258e-22    # dp2T2 [1/PaA^2/K^2]: pressure^2*temperature^2 coefficient for thermal conductivity
+ 1.812148383e-14    # dpT2 [1/PaA/K^2]: pressure*temperature^2 coefficient for thermal conductivity
+ 1.098726152e-26    # dp3 [1/PaA^3]: pressure^3 coefficient for thermal conductivity
+-9.119677457e-31    # dp3T [1/PaA^3/K]: pressure^3*temperature coefficient for thermal conductivity
+ 6.355895958e-31    # dp3T2 [1/PaA^3/K^2]: pressure^3*temperature^2 coefficient for thermal conductivity

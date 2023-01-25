@@ -1,0 +1,9 @@
+# Table format: MULTILINES
+# Gas: sulfur hexafluoride (SF6)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+300.0 1000.0 5000.0       # boundary temperatures
+# Temperature range 300.0 - 1000.0 K
+4.185726e-01 -1.973361e+02 -2.566195e+04 3.455521e+00       # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 1000.0 - 5000.0 K
+6.063390e-01 4.445813e+01 -5.267651e+04 1.943696e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

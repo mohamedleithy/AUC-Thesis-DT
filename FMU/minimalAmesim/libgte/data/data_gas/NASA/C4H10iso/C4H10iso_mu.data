@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: isobutane (C4H10)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+262.0 580.0       # boundary temperatures
+# Temperature range 262.0 - 580.0 K
+9.409775e-01 9.637827e-01 9.998421e-01 -1.045999e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

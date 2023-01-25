@@ -1,0 +1,9 @@
+# Table format: MULTILINES
+# Gas: ammonia (NH3)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+5.665240e-01 -3.671808e+02 3.166384e+04 2.264744e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu
+# Temperature range 1000.0 - 5000.0 K
+5.976100e-01 -2.802734e+02 3.753246e+03 1.991013e+00        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

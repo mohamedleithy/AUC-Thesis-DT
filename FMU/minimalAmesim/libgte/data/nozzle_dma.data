@@ -1,0 +1,18 @@
+# You should define the table which is function of:
+# 	- nozzle mass flow rate dm [kg/s]
+#	- temperature at the nozzle inlet [K] 
+#	- pressure at the nozzle inlet [kPa]
+# Table format: 1D
+# table_unit = null
+# axis1_unit = null
+	1.00000000000	0.0000000000
+	1.18591666667	4.81491902661
+	1.31591666667	6.00013973
+	1.51603333333	7.116474
+	1.74366666667	7.94879366932	
+	2.05134			8.712476
+	2.48733333333	9.20497771696	
+	3.231			9.50
+	4.5				9.548996
+	6.0				9.548996
+	7.0				9.548996

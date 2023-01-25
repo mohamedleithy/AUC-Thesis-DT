@@ -1,0 +1,18 @@
+# Table format: 0D
+3001        Gas properties model - linear
+
+250        Minimum temperature                              [K]
+1500        Maximum temperature                             [K]
+
+1064.4381428        Minimum constant-pressure specific heat (cpint)  [J/kg/K]
+1380.1758507        Maximum constant-pressure specific heat (cpexh)  [J/kg/K]
+
+290.781464319        Perfect gas constant (r)                        [J/kg/K]
+
+1.41325807853e-05        Minimum absolute viscosity (muint)               [kg/m/s]
+6.02530843914e-05        Maximum absolute viscosity (muexh)              [kg/m/s]
+
+0.0196928598918        Minimum thermal conductivity (lambint)           [W/m/K]
+0.100746026139        Maximum thermal conductivity (lambexh)          [W/m/K]
+
+-83197.0        Enthalpy of formation                           [J/mol]

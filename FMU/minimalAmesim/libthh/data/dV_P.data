@@ -1,0 +1,11 @@
+# Table format: 1D
+# table_unit = cm**3/m
+# axis1_unit = bar
+# file for volumetric expansion dV = f(p) 
+# 
+10    0.4520
+30    1.1942
+50    1.9364
+70    2.6786
+90    3.4208
+110   4.1630

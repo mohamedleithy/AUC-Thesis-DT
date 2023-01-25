@@ -1,0 +1,8 @@
+# Table format: 0D
+301        Gas properties model - constant
+
+1127.08    Constant pressure specific heat (cp) [J/kg/K]
+3.0747e-05 Absolute viscosity                   [kg/m/s]
+0.0484894  Thermal conductivity                 [W/m/K]
+188.966    Perfect gas constant (r)             [J/kg/K]
+-393522.0  Enthalpy of formation                [J/mol]

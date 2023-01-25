@@ -1,0 +1,722 @@
+# Table format: MULTILINES
+#   Mobil DTE Medium ISO VG 46
+#	Pressure operating range: 0.8 … 500 [bar]
+#	Temperature operating range: -20 … 200 [°C]
+#__________________________________________________________________
+#This file shows how to organise data to define
+#properties using table in mode 1.
+#
+#In mode 1 density and bulk modulus are defined from a reference
+#density and a table of bulk modulus values.
+#
+#Note all lines started with a '#' are comments.
+#
+#First we have the mode.
+1 
+#Then the number of temperature values. This must be greater
+#than zero. If it is one, it is assumed that density and bulk 
+#modulus do not vary with temperature.
+18
+#
+#
+#
+#Now the ref. density in kg/m**3 and pressure in bar gauge.
+8.776e+002	0.000000e+000
+#Next the first temperature in Celsius.
+15
+#Then the number of pressure-bulk modulus pairs N (greater than 0)
+#followed by N pressure-bulk modulus pairs. The pressure values
+#must form a strictly monotically increasing sequence.
+#The pressure is in bar gauge and the bulk modulus also in bar. 
+26
+#The first bulk modulus table.
+0         16953
+20        17142
+40        17332
+60        17521
+80        17711
+100       17900
+120       18090
+140       18280
+160       18469
+180       18659
+200       18849
+220       19039
+240       19229
+260       19418
+280       19608
+300       19798
+320       19988
+340       20178
+360       20368
+380       20558
+400       20748
+420       20938
+440       21128
+460       21318
+480       21508
+500       21698
+#
+#
+#
+#your temperature number 2.
+#The ref. density and pressure.
+874.5	0.000000e+000
+#The temperature is :
+20
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         16514
+20        16702
+40        16890
+60        17078
+80        17266
+100       17454
+120       17642
+140       17831
+160       18019
+180       18208
+200       18397
+220       18585
+240       18774
+260       18963
+280       19152
+300       19342
+320       19531
+340       19720
+360       19910
+380       20099
+400       20289
+420       20478
+440       20668
+460       20858
+480       21048
+500       21238
+#
+#
+#
+#your temperature number 3.
+#The ref. density and pressure.
+871.4	0.000000e+000
+#The temperature is :
+25
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         16095
+20        16281
+40        16467
+60        16553
+80        16840
+100       17025
+120       17213
+140       17400
+160       17588
+180       17775
+200       17963
+220       18150
+240       18338
+260       18526
+280       18715
+300       18903
+320       19092
+340       19280
+360       19469
+380       19558
+400       19847
+420       20036
+440       20226
+460       20415
+480       20605
+500       20794
+#
+#
+#
+#your temperature number 4.
+#The ref. density and pressure.
+868.3	0.000000e+000
+#The temperature is :
+30
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         15693
+20        15878
+40        16062
+60        16247
+80        16431
+100       16671
+120       16802
+140       16988
+160       17174
+180       17360
+200       17546
+220       17733
+240       17919
+260       18107
+280       18294
+300       18481
+320       18669
+340       18857
+360       19045
+380       19233
+400       19422
+420       19610
+440       19799
+460       19988
+480       20177
+500       20367
+#
+#
+#
+#your temperature number 5.
+#The ref. density and pressure.
+865.2	0.000000e+000
+#The temperature is :
+35
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         15309
+20        15491
+40        15674
+60        15857
+80        16040
+100       16223
+120       16407
+140       16591
+160       16776
+180       16961
+200       17146
+220       17331
+240       17517
+260       17703
+280       17889
+300       18075
+320       18262
+340       18449
+360       18636
+380       18824
+400       19012
+420       19200
+440       19388
+460       19576
+480       19765
+500       19954
+#
+#
+#
+#your temperature number 6.
+#The ref. density and pressure.
+862.1	0.000000e+000
+#The temperature is :
+40
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         14940
+20        15120
+40        15301
+60        15482
+80        15664
+100       15846
+120       16028
+140       16211
+160       16394
+180       16577
+200       16761
+220       16945
+240       17129
+260       17314
+280       17499
+300       17685
+320       17870
+340       18056
+360       18243
+380       18429
+400       18616
+420       18803
+440       18991
+460       19179
+480       19367
+500       19555
+#
+#
+#
+#your temperature number 7.
+#The ref. density and pressure.
+859.0	0.000000e+000
+#The temperature is :
+45
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         14586
+20        14765
+40        14944
+60        15123
+80        15303
+100       15483
+120       15664
+140       15845
+160       16026
+180       16208
+200       16391
+220       16573
+240       16756
+260       16940
+280       17124
+300       17308
+320       17493
+340       17678
+360       17863
+380       18049
+400       18235
+420       18421
+440       18608
+460       18795
+480       18982
+500       19170
+#
+#
+#
+#your temperature number 8.
+#The ref. density and pressure.
+856.0	0.000000e+000
+#The temperature is :
+50
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         14246
+20        14423
+40        14600
+60        14778
+80        14956
+100       15134
+120       15513
+140       15493
+160       15673
+180       15853
+200       16034
+220       16215
+240       16397
+260       16579
+280       16762
+300       16945
+320       17128
+340       17312
+360       17497
+380       17681
+400       17866
+420       18052
+440       18238
+460       18424
+480       18610
+500       18797
+#
+#
+#
+#your temperature number 9.
+#The ref. density and pressure.
+852.9	0.000000e+000
+#The temperature is :
+55
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         13920
+20        14094
+40        14270
+60        14445
+80        14622
+100       14798
+120       14976
+140       15154
+160       15332
+180       15511
+200       15690
+220       15870
+240       16051
+260       16231
+280       16413
+300       16595
+320       16777
+340       16960
+360       17143
+380       17326
+400       17510
+420       17695
+440       17880
+460       18065
+480       18251
+500       18437
+#
+#
+#
+#your temperature number 10.
+#The ref. density and pressure.
+849.8	0.000000e+000
+#The temperature is :
+60
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         13605
+20        13778
+40        13952
+60        14125
+80        14300
+100       14475
+120       14651
+140       14827
+160       15004
+180       15181
+200       15359
+220       15537
+240       15716
+260       15896
+280       16076
+300       16256
+320       16437
+340       16619
+360       16901
+380       16983
+400       17166
+420       17350
+440       17534
+460       17718
+480       17903
+500       18088
+#
+#
+#
+#your temperature number 11.
+#The ref. density and pressure.
+846.7	0.000000e+000
+#The temperature is :
+65
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         13303
+20        13474
+40        13645
+60        13817
+80        13990
+100       14163
+120       14337
+140       14512
+160       14697
+180       14863
+200       15039
+220       15216
+240       15394
+260       15572
+280       15750
+300       15929
+320       16109
+340       16289
+360       16470
+380       16652
+400       16833
+420       17016
+440       17199
+460       17382
+480       17566
+500       17750
+#
+#
+#
+#your temperature number 12.
+#The ref. density and pressure.
+843.6	0.000000e+000
+#The temperature is :
+70
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         13011
+20        13180
+40        13350
+60        13520
+80        13691
+100       13863
+120       14035
+140       14208
+160       14382
+180       14556
+200       14730
+220       14906
+240       15082
+260       15259
+280       15436
+300       15614
+320       15792
+340       15971
+360       16150
+380       16331
+400       16511
+420       16692
+440       16874
+460       17058
+480       17239
+500       17423
+#
+#
+#
+#your temperature number 13.
+#The ref. density and pressure.
+840.5	0.000000e+000
+#The temperature is :
+75
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         12731
+20        12898
+40        13065
+60        13234
+80        13403
+100       13573
+120       13743
+140       13915
+160       14086
+180       14259
+200       14432
+220       14606
+240       14781
+260       14956
+280       15132
+300       15308
+320       15485
+340       15663
+360       15841
+380       16020
+400       16199
+420       16379
+440       16560
+460       16741
+480       16923
+500       17105
+#
+#
+#
+#your temperature number 14.
+#The ref. density and pressure.
+837.4	0.000000e+000
+#The temperature is :
+80
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         12460
+20        12625
+40        12791
+60        12957
+80        13125
+100       13293
+120       13462
+140       13631
+160       13801
+180       13972
+200       14144
+220       14316
+240       14489
+260       14663
+280       14837
+300       15012
+320       15188
+340       15364
+360       15541
+380       15719
+400       15897
+420       16076
+440       16255
+460       16435
+480       16636
+500       16797
+#
+#
+#
+#your temperature number 15.
+#The ref. density and pressure.
+834.3	0.000000e+000
+#The temperature is :
+85
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         12198
+20        12361
+40        12525
+60        12690
+80        12856
+100       13022
+120       13189
+140       13357
+160       13526
+180       13695
+200       13865
+220       14036
+240       14207
+260       14380
+280       14552
+300       14726
+320       14900
+340       15075
+360       15251
+380       15427
+400       15604
+420       15782
+440       15960
+460       16139
+480       16318
+500       16499
+#
+#
+#
+#your temperature number 16.
+#The ref. density and pressure.
+831.2	0.000000e+000
+#The temperature is :
+90
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         11945
+20        12107
+40        12269
+60        12432
+80        12596
+100       12760
+120       12926
+140       13092
+160       13259
+180       13427
+200       13595
+220       13764
+240       13934
+260       14105
+280       14276
+300       14449
+320       14622
+340       14795
+360       14969
+380       15144
+400       15320
+420       15496
+440       15673
+460       15851
+480       16030
+500       16208
+#
+#
+#
+#your temperature number 17.
+#The ref. density and pressure.
+828.1	0.000000e+000
+#The temperature is :
+95
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         11701
+20        11861
+40        12021
+60        12182
+80        12344
+100       12507
+120       12671
+140       12836
+160       13001
+180       13167
+200       13334
+220       13502
+240       13670
+260       13839
+280       14009
+300       14180
+320       14351
+340       14524
+360       14696
+380       14870
+400       15044
+420       15220
+440       15395
+460       15572
+480       15749
+500       15927
+#
+#
+#
+#your temperature number 18.
+#The ref. density and pressure.
+825.0	0.000000e+000
+#The temperature is :
+100
+#The number of pressures.
+26
+#The bulk modulus table for this temperature is :.
+0         11465
+20        11623
+40        11781
+60        11941
+80        12101
+100       12262
+120       12424
+140       12587
+160       12751
+180       12915
+200       13081
+220       13247
+240       13414
+260       13581
+280       13750
+300       13919
+320       14089
+340       14260
+360       14432
+380       14604
+400       14777
+420       14951
+440       15125
+460       15301
+480       15477
+500       15653
+#
+#
+#
+#The definition of bulk modulus and density is now complete.
+#Next we define the absolute viscosity in mode 1.
+#In mode 1 the absolute viscosity is defined from tables of
+#absolute viscosities.
+#Mode for viscosity.
+1
+#Then the number of temperature values. This must be greater
+#than zero. If it is one, it is assumed that absolute viscosity 
+#does not vary with temperature.
+3
+#Temperature point number 1:.
+40
+#Then the number of pressure-absolute viscosity pairs M
+#(greater than 0) followed by M pressure-absolute viscosity pairs.
+#The pressure values must form a strictly monotically increasing 
+#sequence. The pressure is in bar gauge and the absolute viscosity
+#in cP. 
+1
+#The first absolute viscosity table.
+0.000000e+000	37.9324
+#Temperature point number : 2.
+50
+#The number of pressures.
+1
+#The absolute viscosity table at this temperature :.
+0.000000e+000	24.7384
+#Temperature point number : 3.
+100
+#The number of pressures.
+1
+#The absolute viscosity table at this temperature :.
+0.000000e+000	5.5358

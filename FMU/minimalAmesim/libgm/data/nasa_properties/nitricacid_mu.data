@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: nitric acid (HNO3)
+# Coefficients for absolute viscosity (mu in microP) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+150.0 1500.0       # boundary temperatures
+# Temperature range 150.0 - 1500.0 K
+9.837793e-01 9.620897e-01 9.998420e-01 -9.857266e-01        # aMu, bMu, cMu, dMu in ln(mu) = aMu.ln(T)+bMu/T+cMu/T^2+dMu

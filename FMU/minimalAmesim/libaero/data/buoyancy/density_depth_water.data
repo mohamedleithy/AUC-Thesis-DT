@@ -1,0 +1,11 @@
+# Table format: 1D
+# table_unit = kg/m**3
+# axis1_unit = m
+# axis1_token = depth
+# axis2_token = rho
+# axis1_title = depth
+# axis2_title = fluid density
+     0.00000000000000e+00      1.02500000000000e+03
+     5.00000000000000e+02      1.02700000000000e+03
+     1.00000000000000e+03      1.02800000000000e+03
+     4.50000000000000e+03      1.02800000000000e+03

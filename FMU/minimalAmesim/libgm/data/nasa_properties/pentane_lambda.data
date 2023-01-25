@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: pentane (C5H12)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+310.0 610.0       # boundary temperatures
+# Temperature range 310.0 - 610.0 K
+1.807472e+00 8.940064e-01 9.995288e-01 -5.325983e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

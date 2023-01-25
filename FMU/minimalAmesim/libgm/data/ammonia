@@ -1,0 +1,25 @@
+# gas name
+ammonia NH3
+# reference temperature (in K)
+293.15
+# reference pressure (absolute) (in Pa)
+1.0e5
+# minimum temperature (in K)
+240.0
+# maximum temperature (in K)
+700.0
+# density at ref. pressure and ref. temperature (in kg/m3)
+0.70658102
+#	T(K)		cp(J/kg/K)		mu(kg/m/s)		lam(W/m/K)
+      240		2291.81		8.0603e-06		2.0974e-02
+      260		2204.39		8.7348e-06		2.2041e-02
+      280		2170.11		9.4367e-06		2.3422e-02
+      300		2163.71		1.0161e-05		2.5100e-02
+	350		2204.98		1.2039e-05		3.0465e-02
+	400		2283.17		1.3971e-05		3.7214e-02
+	450		2378.22		1.5920e-05		4.4929e-02
+	500		2482.62		1.7863e-05		5.3119e-02	
+	550		2592.62		1.9786e-05		6.1223e-02
+	600		2705.95		2.1682e-05		6.8606e-02
+	650		2821.08		2.3550e-05		7.4562e-02
+	700  		2936.86		2.5391e-05		7.8311e-02

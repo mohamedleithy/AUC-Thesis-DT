@@ -1,0 +1,16 @@
+# solid name
+gold
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+1063.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+-73            19300           124            323
+27             19300           129            317
+127            19300           131            311
+327	       19300           135            298
+527	       19300           140            284
+727   	       19300           145            270
+927            19300           155            255

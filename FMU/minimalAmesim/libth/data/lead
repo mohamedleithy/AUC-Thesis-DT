@@ -1,0 +1,13 @@
+# solid name
+lead
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+328.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+-73            11340            125            36.7
+27             11340            129            35.3
+127            11340            132            34.0
+327	       11340            142            31.4

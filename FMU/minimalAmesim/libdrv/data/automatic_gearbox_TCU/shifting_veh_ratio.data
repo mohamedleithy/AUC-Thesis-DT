@@ -1,0 +1,14 @@
+# Table format: 1D
+# table_unit = m/s
+# axis1_unit = m/s
+# First column: vehicle speed for downshift [m/s]
+# Second column: vehicle speed for upshift [m/s]
+# Each line represents a gear ratio
+# If reverse gears are set, add a line with two 0 to represent the neutral
+# For reverse gears vehicle speeds must be negative
+# 
+    0.00000000000000e+000     6.00000000000000e+000 
+    5.00000000000000e+000     8.00000000000000e+000 
+    7.00000000000000e+000     1.00000000000000e+001 
+    9.00000000000000e+000     1.20000000000000e+001 
+    1.10000000000000e+001     1.40000000000000e+001 

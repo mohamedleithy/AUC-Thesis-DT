@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+
+<SUSPENSION type="Integral-Link">
+<HARDPOINTS>
+	<point name="A" title="wheel center">
+	  <x>2864.4</x>
+	  <y>-777.1</y>
+	  <z>59.9</z>
+	</point>
+	<point name="B" title="contact patch">
+	  <x>2864.4</x>
+	  <y>-777.1</y>
+	  <z>-240</z>
+	</point>
+	<point name="A1" title="LCA rear joint to chassis (inner)" label="">
+	  <x>2874.6</x>
+	  <y>-323</y>
+	  <z>-86.8</z>
+	</point>
+	<point name="A2" title="LCA front joint to chassis (inner)" label="">
+	  <x>2615.0</x>
+	  <y>-332.2</y>
+	  <z>-60.0</z>
+	</point>
+	<point name="A3" title="tie rod joint to chassis (inner)" label="">
+	  <x>3025.8</x>
+	  <y>-420</y>
+	  <z>67.5</z>
+	</point>
+	<point name="A4" title="UCA joint to chassis (inner)" label="">
+	  <x>2866.5</x>
+	  <y>-509.2</y>
+	  <z>199.6</z>
+	</point>
+	<point name="A6" title="damper upper joint to chassis" label="">
+	  <x>2941.3</x>
+	  <y>-495.1</y>
+	  <z>341.2</z>
+	</point>
+	<point name="B1" title="LCA joint to wheel carrier (outer)" label="">
+	  <x>2869.0</x>
+	  <y>-730.0</y>
+	  <z>-106.3</z>
+	</point>
+	<point name="B2" title="integral link lower joint to LCA" label="">
+	  <x>2721.7</x>
+	  <y>-720.0</y>
+	  <z>-38.3</z>
+	</point>
+	<point name="B3" title="tie rod joint to wheel carrier (outer)" label="">
+	  <x>3024.5</x>
+	  <y>-680.0</y>
+	  <z>88.8</z>
+	</point>
+	<point name="B4" title="UCA joint to wheel carrier (outer)" label="">
+	  <x>2870.0</x>
+	  <y>-730.0</y>
+	  <z>239.7</z>
+	</point>
+	<point name="B5" title="integral link upper joint to wheel carrier" label="">
+	  <x>2771.5</x>
+	  <y>-709.0</y>
+	  <z>145.1</z>
+	</point>
+	<point name="B6" title="damper lower joint to wheel carrier" label="">
+	  <x>2973.2</x>
+	  <y>-657.1</y>
+	  <z>-90.2</z>
+	</point>
+	<point name="W" title="virtual point for static toe and camber adjustment">
+	  <x>2864.4</x>
+	  <y>-1500</y>
+	  <z>59.9</z>
+	</point>
+</HARDPOINTS>
+<BUSHINGS>
+	<point name="A1" title="LCA rear joint to chassis (inner)">
+	  <ka>1.0e+06</ka>
+	  <kr>1.0e+06</kr>
+	</point>
+	<point name="A2" title="LCA front joint to chassis (inner)">
+	  <ka>1.0e+06</ka>
+	  <kr>1.0e+06</kr>
+	</point>
+	<point name="A4" title="UCA joint to chassis (inner)">
+	  <ka>1.0e+06</ka>
+	  <kr>1.0e+06</kr>
+	</point>
+	<point name="A6" title="damper upper joint to chassis">
+	  <ka>1.0e+06</ka>
+	  <kr>1.0e+06</kr>
+	</point>
+</BUSHINGS>
+<PARTS>
+	<part name="wheel carrier" title="wheel carrier">
+	  <point>B1</point>
+	  <point>B3</point>
+	  <point>B4</point>
+	  <point>B5</point>
+	  <point>B6</point>
+	</part>
+	<part name="LCA" title="lower control arm">
+	  <point>A1</point>
+	  <point>B1</point>
+	  <point>A2</point>
+	  <point>B2</point>
+	</part>
+	<part name="integral link" title="integral link">
+	  <point>B2</point>
+	  <point>B5</point>
+	</part>
+	<part name="tie rod" title="tie rod link">
+	  <point>A3</point>
+	  <point>B3</point>
+	</part>
+	<part name="UCA" title="upper control arm">
+	  <point>A4</point>
+	  <point>B4</point>
+	</part>
+	<part name="damper" title="damper">
+	  <point>A6</point>
+	  <point>B6</point>
+	</part>
+</PARTS>
+</SUSPENSION>

@@ -1,0 +1,142 @@
+MF-Tyre/MF-Swift Library Usage
+==============================
+
+Overview
+--------
+
+The MF-Tyre/MF-Swift SDK libraries in this distribution come in a number of different flavors. The
+goal of this document is to clarify which libraries are to be used for different use cases.
+
+The following table gives on overview of the available libraries. The Unix in this case represents
+both dSpace and Linux platforms.
+
+|---------+------------+------------------------------+-------------------------------------|
+|         |            | Offline                      | Online                              |
+|---------+------------+------------------------------+-------------------------------------|
+| Static  | Unix       | X                            | libmfswift_tire_interface_online.a  |
+|         |            |                              |                                     |
+|         | Win        | X                            | mfswift_tire_interface_online.lib   |
+|---------+------------+------------------------------+-------------------------------------|
+| Dynamic | Unix       | libmfswift_tire_interface.so | libmfswift_tire_interface_online.so |
+|         |            |                              |                                     |
+|         | Win import | mfswift_tire_interface.lib   | mfswift_tire_interface_online.lib   |
+|         | Win dll    | mfswift_tire_interface.dll   | mfswift_tire_interface_online.dll   |
+|---------+------------+------------------------------+-------------------------------------|
+
+
+Offline vs. Online Libraries
+----------------------------
+
+MF-Tyre/MF-Swift distinguishes between two main use cases: Offline and Online. Online refers to
+usage on Real-Time applications (typically on Concurrent, dSPACE, etc). Offline usage refers to
+desktop applications that have no real time constraints.
+
+Each of these use cases require different types of licenses. The libraries for the Offline use case
+use a Flexlm license mechanism. The libraries for the Online use case work with our real-time
+licensing mechanism using entitlement files.
+
+To protect our business model, the Offline libraries include a sporadic delay of a few
+milliseconds. The delay will trip up real-time systems, but won't add any significant extra run-time
+to desktop applications.
+
+The different use cases require different libraries to be used, as indicated in the table. From a
+functional perspective, the libraries do not differ. They produce the exact same results and expose
+the exact same interface. The only difference between them is the licensing mechanism and the
+artificial delay.
+
+
+Static vs. Dynamic Libraries
+----------------------------
+
+The Online libraries are provided as both static and dynamic libraries. We recommend using dynamic
+libraries if the platform allows the use of dynamic libraries. For certain platforms (DS1006) we
+only ship static libraries since they do not support dynamic libraries.
+
+The Offline libraries are only provided as dynamic libraries.
+
+On Windows the dynamic libraries are supplied as a combination of a dll (located in the 'bin'
+sudirectory) and an import library (located in the 'lib' subdirectory). These files support both
+implicit and explicit linking. When you link your application against the import library, Windows
+will automatically load the dll when your executable starts (implicit linking). If you want more
+control and flexibility you can explicitly load the dll at runtime by using the appropriate
+functions.
+
+Runtime Loader
+- - - - - - -
+
+Next to the tire model libraries, we provide a support library to assist loading the library at
+runtime. The static library is available on Windows and Linux. It will load the tire library and map
+all functions into a data structure.  
+
+Platform Support
+----------------
+
+The MF-Tyre/MF-Swift libraries are built in pure C with as little dependencies as possible. Building
+this way we aim for maximum compatibility with as many compilers as possible.
+
+Windows
+- - - -
+
+The Windows platform is supported for Offline use. Our main build platform is Visual Studio 2012 (32
+bit and 64 bit). These libraries should be compatible with any newer version of Visual Studio.
+
+Alternatively, we also provide 64bit libraries built with Visual Studio 2017.
+
+Linux
+- - -
+
+The Linux libraries are compiled on Centos 6.5 with gcc 4.4.7 against libc 2.12. We provide both 32
+bit and 64 bit binaries. These libraries should be compatible with any Linux system with a libc
+version larger or equal to 2.12.
+
+dSPACE DS1006
+- - - - - - -
+
+For the dSPACE DS1006 platform, two libraries are available.
+
+The 7.2 library is built using the gcc 3.3.5 cross compiler from dSPACE. It is compatible with all
+RCPHIL version from 7.2 up to 2013-A SP2.
+
+The 2015 version is compiled with the gcc 4.8.3 cross compiler from dSPACE. It is compatible with
+all RCPHIL versions from 2014-B and up.
+
+dSPACE SCALEXIO
+- - - - - - - -
+
+The Scalexio library is built with the qnx compiler in the RCPHIL 2017-A distribution and is
+compatible with RCPHIL 2017-A up until 2018-B
+
+
+Licensing Requirements
+----------------------
+
+Offline (Flexlm)
+- - - - - - - -
+
+The Flexlm licensing mechanism does not require any configuration on the API side. The user needs to
+have a valid license server running and the MADLIC_LICENSE_FILE environment variable should be set
+on the client system that runs the simulation.
+
+
+Online (Entitlement)
+- - - - - - - - - -
+
+Users that want to use the real-time capabilities of the MF-Tyre/MF-Swift model will receive an
+entitlement file that allows the Online library to run.
+
+Users of the API have two approaches for provideing the library with the contents of this file. The
+data can be provided as a buffer with the contents of the file through the
+mfs_api_simulation_load_entitlement_data function (this is the only option on systems without a file
+system). On platforms with filesystem support (Linux) a path to the entitlement file can be given to
+the mfs_api_simulation_load_entitlement_file function.
+
+Users should be able to specify the name and location of the entitlement file. For GUI applications,
+the recommended way is to provide a way to set the file in the GUI. Entitlements rarely change, so
+it is recommended to make it a 'global' option rather than a 'per simulation' option.
+
+For applications without a GUI, the recommended way is to read the MFSWIFTRT_ENTITLEMENT_FILE
+environment variable.
+
+The second approach is used for MF-Tyre/MF-Swift on Simulink. During code generation for real-time
+targets, the environment variable is read and the contents of the file are embedded into the
+generated code in base64 encoding.

@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: nonane (C9H20)
+# Coefficients for equation of state
+1.28260000e-01          # molar mass M [kg/mol]
+594.550000              # critical temperature Tc [K]
+2.281000e+06            # critical pressure Pc [Pa]
+0.443300                # acentric factor w [-]
+219.700000              # minimal temperature [K]
+600.000000              # maximal temperature [K]
+-228300.00              # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from Good, 1969)

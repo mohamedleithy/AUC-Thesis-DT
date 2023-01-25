@@ -1,0 +1,10 @@
+# Table format: 0D
+# Gas: propane (C3H8)
+# Coefficients for equation of state
+4.40956200e-02          # molar mass M [kg/mol]
+369.820000              # critical temperature Tc [K]
+4.249000e+06            # critical pressure Pc [Pa]
+0.152000                # acentric factor w [-]
+85.500000               # minimal temperature [K]
+625.000000              # maximal temperature [K]
+-104680.000             # enthalpy of formation [J/mol] at T=298.15K and P=1barA (from NASA/TP-2002-211556)

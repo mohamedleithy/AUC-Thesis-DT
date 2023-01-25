@@ -1,0 +1,7 @@
+# Table format: MULTILINES
+# Gas: sulfur trioxide (SO3)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+100.0 1500.0       # boundary temperatures
+# Temperature range 100.0 - 1500.0 K
+7.909942e-01 -1.546160e+02 -5.417053e+00 7.069344e-01       # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

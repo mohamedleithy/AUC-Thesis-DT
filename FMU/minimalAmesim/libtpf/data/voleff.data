@@ -1,0 +1,11 @@
+# Table format: T1D
+# table_unit = null
+# axis1_unit = null
+# axis2_unit = rev/min
+1000.0      2
+1.0     0.6
+5.0     0.6
+
+10000.0     2
+1.0     0.6
+5.0     0.6

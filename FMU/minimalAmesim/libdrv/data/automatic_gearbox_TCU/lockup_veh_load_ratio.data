@@ -1,0 +1,15 @@
+# Table format: 2D
+# table_unit = m/s
+# axis1_unit = null
+# axis2_unit = null
+# Columns represent lockup clutch state change (ex: 2.0 => when gear 2 is used, disengage lockup clutch when corresponding vehicle speed is reached
+#                                                   3.1 => when gear 3 is used, engage lockup clutch when corresponding vehicle speed is reached)
+# Rows represent different loads [%]
+# Data in table are vehicle speed threshold [m/s]
+# 
+10
+2
+    1.00000000000000e+000     1.10000000000000e+000     2.00000000000000e+000     2.10000000000000e+000     3.00000000000000e+000     3.10000000000000e+000     4.00000000000000e+000     4.10000000000000e+000     5.00000000000000e+000     5.10000000000000e+000
+    0.00000000000000e+000     1.00000000000000e+002
+    5.00000000000000e+000     6.00000000000000e+000     5.00000000000000e+000     8.00000000000000e+000     5.00000000000000e+000     1.00000000000000e+001     5.00000000000000e+000     1.20000000000000e+001     5.00000000000000e+000     1.40000000000000e+001
+    5.00000000000000e+000     7.00000000000000e+000     5.00000000000000e+000     9.00000000000000e+000     5.00000000000000e+000     1.10000000000000e+001     5.00000000000000e+000     1.30000000000000e+001     5.00000000000000e+000     1.50000000000000e+001

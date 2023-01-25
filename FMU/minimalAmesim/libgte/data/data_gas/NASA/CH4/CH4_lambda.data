@@ -1,0 +1,9 @@
+# Table format: MULTILINES
+# Gas: methane (CH4)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+200.0 1000.0 5000.0       # boundary temperatures
+# Temperature range 200.0 - 1000.0 K
+1.023818e+00 -3.109237e+02 3.294431e+04 6.778744e-01        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 1000.0 - 5000.0 K
+7.748503e-01 -4.008963e+02 -4.655108e+04 2.567148e+00       # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

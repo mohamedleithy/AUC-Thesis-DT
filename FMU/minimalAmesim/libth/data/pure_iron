@@ -1,0 +1,17 @@
+# solid name
+pure iron
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+1537.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+-73             7870           384            94
+27              7870           447            80.2
+127             7870           490            69.5
+327	        7870           574            54.7
+527	        7870           680            43.3
+727   	        7870           975            32.8
+927             7870           609            28.3
+1227            7870           654            32.1

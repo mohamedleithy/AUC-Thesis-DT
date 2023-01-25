@@ -1,0 +1,11 @@
+# Table format: MULTILINES
+# Gas: exhaust (0.73268 N2, 0.12580 CO2, 0.14152 H20)
+# Coefficients for thermal conductivity (lambda in microW/cm/K) as a function of temperature (T in K) in the NASA 96 format
+# Ref: Computer Program for Calculation of Complex Chemical Equilibrium Compositions and Applications, NASA Reference Publication 1311, 1996
+374.0 1000.0 5000.0 10000.0       # boundary temperatures
+# Temperature range 374.0 - 1000.0 K
+8.255778e-01 -8.064074e+01 1.180666e+04 9.082747e-01        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 1000.0 - 5000.0 K
+8.065577e-01 -1.694718e+02 4.499514e+04 1.095032e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam
+# Temperature range 5000.0 - 10000.0 K
+1.861216e+00 3.377446e+03 7.046569e+06 -8.872448e+00        # aLam, bLam, cLam, dLam in ln(Lam) = aLam.ln(T)+bLam/T+cLam/T^2+dLam

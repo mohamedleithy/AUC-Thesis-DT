@@ -1,0 +1,12 @@
+# Table format: nT1D v1.0
+# distance dependant data for lap
+
+id activeLongitudinalDriver longiDriverId
+   0.   fixedSpeed
+
+float cruiseControlTargetSpeed
+   0.0    10. 
+2000.0    10.
+
+id activeLateralDriver latDriverId
+   0.  pathFollower

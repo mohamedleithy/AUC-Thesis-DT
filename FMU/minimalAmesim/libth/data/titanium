@@ -1,0 +1,17 @@
+# solid name
+titanium
+# reference temperature (in degC)
+27.0
+# minimum temperature (in degC)
+-100.0
+# maximum temperature (in degC)
+1680.0
+#  T(degC)    rho(kg/m**3)    cp(J/kg/degC)  lam(W/m/degC)
+-73             4500           465            24.5
+27              4500           522            21.9
+127             4500           551            20.4
+327	        4500           591            19.4
+527	        4500           633            19.7
+727   	        4500           675            20.7
+927             4500           620            22.0
+1227            4500           686            24.5

@@ -1,0 +1,18 @@
+# Table format: 0D
+3001        Gas properties model - linear
+
+295.0       Intake temperature                              [K]
+700.0       Exhaust temperature                             [K]
+
+874.3425258  Intake constant-pressure specific heat (cpint)  [J/kg/K]
+1150.152593  Exhaust constant-pressure specific heat (cpexh) [J/kg/K]
+
+188.8974464  Perfect gas constant (r)                        [J/kg/K]
+
+1.451122e-05 Intake absolute viscosity (muint)               [kg/m/s]
+3.09040e-05  Exhaust absolute viscosity (muexh)              [kg/m/s]
+
+0.017325395  Intake thermal conductivity (lambint)           [W/m/K]
+0.04874938   Exhaust thermal conductivity (lambexh)          [W/m/K]
+
+8.2048e+04   Enthalpy of formation                           [J/mol]

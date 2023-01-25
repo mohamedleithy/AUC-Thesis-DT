@@ -1,0 +1,8 @@
+#*********************************************************
+#*  Oxydation/reduction reaction kinetic: partial orders *
+#   O2 + 4 H+ + 4 e- <=> 2 H2O
+#*********************************************************
+0      			# electrolyte ion: H+
+0.5			# mixture species 1: O2
+1			# mixture species 2: H2O
+0			# mixture species 4: N2

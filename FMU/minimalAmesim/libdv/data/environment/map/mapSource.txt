@@ -1,0 +1,43 @@
+
+File    : D36_MontDore.svg
+source  : openstreetmap, http://www.openstreetmap.org
+author  : collaborative work
+license : http://www.openstreetmap.org/copyright
+          Open Data Commons Open Database License
+          Creative Commons Attribution-ShareAlike 2.0
+description  : area of the 'course de Cote du Mont-Dore / Chambon-sur-lac', Auvergne, France
+GPS location : 45.552N, 2.8E x 45.6006N, 2.8931E
+OSM scale    : 1:20000
+image size   : 1851x1380
+
+
+Goteborg_Sweden_City_Race_Track_map.svg
+source  : http://en.wikipedia.org/wiki/Goteborg_City_Race
+author  : Will Pittenger
+license : http://creativecommons.org/licenses/by-sa/3.0/deed.en
+          Attribution-Share Alike 3.0 Unported
+description  : "Eco Drive Arena" racing circuit in Goteborg, Sweden
+GPS location : 57°42'48.40N, 11°57'38.80E
+image size   : 1424x982
+
+
+Irungattukottai_Race_Track_map_--_Full_track.svg
+source  : http://en.wikipedia.org/wiki/Irungattukottai_Race_Track
+author  : Will Pittenger
+license : http://creativecommons.org/licenses/by-sa/3.0/deed.en
+          Attribution-Share Alike 3.0 Unported
+description  : Irungattukottai race track, Chennai, India
+GPS location : 13°0'8.20N, 79°59'4.30E
+image size   : 1441x806
+
+
+OaklandBayBridgeAccess.svg
+source  : openstreetmap, http://www.openstreetmap.org
+author  : collaborative work
+license : http://www.openstreetmap.org/copyright
+          Open Data Commons Open Database License
+          Creative Commons Attribution-ShareAlike 2.0
+description  : I80, I580, I880 interchange near San Franciso - Oakland Bay bridge access
+GPS location : 37.81293N, 122.32374W x 37.83484N, 122.27814W
+OSM scale    : 1:7500
+image size   : 2417x1470

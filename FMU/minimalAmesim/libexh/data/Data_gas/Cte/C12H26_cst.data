@@ -1,0 +1,6 @@
+# Table format: 0D
+300
+3238.81             Constant pressure specific heat (cp)             [J/kg/K]
+0.0000159867        Absolute viscosity                               [kg/m/s]
+0.103962            Thermal conductivity                             [W/m/K]
+48.9089        	  Perfect gas constant (r)                         [J/kg/K]

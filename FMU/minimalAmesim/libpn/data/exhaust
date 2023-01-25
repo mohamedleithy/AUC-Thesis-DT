@@ -1,0 +1,22 @@
+# gas name
+exhaust gas
+# reference temperature (in K)
+293.15
+# reference pressure (absolute) (in Pa)
+1.0e5
+# minimum temperature (in K)
+100.0
+# maximum temperature (in K)
+1100.0
+# density at ref. pressure and ref. temperature (in kg/m3)
+1.225
+#	T(K)		cp(J/kg/K)	mu(kg/m/s)	lam(W/m/K)
+	293.15		1061		1.819e-5	256e-4
+	373.15		1080		2.185e-5	314e-4
+	473.15		1107		2.589e-5	386e-4
+	573.15		1136		2.950e-5	453e-4
+	673.15		1170		3.277e-5	515e-4
+	773.15		1206		3.578e-5	571e-4
+	873.15		1243		3.860e-5	621e-4
+	973.15		1280		4.123e-5	667e-4
+	1073.15		1315		4.372e-5	707e-4

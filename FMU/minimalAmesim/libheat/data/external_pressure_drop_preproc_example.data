@@ -1,0 +1,22 @@
+# heat exchanger external pressure drop preprocessing tool file
+#cross-sectional area [mm**2]:	240000
+#hydraulic diameter [mm]:	100
+#fluid:	air
+#frontal area [mm**2]:	318500
+Pin	Tin	dmext	dPext
+barA	degC	kg/s	Pa
+1.013	45	0.1	5
+1.013	45	0.2	17
+1.013	45	0.3	33
+1.013	45	0.4	54
+1.013	45	0.5	78
+1.013	45	0.6	106
+1.013	45	0.7	138
+1.013	45	0.8	172
+1.013	45	0.9	210
+1.013	45	1	250
+1.013	45	1.1	293
+1.013	45	1.2	338
+1.013	45	1.7	664
+1.013	45	1.8	727
+1.013	45	1.9	800
