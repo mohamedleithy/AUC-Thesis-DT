@@ -12,13 +12,14 @@ roscore_sim:
 
 .PHONY: sensor_values
 sensor_values:
-	nohup python3 /AUC-Thesis-DT/ROS-master/cloudconnect/Reactive.py > output.log & ; python3 ~/catkin_ws/src/sensor_fusion/src/sensor_fusion.py
+	nohup python3 /AUC-Thesis-DT/ROS-master/cloudconnect/Reactive.py > output.log & && python3 ~/catkin_ws/src/sensor_fusion/src/sensor_fusion.py
 
 .PHONY: stream
 stream:
-	nohup python3 /AUC-Thesis-DT/ROS-master/cloudconnect/Streaming.py > output.log & ; python3 ~/catkin_ws/src/laser_values/src/scan.py
+	nohup python3 /AUC-Thesis-DT/ROS-master/cloudconnect/Streaming.py > output.log & && python3 ~/catkin_ws/src/laser_values/src/scan.py
 
 .PHONY: actuate
 actuate:
-	nohup python3 /AUC-Thesis-DT/ROS-master/cloudconnect/TeleOperations.py > output.log & ; python3 ~/catkin_ws/src/actuate/src/actuate.py
+	python3 ~/catkin_ws/src/actuate/src/actuate.py && nohup python3 /AUC-Thesis-DT/ROS-master/cloudconnect/TeleOperations.py > output.log & 
+	
 
