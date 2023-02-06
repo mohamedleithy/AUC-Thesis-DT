@@ -2,9 +2,9 @@
 #  Command to build it
 # docker built -t <image name > .
 
-#Start from ros:noetic-desktop-full image
+#Start from ros:kinetic-desktop-full image
 
-FROM osrf/ros:noetic-desktop-full
+FROM osrf/ros:kinetic-desktop-full
 
 #install necessary packages 
 RUN apt-get update
@@ -23,15 +23,19 @@ RUN apt-get update
 
 #install packages for TURTLEBOT3_MODEL=wafflebot3 
 
-RUN apt-get install -y ros-noetic-joy ros-noetic-teleop-twist-joy \
-  ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
-  ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
-  ros-noetic-rosserial-python ros-noetic-rosserial-client \
-  ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
-  ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
-  ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
-  ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers \
-  ros-noetic-dynamixel-sdk ros-noetic-turtlebot3-msgs ros-noetic-turtlebot3
+RUN apt-get -y install ros-kinetic-joy ros-kinetic-teleop-twist-joy \
+  ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc \
+  ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan \
+  ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python \
+  ros-kinetic-rosserial-server ros-kinetic-rosserial-client \
+  ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server \
+  ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro \
+  ros-kinetic-compressed-image-transport ros-kinetic-rqt* \
+  ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
+
+RUN apt-get -y install ros-kinetic-dynamixel-sdk
+RUN apt-get -y install ros-kinetic-turtlebot3-msgs
+RUN apt-get -y install ros-kinetic-turtlebot3
 
 
 
@@ -40,12 +44,20 @@ RUN mkdir -p ~/catkin_ws/src/turtlebot3_simulations
 RUN git clone -b noetic-devel https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git ~/catkin_ws/src/turtlebot3_simulations
 RUN git clone https://github.com/mohamedleithy/AUC-Thesis-DT.git
 RUN wget https://github.com/ROBOTIS-GIT/turtlebot3/tree/master/turtlebot3_description -P ~/catkin_ws/src/turtlebot3_simulations
-RUN /bin/bash -c '. /opt/ros/noetic/setup.bash; cd ~/catkin_ws/; catkin_make'
+RUN /bin/bash -c '. /opt/ros/kinetic/setup.bash; cd ~/catkin_ws/; catkin_make'
 RUN cp -r /AUC-Thesis-DT/ROS-master/actuate ~/catkin_ws/src
 RUN cp -r /AUC-Thesis-DT/ROS-master/laser_values ~/catkin_ws/src
 RUN cp -r /AUC-Thesis-DT/ROS-master/sensor_fusion ~/catkin_ws/src
 RUN . ~/catkin_ws/devel/setup.sh 
 
+RUN apt-get update
+RUN apt-get install -y ros-$ROS_DISTRO-cloudwatch-metrics-collector
+
+RUN apt-get -y install unzip
+
+RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+RUN unzip awscliv2.zip
+RUN ./aws/install
 
 
 
