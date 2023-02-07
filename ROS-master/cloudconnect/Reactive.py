@@ -7,6 +7,7 @@ import json
 import re
 import math
 import message_converter
+import subprocess
 # from django.db import connections
 import mysql.connector
 import time
@@ -114,7 +115,9 @@ def preprocessing(data):
             "magnitude" : data["magnitude"],
             "time": json.dumps(datetime.now(), default=str)
           }
+      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Acceleration', '--namespace', 'Turtlebot3', '--unit', 'mps^2', '--value', f'''{data['magnitude']}'''])
       flag = True
+
       # dbSave(data)    
 
     elif(bool(re.search("^Speed", data["sensor_name"]))):
@@ -123,6 +126,7 @@ def preprocessing(data):
               "magnitude" : data['magnitude'],
               "time": json.dumps(datetime.now(), default=str)
             }
+      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Speed', '--namespace', 'Turtlebot3', '--unit', 'mps', '--value', f'''{data['magnitude']}'''])
       flag = True
       
 
@@ -133,6 +137,8 @@ def preprocessing(data):
               "lng": data['position_y'],
               "time": json.dumps(datetime.now(), default=str)
             }
+      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_x', '--namespace', 'Turtlebot3', '--unit', 'm', '--value', f'''{data['lat']}'''])
+      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_y', '--namespace', 'Turtlebot3', '--unit', 'm', '--value', f'''{data['long']}'''])
     else:  
       if(i==30):      
         dbSave(data)
