@@ -23,6 +23,7 @@ docker run -d --rm --net=ros \
    --name=novnc -p=8080:8080 \
    theasp/novnc:latest
 ````
+📺 on https://localhost:8080/vnc.html .
 ### 4. Launch a container running roscore. 
 
 ````
