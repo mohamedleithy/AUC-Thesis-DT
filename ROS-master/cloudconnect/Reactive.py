@@ -11,6 +11,13 @@ import subprocess
 # from django.db import connections
 import mysql.connector
 import time
+
+#Kinesis SDK
+import boto3
+
+kinesis_client = boto3.client('kinesis')
+
+
 # data = {"sensor_name": "Accelerometer1",
 # "linear_acceleartion_x": 1,
 #  "linear_accelaration_y": 1,
@@ -116,6 +123,9 @@ def preprocessing(data):
             "time": json.dumps(datetime.now(), default=str)
           }
       subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Acceleration', '--namespace', 'Turtlebot3', '--unit', 'mps^2', '--value', f'''{data['magnitude']}'''])
+      
+      response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Acceleration":"{data['magnitude']}"}}''',PartitionKey='123',)
+      print(response)
       flag = True
 
       # dbSave(data)    
@@ -127,6 +137,8 @@ def preprocessing(data):
               "time": json.dumps(datetime.now(), default=str)
             }
       subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Speed', '--namespace', 'Turtlebot3', '--unit', 'mps', '--value', f'''{data['magnitude']}'''])
+      response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Speed":"{data['magnitude']}"}}''',PartitionKey='123',)
+      print(response)
       flag = True
       
 
@@ -137,8 +149,15 @@ def preprocessing(data):
               "lng": data['position_y'],
               "time": json.dumps(datetime.now(), default=str)
             }
-      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_x', '--namespace', 'Turtlebot3', '--unit', 'm', '--value', f'''{data['lat']}'''])
-      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_y', '--namespace', 'Turtlebot3', '--unit', 'm', '--value', f'''{data['long']}'''])
+      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_x', '--namespace', 'Turtlebot3', '--value', f'''{data['lat']}'''])
+      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_y', '--namespace', 'Turtlebot3', '--value', f'''{data['lng']}'''])
+
+      response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Position_x":"{data['lat']}"}}''',PartitionKey='123',)
+      print(response)
+      response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Position_y":"{data['lng']}"}}''',PartitionKey='123',)
+      print(response)
+
+
     else:  
       if(i==30):      
         dbSave(data)
