@@ -11,7 +11,8 @@ import subprocess
 # from django.db import connections
 import mysql.connector
 import time
-
+import os 
+import subprocess
 #Kinesis SDK
 import boto3
 
