@@ -45,8 +45,8 @@ roslaunch turtlebot3_gazebo turtlebot3_house.launch
 
 ### 7. Launch the dashboard to monitor/actuate the turtlebot. 
 ````
-pip3 install -r /AUC-Thesis-DT/RemoteDrivingDashboard-master/requirements.txt
-python3 /AUC-Thesis-DT/OTA_RemoteDrivingConfigurator-main/Designs/QtGUI.py
+pip3 install -r ./RemoteDrivingDashboard-master/requirements.txt
+python3 ./OTA_RemoteDrivingConfigurator-main/Designs/QtGUI.py
 ````
 then configure your dashboard. 🕹
 
