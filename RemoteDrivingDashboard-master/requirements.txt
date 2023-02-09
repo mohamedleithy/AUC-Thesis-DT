@@ -15,6 +15,9 @@ websocket-client==1.2.1
 mysql-connector
 mysql-connector-python
 
+# AWS Kinesis SDK 
+boto3
+
 
 
 

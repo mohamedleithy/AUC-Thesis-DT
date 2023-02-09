@@ -40,32 +40,32 @@ kinesis_client = boto3.client('kinesis')
 # }
 
 
-def dbInit(db_host,db_user,db_password,data_base,server_addr):
-    server_addr = server_addr
-    server_port = 8000
-    mydb = mysql.connector.connect(
-    host=db_host,
-    user= db_user,
-    password=db_password,
-    database=data_base,
-    autocommit=True,
-    port = 3306
-    )
-    cursor = mydb.cursor()
-    print('[INFO] Connecting to server http://{}:{}...'.format(server_addr, server_port))
-    return cursor, mydb
+# def dbInit(db_host,db_user,db_password,data_base,server_addr):
+#     server_addr = server_addr
+#     server_port = 8000
+#     mydb = mysql.connector.connect(
+#     host=db_host,
+#     user= db_user,
+#     password=db_password,
+#     database=data_base,
+#     autocommit=True,
+#     port = 3306
+#     )
+#     cursor = mydb.cursor()
+#     print('[INFO] Connecting to server http://{}:{}...'.format(server_addr, server_port))
+#     return cursor, mydb
 
-def dbSave(data):
-  cursor, mydb = dbInit("127.0.0.1","root","root","velanalytics","0.0.0.0")
+# def dbSave(data):
+#   cursor, mydb = dbInit("127.0.0.1","root","root","velanalytics","0.0.0.0")
 
   # cursor = connections["default"].cursor()
-  sql_statement = f"""INSERT INTO  {data["sensor_name"]}
-                ( `time`,
-                `value`)
-                VALUES
-                ({data["time"]},{data["magnitude"]});
-                """
-  cursor.execute(sql_statement)
+  # sql_statement = f"""INSERT INTO  {data["sensor_name"]}
+  #               ( `time`,
+  #               `value`)
+  #               VALUES
+  #               ({data["time"]},{data["magnitude"]});
+  #               """
+  # cursor.execute(sql_statement)
 
 def callback(data):
 #     # rospy.loginfo(rospy.get_caller_id() + "I heard %s", data.data)
@@ -78,7 +78,7 @@ def callback(data):
 
   data = preprocessing(data)
   print(data)
-  cursor, mydb = dbInit("127.0.0.1","root","root","velanalytics","0.0.0.0")
+  # cursor, mydb = dbInit("127.0.0.1","root","root","velanalytics","0.0.0.0")
 
   # cursor = connections["default"].cursor()
   if "Position" in data["sensor_name"]:
@@ -96,7 +96,7 @@ def callback(data):
                   VALUES
                   ({data["time"]},{data["magnitude"]});
                   """                    
-  cursor.execute(sql_statement)
+  # cursor.execute(sql_statement)
 
   #timestamp here ----------------------
 
@@ -160,7 +160,7 @@ def preprocessing(data):
 
     else:  
       if(i==30):      
-        dbSave(data)
+        # dbSave(data)
         i=0
 
 
