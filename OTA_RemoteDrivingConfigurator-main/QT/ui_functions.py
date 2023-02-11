@@ -2,14 +2,23 @@ import json
 import socketio
 import os
 import webbrowser
+import sys
 
+from pathlib import Path
 
-dir_path = "/home/g02-f22/Downloads/source_code/AUC-Thesis-DT/RemoteDrivingDashboard-master/docker-compose.yml" #
+p = Path(__file__).parents[4]
+print(p)
+sys.path.append(p)
+
+dir_path = f"{p}/RemoteDrivingDashboard-master/docker-compose.yml" 
 os.system("docker-compose -f " + dir_path + " up -d")
+
+
+### UNCOMMENT OS.system to run nodes on host machine
 # to run the cloudconnect scripts in the background
 # the scripts can be found in the ROS directory attached with the project
-os.system("nohup python3 /home/g02-f22/Downloads/source_code/AUC-Thesis-DT/ROS-master/cloudconnect/Reactive.py > output.log &")
-os.system("nohup python3 /home/g02-f22/Downloads/source_code/AUC-Thesis-DT/ROS-master/cloudconnect/Streaming.py > output.log &")
+#os.system("nohup python3 /home/g02-f22/Downloads/source_code/AUC-Thesis-DT/ROS-master/cloudconnect/Reactive.py > output.log &")
+#os.system("nohup python3 /home/g02-f22/Downloads/source_code/AUC-Thesis-DT/ROS-master/cloudconnect/Streaming.py > output.log &")
 # os.system("nohup python3 /home/g02-f22/Downloads/source_code/AUC-Thesis-DT/ROS-master/cloudconnect/TeleOperations.py > output.log &")
 
 sio = socketio.Client()
