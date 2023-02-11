@@ -74,5 +74,14 @@ python3 ~/catkin_ws/src/sensor_fusion/src/sensor_fusion.py
 python3 ~/catkin_ws/src/laser_values/src/scan.py
 ````
 
+
+### 10. Run Kinetic Image for kinesisvideo-ros1 and follow [this](https://github.com/aws-robotics/kinesisvideo-ros1) 
+
+````
+docker run -it --net=ros osrf/ros:kinetic-desktop-full bash
+````
+
 and have fun. 🎉
+
+
 
