@@ -10,8 +10,8 @@ FROM osrf/ros:noetic-desktop-full
 RUN apt-get update
 RUN apt-get install -y git && apt-get install -y python3-pip && apt-get install -y curl  && \ 
 apt-get install -y wget && apt-get install -y net-tools \
-&& apt-get install -y nano
-RUN pip3 install python-socketio && pip3 install requests
+&& apt-get install -y nano && apt-get install -y vim
+RUN pip3 install python-socketio && pip3 install requests && pip3 install boto3
 
 
 # software packages from ROS 
@@ -25,18 +25,17 @@ RUN apt-get update
 
 RUN apt-get -y install ros-noetic-joy ros-noetic-teleop-twist-joy \
   ros-noetic-teleop-twist-keyboard ros-noetic-laser-proc \
-  ros-noetic-rgbd-launch ros-noetic-depthimage-to-laserscan \
-  ros-noetic-rosserial-arduino ros-noetic-rosserial-python \
-  ros-noetic-rosserial-server ros-noetic-rosserial-client \
+  ros-noetic-rgbd-launch ros-noetic-rosserial-arduino \
+  ros-noetic-rosserial-python ros-noetic-rosserial-client \
   ros-noetic-rosserial-msgs ros-noetic-amcl ros-noetic-map-server \
   ros-noetic-move-base ros-noetic-urdf ros-noetic-xacro \
-  ros-noetic-compressed-image-transport ros-noetic-rqt* \
+  ros-noetic-compressed-image-transport ros-noetic-rqt* ros-noetic-rviz \
   ros-noetic-gmapping ros-noetic-navigation ros-noetic-interactive-markers
 
 RUN apt-get -y install ros-noetic-dynamixel-sdk
 RUN apt-get -y install ros-noetic-turtlebot3-msgs
 RUN apt-get -y install ros-noetic-turtlebot3
-
+RUN apt-get -y  install docker-compose
 
 
 # simulation 
@@ -48,10 +47,10 @@ RUN /bin/bash -c '. /opt/ros/noetic/setup.bash; cd ~/catkin_ws/; catkin_make'
 RUN cp -r /AUC-Thesis-DT/ROS-master/actuate ~/catkin_ws/src
 RUN cp -r /AUC-Thesis-DT/ROS-master/laser_values ~/catkin_ws/src
 RUN cp -r /AUC-Thesis-DT/ROS-master/sensor_fusion ~/catkin_ws/src
+RUN pip3 install -r /AUC-Thesis-DT/RemoteDrivingDashboard-master/requirements.txt
 RUN . ~/catkin_ws/devel/setup.sh 
 
-RUN apt-get update
-RUN apt-get install -y ros-$ROS_DISTRO-cloudwatch-metrics-collector
+
 
 RUN apt-get -y install unzip
 
