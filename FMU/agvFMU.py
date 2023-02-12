@@ -1,8 +1,7 @@
 from fmpy import *
 #from fmpy.utill import plot_result
-import matplotlib.pyplot as plt
 import numpy as np
-import matplotlib.animation as animation
+
 
 
 def fmu(path, setSpeed, posError, headingError):
