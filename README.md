@@ -43,7 +43,7 @@ source ~/catkin_ws/devel/setup.sh
 roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ````
 
-### 7. Launch the dashboard to monitor/actuate the turtlebot. 
+### 7. Launch the dashboard to monitor/actuate the turtlebot (on your local machine not Docker). 
 ````
 pip3 install -r ./RemoteDrivingDashboard-master/requirements.txt
 cd ./OTA_RemoteDrivingConfigurator-main/Designs/
@@ -51,14 +51,14 @@ python3 QtGUI.py
 ````
 then configure your dashboard. 🕹
 
-### 8. On a new terminal window, run another container (step 3) and: 
+### 8. On a new terminal window, run another container of the turtlebot3-noetic (step 5) and: 
 #### a. Configure Aws for Kinesis Data & Video Streaming [check for help](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) then: 
 
 ````
 bash /AUC-Thesis-DT/RemoteDrivingDashboard-master/cloudconnect.sh
 ````
 
-### 9. Activate any of the following nodes in a new container (step3): 
+### 9. Activate any of the following nodes in a new container of the turtlebot3-noetic (step5): 
 
 
 #### Actuate Node 
