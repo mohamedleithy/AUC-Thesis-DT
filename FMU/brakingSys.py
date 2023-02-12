@@ -15,12 +15,12 @@ def fmu(path,force):
     for variable in model_description.modelVariables:
         vrs[variable.name] = variable.valueReference
     print(vrs)
-    Force = force
-    dtype = [('expseu_.Force', np.float)]
-    signals = np.array([Force], dtype=dtype)
-    result = simulate_fmu(fmu, stop_time=0.5, input=signals)
-    print(result)
-    return result
+    # Force = force
+    # dtype = [('expseu_.Force', np.float)]
+    # signals = np.array([Force], dtype=dtype)
+    # result = simulate_fmu(fmu, stop_time=0.5, input=signals)
+    # print(result)
+    # return result
     
 # def pushing_into_file(results):
 #     for result in results:
@@ -57,7 +57,7 @@ def animate(i,axis,path):
     lines = graph_data.split('\n')
     plotting(axis,lines)
 
-fmu("/home/g02-f22/Downloads/ToSend/FMI/BrakingSystem.fmu",50)
+fmu("/home/g02-f22/Downloads/source_code/AUC-Thesis-DT/FMU/BrakingSystem.fmu",50)
 #pushing_into_file(fmu("/home/g02-f22/Downloads/ToSend/FMI/BrakingSystem.fmu",50))
 # ani_1 = animation.FuncAnimation(fig,animate(ax1,"front_left_path"), interval=1000)
 # ani_2 = animation.FuncAnimation(fig,animate(ax1,"front_right_path"), interval=1000)
