@@ -29,7 +29,7 @@ docker run -d --rm --net=ros \
 ````
 docker run -d --net=ros -p 11311:11311 --name roscore osrf/ros:noetic-desktop-full roscore
 ````
-### 5. Run a container from the built image and replace <machine-ip>. 
+### 5. Run a container from the built image and replace machine-ip. 
 
 ````
 docker run -it --net=ros --env="DISPLAY=novnc:0.0" --env="HOST_IP=<machine-ip>" \
