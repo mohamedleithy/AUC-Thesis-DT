@@ -10,8 +10,8 @@ p = Path(__file__).parents[4]
 print(p)
 sys.path.append(p)
 
-dir_path = f"{p}/RemoteDrivingDashboard-master/docker-compose.yml" 
-os.system("docker-compose -f " + dir_path + " up -d")
+#dir_path = f"{p}/RemoteDrivingDashboard-master/docker-compose.yml" 
+#os.system("docker-compose -f " + dir_path + " up -d")
 
 
 ### UNCOMMENT OS.system to run nodes on host machine

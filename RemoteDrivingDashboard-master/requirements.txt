@@ -18,6 +18,8 @@ mysql-connector-python
 # AWS Kinesis SDK 
 boto3
 
+FMPy
+
 
 
 
