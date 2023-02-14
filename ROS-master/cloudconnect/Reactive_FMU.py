@@ -42,8 +42,8 @@ def fmu(path, setSpeed, posError, headingError):
 
     signals = np.array(start_values, dtype=dtype)
 
-   
-    result = simulate_fmu(fmu, stop_time=0.5, input=signals)
+
+    result = simulate_fmu(fmu, stop_time=0.1, input=signals)
     print(result)
     return result
     
@@ -179,7 +179,8 @@ def preprocessing(data):
               "time": json.dumps(datetime.now(), default=str)
             }
       # subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Speed', '--namespace', 'Turtlebot3', '--unit', 'mps', '--value', f'''{data['magnitude']}'''])
-      
+      print('SPEED: ')
+      print(data['magnitude'])
       pushing_into_file(fmu("/AUC-Thesis-DT/FMU/AGV_turtle_electric_drive_Prescan_export.fmu",data['magnitude'], 0.1, 0.1))
       
       response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Speed":"{data['magnitude']}"}}''',PartitionKey='123',)
