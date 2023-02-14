@@ -30,10 +30,10 @@ docker run -d --rm --net=ros \
 docker run -d --net=ros -p 11311:11311 --name roscore osrf/ros:noetic-desktop-full roscore
 ````
 
-### 6. Launch the server and DB by running: 
+### 5. Launch the server and DB by running: 
 
 ````
-cd ./RemoteDrivingDashboard-master 
+cd ../RemoteDrivingDashboard-master 
 docker-compose up
 ````
  (on your localmachine not Dokcer). 
