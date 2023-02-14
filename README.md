@@ -29,38 +29,50 @@ docker run -d --rm --net=ros \
 ````
 docker run -d --net=ros -p 11311:11311 --name roscore osrf/ros:noetic-desktop-full roscore
 ````
-### 5. Run a container from the built image and replace machine-ip. 
+
+### 6. Launch the server and DB by running: 
+
+````
+cd ./RemoteDrivingDashboard-master 
+docker-compose up
+````
+ (on your localmachine not Dokcer). 
+
+### 6. Run a container from the built image and replace machine-ip. 
 
 ````
 docker run -it --net=ros --env="DISPLAY=novnc:0.0" --env="HOST_IP=<machine-ip>" \
    --env="ROS_MASTER_URI=http://roscore:11311" --env="TURTLEBOT3_MODEL=waffle_pi" \ 
    turtlebot3-noetic bash
 ````
+### 7. Launch the dashboard to monitor/actuate the turtlebot (from within the container):  
+````
+cd /AUC-Thesis-DT/OTA_RemoteDrivingConfigurator-main/Designs/
+python3 QtGUI.py
+````
 
-### 6. Launch the turtlebot3 simulation. 💣
+then configure your dashboard through localhost:8080. 🕹
+### 8. Open a new terminal and run a new turtlebot3-noetic image (step 6) then launch the turtlebot3 simulation. 💣
 ````
 source ~/catkin_ws/devel/setup.sh
 roslaunch turtlebot3_gazebo turtlebot3_house.launch
 ````
 
-### 7. Launch the dashboard to monitor/actuate the turtlebot (on your local machine not Docker). 
-````
-pip3 install -r ./RemoteDrivingDashboard-master/requirements.txt
-cd ./OTA_RemoteDrivingConfigurator-main/Designs/
-python3 QtGUI.py
-````
-then configure your dashboard. 🕹
-
-### 8. On a new terminal window, run another container of the turtlebot3-noetic (step 5) and: 
+### 9. On a new terminal window, run another container of the turtlebot3-noetic (step 6) and: 
 #### a. Configure Aws for Kinesis Data & Video Streaming [check for help](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html) then: 
 
 ````
 bash /AUC-Thesis-DT/RemoteDrivingDashboard-master/cloudconnect.sh
 ````
 
-### 9. Activate any of the following nodes in a new container of the turtlebot3-noetic (step5): 
+### 10. Activate all or any of the following nodes in a new container of the turtlebot3-noetic (step5): 
 
+#### To Launch All nodes at once
 
+````
+bash /AUC-Thesis-DT/RemoteDrivingDashboard-master/turtlebot3_nodes.sh 
+````
+or launch each node on its own
 #### Actuate Node 
 ````
 python3 ~/catkin_ws/src/actuate/src/actuate.py
@@ -75,10 +87,35 @@ python3 ~/catkin_ws/src/laser_values/src/scan.py
 ````
 
 
-### 10. Run Kinetic Image for kinesisvideo-ros1 and follow [this](https://github.com/aws-robotics/kinesisvideo-ros1) 
+### 11. To activate the FMU node: 
+
+#### Replace machine_ip and make sure to source the script with the AMESim env variables (valid only for users who have access to AMESim simcenter).  
 
 ````
-docker run -it --net=ros osrf/ros:kinetic-desktop-full bash
+sudo docker run -it  -v $AME:$AME --env="SPLM_LICENSE_SERVER=28000@orw-sddlic1" --env="SC1D_LICENSING_TYPE=ugs" --env="AME=$AME" --net=ros --env="HOST_IP=<machine_ip>" --env="ROS_MASTER_URI=http://roscore:11311" --env="LD_LIBRARY_PATH=$LD_LIBRARY_PATH" turtlebot3-noetic bash 
+````
+
+then: 
+
+````
+python3 /AUC-Thesis-DT/ROS-master/cloudconnect/Reactive_FMU.py
+````
+
+### 12. Streaming Camera to AWS Kinesis 
+````
+cd ./Streaming_docker 
+docker build -t streaming-node .
+docker 
+````
+then
+````
+nano /opt/ros/kinetic/share/h264_video_encoder/config/sample_configuration.yaml
+````
+#### and replace `subscription_topic` from `/raspicam_node` to `/camera/rgb/image_raw` 
+Configure AWS ([check for help](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)). Then: 
+
+````
+roslaunch kinesis_video_streamer sample_application.launch
 ````
 
 and have fun. 🎉
