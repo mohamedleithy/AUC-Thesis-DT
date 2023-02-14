@@ -56,6 +56,6 @@ def pushing_into_file(results):
 
 
 fmu("./AGV_turtle_electric_drive_Prescan_export.fmu",2.6, 0.1, 0.1)
-pushing_into_file(fmu("./AGV_turtle_electric_drive_Prescan_export.fmu",2.6, 0.1, 0.1))
+pushing_into_file(fmu("./AGV_turtle_electric_drive_Prescan_export.fmu",0.26, 0.1, 0.1))
 
 
