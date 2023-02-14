@@ -3,7 +3,7 @@ A Digital Twin Prototype of an Automated Guided Vehicle (Turtlebot3) 🐢.
 
 ## Usage 
 
-[Get **Docker**](https://docs.docker.com/get-docker/), set it up nicely, then, in your terminal:
+[Get **docker and docker-compose**](https://docs.docker.com/get-docker/), set it up nicely, then, in your terminal:
 
 ### 1. Build the Docker Image to run simulation. 
 ````
