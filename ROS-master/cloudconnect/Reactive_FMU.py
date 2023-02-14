@@ -43,7 +43,7 @@ def fmu(path, setSpeed, posError, headingError):
     signals = np.array(start_values, dtype=dtype)
 
 
-    result = simulate_fmu(fmu, stop_time=0.1, input=signals)
+    result = simulate_fmu(fmu, stop_time=0.2, input=signals)
     print(result)
     return result
     
