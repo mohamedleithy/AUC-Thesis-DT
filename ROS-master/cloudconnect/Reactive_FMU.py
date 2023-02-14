@@ -148,21 +148,7 @@ def callback(data):
   # cursor, mydb = dbInit("127.0.0.1","root","root","velanalytics","0.0.0.0")
 
   # cursor = connections["default"].cursor()
-  if "Position" in data["sensor_name"]:
-    sql_statement = f"""INSERT INTO  {data["sensor_name"]}
-                  ( `time`,
-                  `lng`,
-                  `lat`)
-                  VALUES
-                  ({data["time"]},{data["lng"]}, {data["lat"]});
-                  """
-  else: 
-    sql_statement = f"""INSERT INTO  {data["sensor_name"]}
-                  ( `time`,
-                  `value`)
-                  VALUES
-                  ({data["time"]},{data["magnitude"]});
-                  """                    
+                
   # cursor.execute(sql_statement)
 
   #timestamp here ----------------------
