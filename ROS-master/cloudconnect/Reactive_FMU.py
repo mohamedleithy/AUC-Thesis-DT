@@ -43,7 +43,7 @@ def fmu(path, setSpeed, posError, headingError):
     signals = np.array(start_values, dtype=dtype)
 
 
-    result = simulate_fmu(fmu, stop_time=0.2, input=signals)
+    result = simulate_fmu(fmu, stop_time=0.5, input=signals)
     print(result)
     return result
     
@@ -73,11 +73,6 @@ def pushing_into_file(results):
         WheelSpeedRight_RPM = open("WheelSpeedRight_RPM.txt", 'a+')
         WheelSpeedRight_RPM.write(f"{result[0]},{result[4]} \n")
         WheelSpeedRight_RPM.close()
-        subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Acceleration', '--namespace', 'Turtlebot3', '--unit', 'mps^2', '--value', f'''{data['magnitude']}'''])
-      
-        response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Acceleration":"{data['magnitude']}"}}''',PartitionKey='123',)
-        
-        print(response)
 
 
 
