@@ -179,14 +179,20 @@ def preprocessing(data):
     i+=1
     print(i)
     data["time"] = json.dumps(datetime.now(), default=str)
-    flag = False 
-    if(bool(re.search("^Speed", data["sensor_name"]))):
+    flag = False
+    if(bool(re.search("^Accelerometer", data["sensor_name"]))):
+      print("accelerometer")
+      flag = True
+
+      # dbSave(data)    
+
+    elif(bool(re.search("^Speed", data["sensor_name"]))):
       print("speed")
       data = {"sensor_name" : data["sensor_name"],
               "magnitude" : data['magnitude'],
               "time": json.dumps(datetime.now(), default=str)
             }
-      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Speed', '--namespace', 'Turtlebot3', '--unit', 'mps', '--value', f'''{data['magnitude']}'''])
+      # subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Speed', '--namespace', 'Turtlebot3', '--unit', 'mps', '--value', f'''{data['magnitude']}'''])
       
       pushing_into_file(fmu("/AUC-Thesis-DT/FMU/AGV_turtle_electric_drive_Prescan_export.fmu",data['magnitude'], 0.1, 0.1))
       
@@ -194,6 +200,9 @@ def preprocessing(data):
       print(response)
       flag = True
       
+
+    if(bool(re.search("^Position", data["sensor_name"]))):
+      print("position")
 
 
     else:  
