@@ -23,6 +23,11 @@ import numpy as np
 import matplotlib.animation as animation
 
 
+import os
+os.environ["SC1D_LICENSING_TYPE"] = "ugs"
+os.environ["LD_LIBRARY_PATH"] = "/AUC-Thesis-DT/FMU/minimalAmesim/lnx_x64"
+os.environ["SPLM_LICENSE_SERVER"]="28000@orw-sddlic1"
+
 def fmu(path, setSpeed, posError, headingError):
     fmu = path
     dump(fmu)
@@ -69,8 +74,6 @@ def pushing_into_file(results):
         WheelSpeedRight_RPM = open("WheelSpeedRight_RPM.txt", 'a+')
         WheelSpeedRight_RPM.write(f"{result[0]},{result[4]} \n")
         WheelSpeedRight_RPM.close()
-
-
         subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Acceleration', '--namespace', 'Turtlebot3', '--unit', 'mps^2', '--value', f'''{data['magnitude']}'''])
       
         response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Acceleration":"{data['magnitude']}"}}''',PartitionKey='123',)
@@ -172,9 +175,6 @@ def callback(data):
   curr_time = round(time.time())
   print("Milliseconds since epoch:",curr_time)
 
-  for i in range(5):
-    sio.emit('sensedData', dict(data) ,namespace='/dashboard')
-
 def preprocessing(data):
     global i 
     i+=1
@@ -247,33 +247,11 @@ def listener():
     # spin() simply keeps python from exiting until this node is stopped
     rospy.spin()
 
-sio = socketio.Client()
 
 
-@sio.event(namespace='/dashboard')
-def connect():
-  print('[INFO] Successfully connected to server.')
-  # for i in range(1000):
-  # callback(data)
-  # sio.emit('sensedData', "Hello!" ,namespace='/dashboard')
 
-
-@sio.event(namespace='/dashboard')
-def connect_error():
-  print('[INFO] Failed to connect to server.')
-
-
-@sio.event(namespace='/dashboard')
-def disconnect():
-  print('[INFO] Disconnected from server.')
-
-#new data recieved
-@sio.event(namespace='/dashboard')
-def data_Changed(data):
-  print(data)
 
 if __name__ == '__main__':
-    sio.connect(os.path.expandvars('http://$HOST_IP:8000'))
     global i 
     i=0
     listener()
