@@ -30,12 +30,12 @@ def on_connect():
 #Sending Sensors Info
 def send_data(data):
     if(not sio.connected):
-        sio.connect('http://localhost:8000', namespaces=['/dynamicDB'], wait_timeout=60)
+        sio.connect(os.path.expandvars('http://$HOST_IP:8000'), namespaces=['/dynamicDB'], wait_timeout=60)
     data = str.encode(json.dumps(data))
     print(data)
     sio.emit('DB_Info', data, namespace='/dynamicDB')
     url = "http://localhost:8000/"
-    webbrowser.open(url, new=0, autoraise=True)
+    #webbrowser.open(url, new=0, autoraise=True)
 
 
 
