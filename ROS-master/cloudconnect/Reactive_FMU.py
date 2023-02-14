@@ -181,7 +181,7 @@ def preprocessing(data):
       # subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Speed', '--namespace', 'Turtlebot3', '--unit', 'mps', '--value', f'''{data['magnitude']}'''])
       print('SPEED: ')
       print(data['magnitude'])
-      pushing_into_file(fmu("/AUC-Thesis-DT/FMU/AGV_turtle_electric_drive_Prescan_export.fmu",data['magnitude'], 0.1, 0.1))
+      pushing_into_file(fmu("/AUC-Thesis-DT/FMU/AGV_turtle_electric_drive_Prescan_export.fmu",float(data['magnitude']), 0.1, 0.1))
       
       response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Speed":"{data['magnitude']}"}}''',PartitionKey='123',)
       print(response)
