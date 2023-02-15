@@ -105,7 +105,7 @@ python3 /AUC-Thesis-DT/ROS-master/cloudconnect/Reactive_FMU.py
 ````
 cd ./Streaming_docker 
 docker build -t streaming-node .
-docker 
+docker run -it --env"ROS_MASTER_URI=http://roscore:11311" --net=ros streaming-node bash
 ````
 then
 ````
