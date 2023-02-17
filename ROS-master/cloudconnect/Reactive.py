@@ -15,6 +15,7 @@ import os
 import subprocess
 #Kinesis SDK
 import boto3
+import csv
 
 kinesis_client = boto3.client('kinesis')
 
@@ -77,36 +78,43 @@ def callback(data):
   data = json.loads(data['data'])
   
 
-  data = preprocessing(data)
-  print(data)
+  
   # cursor, mydb = dbInit("127.0.0.1","root","root","velanalytics","0.0.0.0")
 
   # cursor = connections["default"].cursor()
-  if "Position" in data["sensor_name"]:
-    sql_statement = f"""INSERT INTO  {data["sensor_name"]}
-                  ( `time`,
-                  `lng`,
-                  `lat`)
-                  VALUES
-                  ({data["time"]},{data["lng"]}, {data["lat"]});
-                  """
-  else: 
-    sql_statement = f"""INSERT INTO  {data["sensor_name"]}
-                  ( `time`,
-                  `value`)
-                  VALUES
-                  ({data["time"]},{data["magnitude"]});
-                  """                    
+  # if "Position" in data["sensor_name"]:
+  #   sql_statement = f"""INSERT INTO  {data["sensor_name"]}
+  #                 ( `time`,
+  #                 `lng`,
+  #                 `lat`)
+  #                 VALUES
+  #                 ({data["time"]},{data["lng"]}, {data["lat"]});
+  #                 """
+  # else: 
+  #   sql_statement = f"""INSERT INTO  {data["sensor_name"]}
+  #                 ( `time`,
+  #                 `value`)
+  #                 VALUES
+  #                 ({data["time"]},{data["magnitude"]});
+  #                 """                    
   # cursor.execute(sql_statement)
 
   #timestamp here ----------------------
 
 
-  obj = time.gmtime(0)
-  epoch = time.asctime(obj)
-  print("The time is:",epoch)
-  curr_time = round(time.time())
+  # obj = time.gmtime(0)
+  # epoch = time.asctime(obj)
+  # print("The time is:",epoch)
+  
+
+  
+  data = preprocessing(data)
+  print(data)
+
+  curr_time = round(time.time()*1000)
   print("Milliseconds since epoch:",curr_time)
+
+  data["time"] = curr_time   #Adding the timestamp to the dictionary
 
   for i in range(5):
     sio.emit('sensedData', dict(data) ,namespace='/dashboard')
@@ -115,7 +123,7 @@ def preprocessing(data):
     global i 
     i+=1
     print(i)
-    data["time"] = json.dumps(datetime.now(), default=str)
+    data["time"] = json.dumps(round(time.time()*1000), default=str)
     flag = False
     if(bool(re.search("^Accelerometer", data["sensor_name"]))):
       print("accelerometer")
@@ -135,7 +143,7 @@ def preprocessing(data):
       print("speed")
       data = {"sensor_name" : data["sensor_name"],
               "magnitude" : data['magnitude'],
-              "time": json.dumps(datetime.now(), default=str)
+              "time": json.dumps(round(time.time()*1000), default=str)
             }
       subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Speed', '--namespace', 'Turtlebot3', '--unit', 'mps', '--value', f'''{data['magnitude']}'''])
       response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Speed":"{data['magnitude']}"}}''',PartitionKey='123',)
@@ -148,7 +156,7 @@ def preprocessing(data):
       data = {"sensor_name" : data["sensor_name"],
               "lat": data['position_x'],
               "lng": data['position_y'],
-              "time": json.dumps(datetime.now(), default=str)
+              "time": json.dumps(round(time.time()*1000), default=str)
             }
       subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_x', '--namespace', 'Turtlebot3', '--value', f'''{data['lat']}'''])
       subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_y', '--namespace', 'Turtlebot3', '--value', f'''{data['lng']}'''])
@@ -164,6 +172,14 @@ def preprocessing(data):
         # dbSave(data)
         i=0
 
+
+    #write the timestamp to the csv file //boody
+    # file = open('awsTime.csv', 'a', newline='')
+    # difference = response - data["time"]
+    # use = [difference]
+    # writer.writerow(use)
+    
+    # file.close()
 
     return data
 def listener():

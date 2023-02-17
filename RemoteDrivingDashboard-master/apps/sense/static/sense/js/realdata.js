@@ -110,7 +110,18 @@ for (const [key, value] of Object.entries(dataSensor)){
 
     socket.on('sensedData', (data) =>{
         //timestamp here ---------------------------------
-        var timestamp = getTime()
+        var date = new Date();
+        var timestamp = date.getTime();
+
+        var difference = timestamp - data["time"];
+
+        const fs = require('fs');
+
+        fs.appendFile('localTime.csv', difference.toString()+"\n", function (err) {
+            if (err) throw err;
+            console.log('Saved!');
+        });
+
         console.log(timestamp);
         console.log(data);
         var name = data["sensor_name"];
@@ -120,6 +131,9 @@ for (const [key, value] of Object.entries(dataSensor)){
                 ultraCharts[i].data.labels.push(data["time"]);
             }
         }
+
+        //save the timestamp into csv file //boody
+
         
         delete data["sensor_name"]
         delete data["time"]
