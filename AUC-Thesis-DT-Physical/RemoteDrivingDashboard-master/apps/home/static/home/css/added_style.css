@@ -1,0 +1,128 @@
+#slider{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+#slider .rs-range-color  {
+  background-color: #E14FCB;
+}
+#slider .rs-path-color  {
+  background-color: #FBEBF9;
+}
+#slider .rs-handle  {
+  background-color: #FBEBF9;
+  padding: 7px;
+  border: 2px solid #FBEBF9;
+}
+#slider .rs-handle.rs-focus  {
+  border-color: #E14FCB;
+}
+#slider .rs-handle:after  {
+  border-color: #E14FCB;
+  background-color: #E14FCB;
+}
+#slider .rs-border  {
+  border-color: transparent;
+}
+#slider .rs-bg-color {
+  background-color: #27293D;
+}
+#slider .rs-tooltip-text{
+  color:white;
+}
+
+#formControlRange {
+  margin: auto;
+  width: 50%;
+  /* padding: 10px; */
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+
+#formControlRange:focus {
+  outline: none;
+}
+#formControlRange::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: white;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+#formControlRange::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #E14FCB;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+
+
+#map-canvas{
+  height:237px;
+}
+
+.handle
+{
+  margin: auto;
+  height: 200px;
+}
+
+.handle .rs-handle  {
+  background-color: transparent;
+  border: 8px solid transparent;
+  border-right-color: #e6a7dc;
+  margin: -6px 0px 0px 14px !important;
+  border-width: 6px 104px 6px 4px;
+}
+.handle .rs-handle:before  {
+  display: block;
+  content: " ";
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background: #e6a7dc;
+  right: -11px;
+  bottom: -11px;
+  border-radius: 100px;
+}
+.handle .rs-tooltip  {
+  top: 75%;
+  font-size: 11px;
+}
+.handle .rs-tooltip div  {
+  text-align: center;
+  background: #E14FCB;
+  /* color: white; */
+  border-radius: 4px;
+  padding: 1px 5px 2px;
+  margin-top: 4px;
+}
+.handle .rs-range-color  {
+  background-color: #E14FCB;
+}
+.handle .rs-path-color  {
+  background-color: #FBEBF9;
+}
+.handle .rs-bg-color {
+  background-color: #27293D;
+}
+
+.handle .rs-tooltip-text{
+  color:white;
+}
+
+.row-eq-height > [class^=col]:first-of-type {
+  display: flex;
+}
+
+.row-eq-height > [class^=col]:first-of-type .black {
+  flex-grow: 1;
+}

@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+
+  apache:
+    image: 'bitnami/apache:latest'
+    ports:
+      - '80:8080'
+      - '443:8443'
+  db:
+    image: mysql:5.7
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app_db
+      MYSQL_PASSWORD: root
+    ports:
+      - "3306:3306"
+    command: --init-file /data/application/init.sql
+    volumes:
+      - myvolume:/var/lib/mysql
+      - ./init.sql:/data/application/init.sql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: pma
+    links:
+      - db
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    restart: always
+    ports:
+      - 8081:80
+  web:
+    build: .
+    command: bash -c "python manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - .:/var/app
+    ports:
+      - "8000:8000"
+    depends_on:
+        - db
+#    network_mode: "host"
+volumes:
+  myvolume:
+
+# python manage.py migrate && 

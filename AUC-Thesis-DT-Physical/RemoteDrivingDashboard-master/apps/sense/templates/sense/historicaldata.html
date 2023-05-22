@@ -1,0 +1,70 @@
+{% extends "home/dashboard_layout.html" %}
+{% block content %}
+<!-- Form card -->
+<div class="row row-eq-height">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="card-title">Sense Historical Data</h2>
+
+            </div>
+            <form method="post" enctype="multipart/form-data" id="form">
+                {% csrf_token %}
+                <div class="card-body">
+                    <div class="row ">
+                        <div class="col-md-12">
+                            <h4>Select Ranges</h4>
+                        </div>
+                        <div class="card" style="background: #2d3047;  margin:10px;padding:10px">
+                            <div class="form-group">
+                                <label for="datepicker">From Date</label>
+                                <input type="datetime-local" value="{{post_items.FromDate}}" name="FromDate"
+                                    class="form-control " style="border-color:#e14eca !important;" id="FromDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="datepicker">To Date</label>
+                                <input type="datetime-local" value="{{post_items.ToDate}}" name="ToDate"
+                                    class="form-control " style="border-color:#e14eca !important;" id="ToDate">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-centered" style="text-align: center;">
+                            <button type="submit" name="Filter_btn" class="btn btn-fill btn-primary">
+                                <i class="tim-icons icon-sound-wave"></i>
+                                <p>Show Data</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <div class="col-md-8">
+
+    </div>
+    </div>
+    <!-- Chart card -->
+    <div class="row" id="sensors">
+
+    </div>
+
+
+
+{% endblock %}
+
+
+
+{% block javascript %}
+{% load static %}
+<script>
+    // dataJS fetches from database tables
+    var data = "{{dataJS|escapejs}}";
+    // data fetches data from QT
+    var sensors_dict = "{{data|escapejs}}";
+</script>
+<script type="text/javascript"> window.CSRF_TOKEN = "{{ csrf_token }}"; </script>
+<script src="{% static 'sense/js/historical.js' %}"></script>
+{% endblock %}
