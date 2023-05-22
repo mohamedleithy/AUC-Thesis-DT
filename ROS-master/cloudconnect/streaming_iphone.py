@@ -9,15 +9,20 @@ import base64
 import time
     
 sys.path.append('/usr/local/lib/python2.7/site-packages')
-def image_callback(msg):
+def image_callback():
     print("Received an image!")
 
     try:
-      im = np.frombuffer(msg.data, dtype=np.uint8).reshape(msg.height, msg.width, -1)
-      print(type(im))
-      print(im)
-      frame = cv2.resize(im,(300,150), interpolation = cv2.INTER_AREA)
-      streamer.send_data(frame)
+    #   im = np.frombuffer(msg.data, dtype=np.uint8).reshape(msg.height, msg.width, -1)
+    #   print(type(im))
+    #   print(im)
+    #   frame = cv2.resize(im,(300,150), interpolation = cv2.INTER_AREA)
+      cap = cv2.VideoCapture(0)
+      while True:
+            # Read a frame from the webcam
+            ret, frame = cap.read()
+            frame = cv2.resize(frame,(300,150), interpolation = cv2.INTER_AREA)
+            streamer.send_data(frame)
 
     except:
       print("error")      
@@ -32,9 +37,9 @@ class CVClient(object):
 
     def _convert_image_to_jpeg(self, image):
         
-        frame = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+        #frame = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
         # Encode frame as jpeg
-        frame = cv2.imencode('.jpg', frame)[1].tobytes()
+        frame = cv2.imencode('.jpg', image)[1].tobytes()
         # Encode frame in base64 representation and remove
         # utf-8 encoding
         # frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
@@ -47,7 +52,7 @@ class CVClient(object):
         if cur_t - self._last_update_t > self._wait_t:
             self._last_update_t = cur_t
             sio.emit(
-                    'cv2server',
+                    'cv2serverphysical',
                     {
                         'image': self._convert_image_to_jpeg(frame),
                     },namespace='/cv')
@@ -86,6 +91,4 @@ def disconnect():
 	
 if __name__ == '__main__':
     sio.connect(os.path.expandvars('http://$HOST_IP:8000'))
-    rospy.init_node('streaming', anonymous=True)
-    sub = rospy.Subscriber('/camera/rgb/image_raw',Image,image_callback)
-    rospy.spin()
+    image_callback()

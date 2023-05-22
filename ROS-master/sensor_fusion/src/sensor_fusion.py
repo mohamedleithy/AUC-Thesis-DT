@@ -33,7 +33,7 @@ def send_dictionary(dictionary,topic):
 def cmd_vel_callback(msg):
     speed_dict = {}
     global last_speed
-    speed_dict['sensor_name'] = 'Speed_Digital_1'
+    speed_dict['sensor_name'] = 'Speed_Digital1'
     # speed_dict['linear_x'] = msg.linear.x
     # speed_dict['linear_y'] = msg.linear.y
     # speed_dict['linear_z'] = msg.linear.z
@@ -55,7 +55,7 @@ def pose_callback(msg):
     position_dict['position_x'] = msg.pose.pose.position.x
     position_dict['position_y'] = msg.pose.pose.position.y
     position_dict['position_z'] = msg.pose.pose.position.z
-    # print (position_dict['position_x'])
+    print (position_dict['position_x'])
     # encoded_data_string = json.dumps(position_dict)
     # print('json',encoded_data_string)
     send_dictionary(position_dict,'metric')
@@ -75,27 +75,31 @@ def acc_callback(msg):
     linear_acc_y += msg.linear_acceleration.y
     linear_acc_z += msg.linear_acceleration.z
     n+=1
-    acc_dict['sensor_name'] = 'Accelerometer_Digital_1'
+    acc_dict['sensor_name'] = 'Accelerometer_Digital1'
     # acc_dict['linear_acceleration_x'] = linear_acc_x / n
     # acc_dict['linear_acceleration_y'] = linear_acc_y / n
     # acc_dict['linear_acceleration_z'] = linear_acc_z / n
-    acc_dict['magnitude'] = int((linear_acc_x*10000)/n)
+    acc_dict['magnitude'] = int((linear_acc_x*10000))
+    
     dif = abs(acc_dict['magnitude'] - last_acceleration)
-    print(dif)
+    #print(dif)
     # acc_dict['magnitude'] = int((((linear_acc_x/n)**2 + (linear_acc_y/n)**2)**0.5)*100000)
-    if(acc_dict['magnitude']==last_acceleration or dif>50 or dif<2 or n<30): 
+    if(acc_dict['magnitude']==last_acceleration or dif<100 or n<40): 
         return
+    
     else:
         last_acceleration=acc_dict['magnitude']
-        # print (acc_dict['magnitude'])
         send_dictionary(acc_dict,'metric')
+        # print (acc_dict['magnitude'])
+    
 
     if n == 30:
         linear_acc_x = linear_acc_y = linear_acc_z = n = 0
     
 
+
 rospy.init_node('sensor_fusion')
 vel_sub = rospy.Subscriber('/cmd_vel',Twist , cmd_vel_callback)
 acc_sub = rospy.Subscriber('/imu',Imu , acc_callback)
-acc_sub = rospy.Subscriber('/odom',Odometry , pose_callback)
+#acc_sub = rospy.Subscriber('/odom',Odometry , pose_callback)
 rospy.spin()

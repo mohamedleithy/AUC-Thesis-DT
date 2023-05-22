@@ -131,10 +131,10 @@ def preprocessing(data):
             "magnitude" : data["magnitude"],
             "time": json.dumps(datetime.now(), default=str)
           }
-      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Acceleration', '--namespace', 'Turtlebot3', '--unit', 'mps^2', '--value', f'''{data['magnitude']}'''])
+      #subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Acceleration', '--namespace', 'Turtlebot3', '--unit', 'mps^2', '--value', f'''{data['magnitude']}'''])
       
-      response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Acceleration":"{data['magnitude']}"}}''',PartitionKey='123',)
-      print(response)
+      #response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Acceleration":"{data['magnitude']}"}}''',PartitionKey='123',)
+      #print(response)
       flag = True
 
       # dbSave(data)    
@@ -145,26 +145,26 @@ def preprocessing(data):
               "magnitude" : data['magnitude'],
               "time": json.dumps(round(time.time()*1000), default=str)
             }
-      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Speed', '--namespace', 'Turtlebot3', '--unit', 'mps', '--value', f'''{data['magnitude']}'''])
-      response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Speed":"{data['magnitude']}"}}''',PartitionKey='123',)
-      print(response)
+      #subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Speed', '--namespace', 'Turtlebot3', '--unit', 'mps', '--value', f'''{data['magnitude']}'''])
+      #response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Speed":"{data['magnitude']}"}}''',PartitionKey='123',)
+      #print(response)
       flag = True
       
 
-    if(bool(re.search("^Position", data["sensor_name"]))):
-      print("position")
-      data = {"sensor_name" : data["sensor_name"],
-              "lat": data['position_x'],
-              "lng": data['position_y'],
-              "time": json.dumps(round(time.time()*1000), default=str)
-            }
-      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_x', '--namespace', 'Turtlebot3', '--value', f'''{data['lat']}'''])
-      subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_y', '--namespace', 'Turtlebot3', '--value', f'''{data['lng']}'''])
+    # if(bool(re.search("^Position", data["sensor_name"]))):
+    #   print("position")
+    #   data = {"sensor_name" : data["sensor_name"],
+    #           "lat": data['position_x'],
+    #           "lng": data['position_y'],
+    #           "time": json.dumps(round(time.time()*1000), default=str)
+    #         }
+    #   subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_x', '--namespace', 'Turtlebot3', '--value', f'''{data['lat']}'''])
+    #   subprocess.run(['aws', 'cloudwatch', 'put-metric-data', '--metric-name', 'Position_y', '--namespace', 'Turtlebot3', '--value', f'''{data['lng']}'''])
 
-      response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Position_x":"{data['lat']}"}}''',PartitionKey='123',)
-      print(response)
-      response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Position_y":"{data['lng']}"}}''',PartitionKey='123',)
-      print(response)
+      #response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Position_x":"{data['lat']}"}}''',PartitionKey='123',)
+      #print(response)
+      #response = kinesis_client.put_record(StreamName='turtlebot', Data=f'''{{"Position_y":"{data['lng']}"}}''',PartitionKey='123',)
+      #print(response)
 
 
     else:  

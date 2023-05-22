@@ -66,6 +66,13 @@
   cocoSsd.load().then(model => {
       socket.on('server2webvirtual', (a) => {
           image_elem.src = a.image;
+          var date = new Date();
+          var timestamp = date.getTime();
+
+          var difference = timestamp - a["upload_time"]*1000;
+
+          console.log('Received image in (digital): ', difference);
+  
           image_elem.onload = () => {
               draw.drawImage(image_elem, 0, 0, canvas_od.width, canvas_od.height);
           };
@@ -135,12 +142,25 @@
               }
           }));
 
+          var date = new Date();
+          var timestampafterinference = date.getTime();
+
+          var difference = timestampafterinference - timestamp;
+
+          console.log('Virtual Inference time: ', difference);
+
       });
   });
 
   cocoSsd.load().then(model => {
     socket.on('server2webphysical', (a) => {
         image_elem1.src = a.image;
+        var date = new Date();
+        var timestamp = date.getTime();
+
+        var difference = timestamp - a["upload_time"]*1000;
+
+        console.log('Received image in (physical): ', difference);
         image_elem1.onload = () => {
             draw1.drawImage(image_elem1, 0, 0, canvas_od1.width, canvas_od1.height);
         };
@@ -206,7 +226,12 @@
                 draw1.fillRect(box[0], box[1] - 30, 70, 30);
                 draw1.fillStyle = "white";
                 draw1.fillText(label, box[0], box[1] - 5);
-
+                var date = new Date();
+                var timestampafter = date.getTime();
+        
+                var difference = timestampafter - timestamp;
+        
+                console.log('Physical Inference time: ', difference);
             }
         }));
 

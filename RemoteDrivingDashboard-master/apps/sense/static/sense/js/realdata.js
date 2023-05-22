@@ -115,15 +115,13 @@ for (const [key, value] of Object.entries(dataSensor)){
 
         var difference = timestamp - data["time"];
 
-        const fs = require('fs');
-
-        fs.appendFile('localTime.csv', difference.toString()+"\n", function (err) {
-            if (err) throw err;
-            console.log('Saved!');
-        });
-
-        console.log(timestamp);
+        console.log('Difference: ', difference);
+  
         console.log(data);
+
+
+        
+
         var name = data["sensor_name"];
 
         for (let i=0;i<totalNumOfSensors;i++){
